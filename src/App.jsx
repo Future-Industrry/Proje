@@ -1,11 +1,10 @@
+import { useRoutes } from "react-router-dom";
 import "./App.css";
+import routes from "./routes";
 
 function App() {
-  return (
-    <>
-      <h1 class="text-3xl font-bold text-center text-white bg-red-800"> Hello world! </h1>
-    </>
-  );
+  let routers = useRoutes(routes)
+  return routers
 }
 
 export default App;
