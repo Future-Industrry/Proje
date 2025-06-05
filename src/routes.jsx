@@ -1,3 +1,4 @@
+import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import LoginRegister from "./pages/LoginRegister";
 import Page404 from "./pages/Page404";
@@ -5,6 +6,7 @@ import Page404 from "./pages/Page404";
 let routes = [
     { path: "/", element: <Home /> },
     { path: "/auth", element: <LoginRegister /> },
+    { path: "/aboutus/*", element: <AboutUs />  },
     { path: "*", element: <Page404 /> },
 ]
 
