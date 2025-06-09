@@ -41,15 +41,15 @@ export default function LoginRegister() {
   }
 
   return (
-    <div className="bg-blue-100 h-[100vh] flex items-center justify-center flex-row-reverse">
-      <div className="relative p-[1rem] rounded-tl-xl rounded-bl-xl bg-white h-[20rem] flex items-center justify-between flex-col">
+    <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse">
+      <div className="relative p-[1rem] rounded-tl-xl rounded-bl-xl bg-light h-[20rem] flex items-center justify-between flex-col">
         <span
           style={
             loginStatus
               ? { transform: "translateY(.3rem)" }
               : { transform: "translateY(7rem)" }
           }
-          className="bg-blue-700 absolute left-[-.3rem] top-[0] translate-y-[6rem] duration-300 h-[33%] w-[.3rem] rounded-full "
+          className="bg-primary absolute left-[-.3rem] top-[0] translate-y-[6rem] duration-300 h-[33%] w-[.3rem] rounded-full "
         ></span>
         <div className="grid place-items-center">
           <svg
@@ -74,15 +74,15 @@ export default function LoginRegister() {
             <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
           </svg>
           <p className="font-bold">
-            پرو<span className="text-blue-400">ج</span>ه
+            پرو<span className="text-primary">ج</span>ه
           </p>
         </div>
         <div className="grid place-items-center cursor-pointer">
           <IoMdFingerPrint
             onClick={loginHandler}
             className={`text-[2.5rem] ${
-              loginStatus ? "bg-blue-300" : "bg-zinc-200"
-            }  p-2 rounded-lg duration-400 hover:bg-blue-300`}
+              loginStatus ? "bg-primary" : "bg-zinc-200"
+            }  p-2 rounded-lg duration-400 hover:bg-primary`}
           />
           <p className="text-[.9rem] mt-[.2rem]">ورود</p>
         </div>
@@ -90,8 +90,8 @@ export default function LoginRegister() {
           <GoShieldCheck
             onClick={registerHandler}
             className={`text-[2.5rem] ${
-              registerStatus ? "bg-blue-300" : "bg-zinc-200"
-            } p-2 rounded-lg duration-400 hover:bg-blue-300`}
+              registerStatus ? "bg-primary" : "bg-zinc-200"
+            } p-2 rounded-lg duration-400 hover:bg-primary`}
           />
           <p className="text-[.8rem] mt-[.2rem]">ثبت نام</p>
         </div>
@@ -120,9 +120,9 @@ export default function LoginRegister() {
       <div className={`${loginStatus?' translate-y-[2rem]':' translate-y-[-26rem]'} duration-500`}>{/*login:2rem - register:-26rem*/}
           <form action="" className="flex items-center justify-center flex-col">
           <h1 className="font-bold text-3xl mb-3 mt-3">ورود</h1>
-          <p className="mb-5 text-[.9rem] ">
+          <p className="mb-5 text-[.9rem] flex gap-1.5">
             اکانتی برای ورود ندارید؟{" "}
-            <button className="text-blue-600 cursor-pointer">ثبت نام</button>
+            <p onClick={registerHandler} className="text-primary cursor-pointer">ثبت نام</p>
           </p>
           <div className="w-[100%] px-5">
             <label htmlFor="">ایمیل</label>
@@ -145,7 +145,7 @@ export default function LoginRegister() {
                 رمز عبور خود را فراموش کرده اید؟
               </a>
             </div>
-            <button className="relative bg-blue-500 hover:bg-blue-600 duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
+            <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
               {btnStatus === "default" ? (
                 <p className="mb-2">ورود</p>
               ) : btnStatus === "loading" ? (
@@ -163,9 +163,9 @@ export default function LoginRegister() {
         </form>
         <form action="" className="flex items-center justify-center flex-col mt-[3rem]">
           <h1 className="font-bold text-3xl mb-3 mt-3">ثبت نام</h1>
-          <p className="mb-5 text-[.9rem] ">
+          <p className="mb-5 text-[.9rem] flex gap-1.5">
             از قبل حسابی برای خود ساخته اید؟{" "}
-            <button className="text-blue-600 cursor-pointer">ورود</button>
+            <p onClick={loginHandler} className="text-primary cursor-pointer">ورود</p>
           </p>
           <div className="w-[100%] px-5">
             <label htmlFor="">نام کاربری</label>
@@ -187,7 +187,7 @@ export default function LoginRegister() {
               {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
               {/* <FaRegEyeSlash /> */}
             </div>
-            <button className="relative bg-blue-500 hover:bg-blue-600 duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
+            <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
               {btnStatus === "default" ? (
                 <p className="mb-2">ثبت نام</p>
               ) : btnStatus === "loading" ? (

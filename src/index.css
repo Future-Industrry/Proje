@@ -1,36 +1,13 @@
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: IRANYekanBlack;
-  src: url(/public/fonts/IRANYekanBlack.ttf);
-}
-@font-face {
-  font-family: IRANYekanBold;
-  src: url(/public/fonts/IRANYekanBold.ttf);
-}
-@font-face {
-  font-family: IRANYekanMedium;
-  src: url(/public/fonts/IRANYekanMedium.ttf);
-}
-@font-face {
-  font-family: IRANYekanLight;
-  src: url(/public/fonts/IRANYekanLight.ttf);
-}
-@font-face {
-  font-family: IRANYekanRegular;
-  src: url(/public/fonts/IRANYekanRegular.ttf);
-}
-@font-face {
-  font-family: IRANYekanThin;
-  src: url(/public/fonts/IRANYekanThin.ttf);
-}
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
-body{
-  font-family:IRANYekanMedium ;
+body {
+  font-family: IRANYekanMedium;
 }
 
 a {
@@ -47,9 +24,3 @@ ul,
 li {
   list-style: none;
 }
-
-@theme {
-    --color-primary: #1DB954;
-    --color-black: #191414;
-    --color-white: #fff;
-} 

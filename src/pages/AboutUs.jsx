@@ -11,8 +11,8 @@ export default function AboutUs() {
   return (
     <>
       {/*header*/}
-      <div className="flex justify-center w-[100%] bg-white dark:bg-[#02142C] ">
-        <div className="w-[100%] lg:w-[80%] md:w-[90%] bg-white dark:bg-[#02142C] flex items-center justify-center flex-col p-5 gap-5">
+      <div className="flex justify-center w-[100%] bg-white dark:bg-dark ">
+        <div className="w-[100%] lg:w-[80%] md:w-[90%] bg-white dark:bg-dark flex items-center justify-center flex-col p-5 gap-5">
 
           <ul className="aboutList sticky top-[1rem] flex items-center justify-between dark:bg-zinc-700/50 text-white backdrop-blur-sm w-[25rem] lg:w-[30rem] p-3 px-3 rounded-full ">
             <li className="">
@@ -73,7 +73,7 @@ export default function AboutUs() {
             id="perspective"
             className="w-full pt-[4rem]  text-white text-4xl "
           >
-            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-[#FFA500] before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-[#FFA500] before:rounded-full ">
+            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               چشم انداز ما
             </p>
             <p className="text-[18px] mt-5 text-zinc-400 leading-7 ">
@@ -85,12 +85,12 @@ export default function AboutUs() {
           </div>
 
           <div id="values" className="w-full pt-[4rem] text-white text-4xl ">
-            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-[#FFA500] before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-[#FFA500] before:rounded-full ">
+            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               ارزش های ما
             </p>
             <ul className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 mt-5 place-content-center place-items-center gap-3 ">
               <li className=" bg-zinc-400/10 p-5 rounded-4xl flex flex-col items-center justify-center text-justify gap-3">
-                <div className="rounded-full bg-[#FFA500] p-5 size-[6rem]">
+                <div className="rounded-full bg-primary p-5 size-[6rem]">
                   <img src="/public/icons/values0.png" className=" " alt="" />
                 </div>{" "}
                 <p className="text-[30px]">همدلی</p>
@@ -101,7 +101,7 @@ export default function AboutUs() {
                 </p>
               </li>
               <li className=" bg-zinc-400/10 p-5 rounded-4xl flex flex-col items-center justify-center text-justify gap-3">
-                <div className="rounded-full bg-[#FFA500] p-5 size-[6rem]">
+                <div className="rounded-full bg-primary p-5 size-[6rem]">
                   <img src="/public/icons/values1.png" className=" " alt="" />
                 </div>{" "}
                 <p className="text-[30px]">تاثیر گذاری</p>
@@ -112,7 +112,7 @@ export default function AboutUs() {
                 </p>
               </li>
               <li className=" bg-zinc-400/10 p-5 rounded-4xl flex flex-col items-center justify-center text-justify gap-3">
-                <div className="rounded-full bg-[#FFA500] p-5 size-[6rem]">
+                <div className="rounded-full bg-primary p-5 size-[6rem]">
                   <img src="/public/icons/values2.png" className=" " alt="" />
                 </div>{" "}
                 <p className="text-[30px]">رشد و یادگیری</p>
@@ -126,7 +126,7 @@ export default function AboutUs() {
           </div>
 
           <div id="gallery" className="w-full pt-[4rem] text-white text-4xl">
-            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-[#FFA500] before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-[#FFA500] before:rounded-full ">
+            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               گالری عکس
             </p>
             <div className="galleryImages mt-5 ">
@@ -143,7 +143,7 @@ export default function AboutUs() {
             id="ourTeam"
             className="w-full pt-[4rem] text-white text-4xl"
           >
-            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-[#FFA500] before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-[#FFA500] before:rounded-full ">
+            <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               تیم ما
             </p>
             <p className="text-[18px] mt-5 text-zinc-400 leading-7 ">

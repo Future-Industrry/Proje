@@ -1,4 +1,37 @@
 @import "tailwindcss";
+@theme {
+  --color-primary: #ffa500;
+  --color-primaryLight: #ffa50070;
+  --color-secondery: #2e3192;
+  --color-thirdry: #fff7e3;
+  --color-dark: #02142c;
+  --color-light: #eee;
+}
+
+@font-face {
+  font-family: IRANYekanBlack;
+  src: url(/public/fonts/IRANYekanBlack.ttf);
+}
+@font-face {
+  font-family: IRANYekanBold;
+  src: url(/public/fonts/IRANYekanBold.ttf);
+}
+@font-face {
+  font-family: IRANYekanMedium;
+  src: url(/public/fonts/IRANYekanMedium.ttf);
+}
+@font-face {
+  font-family: IRANYekanLight;
+  src: url(/public/fonts/IRANYekanLight.ttf);
+}
+@font-face {
+  font-family: IRANYekanRegular;
+  src: url(/public/fonts/IRANYekanRegular.ttf);
+}
+@font-face {
+  font-family: IRANYekanThin;
+  src: url(/public/fonts/IRANYekanThin.ttf);
+}
 
 .loader {
   width: 30px;
