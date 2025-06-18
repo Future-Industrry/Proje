@@ -2,11 +2,13 @@ import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import LoginRegister from "./pages/LoginRegister";
 import Page404 from "./pages/Page404";
+import Saves from "./pages/Saves";
 
 let routes = [
     { path: "/", element: <Home /> },
     { path: "/auth", element: <LoginRegister /> },
     { path: "/aboutus/*", element: <AboutUs />  },
+    { path: "/Saves", element: <Saves />  },
     { path: "*", element: <Page404 /> },
 ]
 
