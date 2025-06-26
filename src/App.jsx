@@ -1,4 +1,4 @@
-import { useRoutes,BrowserRouter,Routes,Route } from "react-router-dom";
+import { useRoutes, BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import routes from "./routes";
 import ProfileAbout from "./pages/ProfileAbout";
@@ -9,12 +9,14 @@ function App() {
   let routers = useRoutes(routes)
   return (
     <BrowserRouter>
-            <Routes>
-                <Route path='/profile/about' element={<ProfileAbout/>}/>
-                <Route path='/profile/collection' element={<ProfileCollection/>}/>
-                <Route path='/profile/sample' element={<ProfileSample/>}/>
-            </Routes>
-        </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<ProfileAbout />} />
+        <Route path='/collection' element={<ProfileCollection />} />
+        <Route path='/sample' element={<ProfileSample />} />
+      </Routes>
+    </BrowserRouter>
+    
+
   )
 }
 

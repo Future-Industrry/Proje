@@ -54,13 +54,13 @@ function Profile() {
                 <div className="h-40 bg-amber-300"></div>
                 <ul className="flex justify-end pl-72  gap-40 border-b-1 py-3  border-gray-300">
                     <li>
-                        <NavLink to='/'>درباره</NavLink>
+                        {/* <NavLink to='/'>درباره</NavLink> */}
                     </li>
                     <li>
-                        <NavLink to='/collection'>کالکشن</NavLink>
+                        {/* <NavLink to='/collection'>کالکشن</NavLink> */}
                     </li>
                     <li>
-                        <NavLink to='/sample'>نمونه کار</NavLink>
+                        {/* <NavLink to='/sample'>نمونه کار</NavLink> */}
                     </li>
                 </ul>
             </div>
