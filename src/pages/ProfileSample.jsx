@@ -1,4 +1,10 @@
+import Profile from "../components/Profile"
+
 function ProfileSample(){
-    return()
+    return(
+        <div>
+            <Profile></Profile>
+        </div>
+    )
 }
 export default ProfileSample
