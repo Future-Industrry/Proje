@@ -7,6 +7,7 @@ import Note from '../assets/images/stickynote.svg'
 import Fasebook from '../assets/images/facebook.svg'
 import Instagram from '../assets/images/instagram.svg'
 import Whatsapp from '../assets/images/whatsapp.svg'
+import { NavLink } from "react-router-dom"
 function Profile() {
     return (
         <div>
@@ -54,13 +55,13 @@ function Profile() {
                 <div className="h-40 bg-amber-300"></div>
                 <ul className="flex justify-end pl-72  gap-40 border-b-1 py-3  border-gray-300">
                     <li>
-                        {/* <NavLink to='/'>درباره</NavLink> */}
+                        <NavLink to='/profile'>درباره</NavLink>
                     </li>
                     <li>
-                        {/* <NavLink to='/collection'>کالکشن</NavLink> */}
+                        <NavLink to='/profile/collection'>کالکشن</NavLink>
                     </li>
                     <li>
-                        {/* <NavLink to='/sample'>نمونه کار</NavLink> */}
+                        <NavLink to='/profile/sample'>نمونه کار</NavLink>
                     </li>
                 </ul>
             </div>
