@@ -8,52 +8,52 @@ import Fasebook from '../assets/images/facebook.svg'
 import Instagram from '../assets/images/instagram.svg'
 import Whatsapp from '../assets/images/whatsapp.svg'
 import { NavLink } from "react-router-dom"
-function Profile() {
+function Profile({ name="امیر علیخانی", email="amiralikhani@gmail.com", website="www.wonka.ir", date="1400/01/27", location="مشهد" }) {
     return (
         <div>
-            <div className="h-screen w-84 py-20 absolute px-10 space-y-2">
+            <div className="h-screen w-84 py-20 absolute px-10 space-y-2 font">
                 <div className="h-[95%] border-1 border-gray-300 rounded-3xl w-full flex gap-3 flex-col py-10 px-5  bg-white">
                     <div className='text-center mb-5 flex flex-col items-center gap-3'>
                         <img src={User} alt="" className=' size-28 rounded-full items-center' />
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-2 font-IranMedium'>
                             <img className='size-4' src={Verify} />
-                            امیر علیخانی
+                            {name}
                         </div>
                     </div>
-                    <div className='flex text-midnight items-center gap-2 text-sm'>
+                    <div className='flex items-center gap-2 text-sm'>
                         <img className='size-4' src={Sms} />
-                        hanirezaee@gmail.com
+                        {email}
                     </div>
-                    <div className='flex text-midnight items-center gap-2 text-sm'>
+                    <div className='flex items-center gap-2 text-sm'>
                         <img className='size-4' src={Global} />
-                        www.wonkapatisiers.ir
+                        {website}
 
                     </div>
-                    <div className='flex text-midnight items-center gap-2 text-sm'>
+                    <div className='flex items-center gap-2 text-sm'>
                         <img className='size-4' src={Note} />
-                        عضویت از 1384/02/1
+                        {date}
                     </div>
-                    <div className='flex text-midnight items-center gap-2 text-sm'>
+                    <div className='flex items-center gap-2 text-sm'>
                         <img className='size-4' src={Location} />
-                        مشهد
+                        {location}
                     </div>
-                    <div className='mt-10 flex justify-center text-sm'>
-                        <div className='flex  bg-yellow rounded-md p-1 pl-2 text-yellow-300  items-center gap-1'>
+                    <div className='mt-10 flex justify-center text-sm '>
+                        <div className='flex bg-thirdry  rounded-md p-1 pl-2 text-yellow-500  items-center gap-1'>
                             <img className='size-4' src={Location} />
                             درخواست
                         </div>
 
                     </div>
                 </div>
-                <div className='bg-yellow w-full h-10 rounded-2xl flex justify-center items-center gap-2'>
+                <div className='bg-yellow w-full h-10 rounded-2xl flex justify-center items-center gap-2 bg-thirdry'>
                     <img className='size-5' src={Fasebook} alt="" />
                     <img className='size-5' src={Instagram} alt="" />
                     <img className='size-5' src={Whatsapp} alt="" />
                 </div>
             </div>
-            <div className="text-midnight">
+            <div>
                 <div className="h-40 bg-amber-300"></div>
-                <ul className="flex justify-end pl-72  gap-40 border-b-1 py-3  border-gray-300">
+                <ul className="flex justify-end pl-72  gap-40 border-b-1 py-3  border-gray-300 font-IranRegular text-gray-500">
                     <li>
                         <NavLink to='/profile'>درباره</NavLink>
                     </li>

@@ -6,6 +6,8 @@
   --color-thirdry: #fff7e3;
   --color-dark: #02142c;
   --color-light: #eee;
+  --font-IranRegular:IRANYekanRegular;
+  --fotn-IranMedium:IRANYekanBlack;
 }
 
 @font-face {

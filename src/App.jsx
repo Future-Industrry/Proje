@@ -7,11 +7,7 @@ import routes from "./routes";
 
 function App() {
   let routers = useRoutes(routes)
-  return (
-    <BrowserRouter>
-    {routers}
-    </BrowserRouter>
-  )
+  return routers
 }
 
 export default App;
