@@ -10,7 +10,7 @@ export default function LoginRegister() {
   const [loginStatus, setLoginStatus] = useState(true);
   const [registerStatus, setRegisterStatus] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [btnStatus, setBtnStatus] = useState("default"); //default,loading,success
+  const [btnStatus, setBtnStatus] = useState("default"); //default, loading, success
   let imgsShadow = useRef(null);
 
   function changePoster() {
@@ -42,7 +42,7 @@ export default function LoginRegister() {
 
   return (
     <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse">
-      <div className="relative p-[1rem] rounded-tl-xl rounded-bl-xl bg-light h-[20rem] flex items-center justify-between flex-col">
+      <div className="relative p-[1rem] rounded-tl-xl rounded-bl-xl bg-light dark:bg-dark/90 h-[20rem] flex items-center justify-between flex-col">
         <span
           style={
             loginStatus
@@ -57,7 +57,7 @@ export default function LoginRegister() {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="#fff"
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
@@ -73,7 +73,7 @@ export default function LoginRegister() {
             <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
             <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
           </svg>
-          <p className="font-bold">
+          <p className="font-bold text-dark dark:text-white ">
             پرو<span className="text-primary">ج</span>ه
           </p>
         </div>
@@ -81,28 +81,28 @@ export default function LoginRegister() {
           <IoMdFingerPrint
             onClick={loginHandler}
             className={`text-[2.5rem] ${
-              loginStatus ? "bg-primary" : "bg-zinc-200"
+              loginStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/10"
             }  p-2 rounded-lg duration-400 hover:bg-primary`}
           />
-          <p className="text-[.9rem] mt-[.2rem]">ورود</p>
+          <p className="text-[.9rem] mt-[.2rem] text-dark dark:text-white">ورود</p>
         </div>
         <div className="grid place-items-center cursor-pointer">
           <GoShieldCheck
             onClick={registerHandler}
             className={`text-[2.5rem] ${
-              registerStatus ? "bg-primary" : "bg-zinc-200"
+              registerStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/10"
             } p-2 rounded-lg duration-400 hover:bg-primary`}
           />
-          <p className="text-[.8rem] mt-[.2rem]">ثبت نام</p>
+          <p className="text-[.8rem] mt-[.2rem] text-dark dark:text-white">ثبت نام</p>
         </div>
       </div>
 
       <div
         ref={imgsShadow}
-        className={`h-[30rem] overflow-hidden duration-500 bg-white rounded-2xl shadow-2xl`}
+        className={`h-[30rem] overflow-hidden duration-500 rounded-2xl shadow-2xl dark:shadow-white/10 shadow-dark/20 `}
       >
         <div
-          className={`${loginStatus && "translate-y-[0rem]"} ${
+          className={`bg-white dark:bg-dark ${loginStatus && "translate-y-[0rem]"} ${
             registerStatus && "translate-y-[-30rem]"
           } duration-700`}
         >
@@ -116,7 +116,7 @@ export default function LoginRegister() {
         </div>
       </div>
 
-      <div className="bg-white h-[28rem] w-[24rem] overflow-hidden  rounded-tr-xl rounded-br-xl p-[.5rem] px-[1rem] ">
+      <div className="bg-white dark:bg-dark text-dark dark:text-white h-[28rem] w-[24rem] overflow-hidden  rounded-tr-xl rounded-br-xl p-[.5rem] px-[1rem] ">
       <div className={`${loginStatus?' translate-y-[2rem]':' translate-y-[-26rem]'} duration-500`}>{/*login:2rem - register:-26rem*/}
           <form action="" className="flex items-center justify-center flex-col">
           <h1 className="font-bold text-3xl mb-3 mt-3">ورود</h1>
@@ -126,7 +126,7 @@ export default function LoginRegister() {
           </p>
           <div className="w-[100%] px-5">
             <label htmlFor="">ایمیل</label>
-            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 border-zinc-200 flex items-center justify-center">
+            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input
                 type="text"
                 className="w-full"
@@ -135,7 +135,7 @@ export default function LoginRegister() {
               {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
             </div>
             <label htmlFor="">رمز عبور</label>
-            <div className="border-[1.6px] mt-2 p-2 rounded-lg border-zinc-200 flex items-center justify-center">
+            <div className="border-[1.6px] mt-2 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input type="password" className="w-full" placeholder="M7aqK#" />
               {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
               {/* <FaRegEyeSlash /> */}
@@ -169,11 +169,11 @@ export default function LoginRegister() {
           </p>
           <div className="w-[100%] px-5">
             <label htmlFor="">نام کاربری</label>
-            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 border-zinc-200 flex items-center justify-center">
+            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input type="text" className="w-full" placeholder="aliReza" />
             </div>
             <label htmlFor="">ایمیل</label>
-            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 border-zinc-200 flex items-center justify-center">
+            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input
                 type="text"
                 className="w-full"
@@ -182,7 +182,7 @@ export default function LoginRegister() {
               {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
             </div>
             <label htmlFor="">رمز عبور</label>
-            <div className="border-[1.6px] mt-2 p-2 rounded-lg border-zinc-200 flex items-center justify-center">
+            <div className="border-[1.6px] mt-2 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input type="password" className="w-full" placeholder="M7aqK#" />
               {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
               {/* <FaRegEyeSlash /> */}
