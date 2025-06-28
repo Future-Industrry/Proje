@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --color-primary: #ffa500;
   --color-primaryLight: #ffa50070;
@@ -35,6 +36,7 @@
   src: url(/public/fonts/IRANYekanThin.ttf);
 }
 
+/*loading*/
 .loader {
   width: 30px;
   height: 30px;
@@ -104,6 +106,7 @@
   }
 }
 
+/*team us section*/
 .aboutList li .active {
   background-color: red;
 }
