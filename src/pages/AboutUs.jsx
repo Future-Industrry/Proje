@@ -11,15 +11,15 @@ export default function AboutUs() {
   return (
     <>
       {/*header*/}
-      <div className="flex justify-center w-[100%] bg-white dark:bg-dark ">
+      <div className="flex justify-center w-[100%] bg-white dark:bg-dark">
         <div className="w-[100%] lg:w-[80%] md:w-[90%] bg-white dark:bg-dark flex items-center justify-center flex-col p-5 gap-5">
 
-          <ul className="aboutList sticky top-[1rem] flex items-center justify-between dark:bg-zinc-700/50 text-white backdrop-blur-sm w-[25rem] lg:w-[30rem] p-3 px-3 rounded-full ">
+          <ul className="aboutList sticky top-[1rem] flex items-center justify-between dark:bg-white/10 bg-dark/20 dark:*:text-white  *:text-dark backdrop-blur-sm w-[25rem] lg:w-[30rem] p-3 px-2 rounded-full ">
             <li className="">
               <a
                 href="#perspective"
                 className={`text-[.8rem] lg:text-[.9rem] px-5 py-1.5 ${
-                  hash == "#perspective" && "bg-zinc-300/20 rounded-full "
+                  hash == "#perspective" && "bg-white/30 dark:bg-white/10 rounded-full "
                 }`}
                 onClick={(e) => {
                   changeMenu(e.target.hash);
@@ -32,7 +32,7 @@ export default function AboutUs() {
               <a
                 href="#values"
                 className={`text-[.8rem] lg:text-[.9rem] px-5 py-1.5 ${
-                  hash == "#values" && "bg-zinc-300/20 rounded-full "
+                  hash == "#values" && "bg-white/30 dark:bg-white/10 rounded-full "
                 }`}
                 onClick={(e) => {
                   changeMenu(e.target.hash);
@@ -45,7 +45,7 @@ export default function AboutUs() {
               <a
                 href="#gallery"
                 className={`text-[.8rem] lg:text-[.9rem] px-5 py-1.5 ${
-                  hash == "#gallery" && "bg-zinc-300/20 rounded-full "
+                  hash == "#gallery" && "bg-white/30 dark:bg-white/10 rounded-full "
                 }`}
                 onClick={(e) => {
                   changeMenu(e.target.hash);
@@ -58,7 +58,7 @@ export default function AboutUs() {
               <a
                 href="#ourTeam"
                 className={`text-[.8rem] lg:text-[.9rem] px-5 py-1.5 ${
-                  hash == "#ourTeam" && "bg-zinc-300/20 rounded-full "
+                  hash == "#ourTeam" && "bg-white/30 dark:bg-white/10 rounded-full "
                 }`}
                 onClick={(e) => {
                   changeMenu(e.target.hash);
@@ -71,12 +71,12 @@ export default function AboutUs() {
 
           <div
             id="perspective"
-            className="w-full pt-[4rem]  text-white text-4xl "
+            className="w-full pt-[4rem] text-dark dark:text-white text-4xl "
           >
             <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               چشم انداز ما
             </p>
-            <p className="text-[18px] mt-5 text-zinc-400 leading-7 ">
+            <p className="text-[18px] mt-5 text-dark/70 dark:text-white leading-7 ">
               چشم‌انداز کوئرا تبدیل‌شدن به جامعه‌ای برای برنامه‌نویسان ایرانه؛
               جایی برای همه‌ی برنامه‌نویس‌ها که به اون‌ها کمک می‌کنه تا زندگی
               حرفه‌ای خودشون رو به‌عنوان یک برنامه‌نویس به‌شکل اثربخش‌تری ادامه
@@ -84,7 +84,7 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div id="values" className="w-full pt-[4rem] text-white text-4xl ">
+          <div id="values" className="w-full pt-[4rem] text-dark dark:text-white text-4xl ">
             <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               ارزش های ما
             </p>
@@ -94,7 +94,7 @@ export default function AboutUs() {
                   <img src="/public/icons/values0.png" className=" " alt="" />
                 </div>{" "}
                 <p className="text-[30px]">همدلی</p>
-                <p className="text-[18px] leading-7 text-zinc-400 text-center">
+                <p className="text-[18px] leading-7 text-dark/70 dark:text-white text-center">
                   داشتن حس همدلی در کارهامون و درک کردن همکارامون به عنوان یه
                   انسان دیگه برامون اهمیت بالایی داره تا همیشه حس خوبی از کار
                   کردن با هم‌تیمی‌ها داشته باشیم.
@@ -105,7 +105,7 @@ export default function AboutUs() {
                   <img src="/public/icons/values1.png" className=" " alt="" />
                 </div>{" "}
                 <p className="text-[30px]">تاثیر گذاری</p>
-                <p className="text-[18px] leading-7 text-zinc-400 text-center">
+                <p className="text-[18px] leading-7 text-dark/70 dark:text-white text-center">
                   داشتن حس همدلی در کارهامون و درک کردن همکارامون به عنوان یه
                   انسان دیگه برامون اهمیت بالایی داره تا همیشه حس خوبی از کار
                   کردن با هم‌تیمی‌ها داشته باشیم.
@@ -116,7 +116,7 @@ export default function AboutUs() {
                   <img src="/public/icons/values2.png" className=" " alt="" />
                 </div>{" "}
                 <p className="text-[30px]">رشد و یادگیری</p>
-                <p className="text-[18px] leading-7 text-zinc-400 text-center">
+                <p className="text-[18px] leading-7 text-dark/70 dark:text-white text-center">
                   داشتن حس همدلی در کارهامون و درک کردن همکارامون به عنوان یه
                   انسان دیگه برامون اهمیت بالایی داره تا همیشه حس خوبی از کار
                   کردن با هم‌تیمی‌ها داشته باشیم.
@@ -125,7 +125,7 @@ export default function AboutUs() {
             </ul>
           </div>
 
-          <div id="gallery" className="w-full pt-[4rem] text-white text-4xl">
+          <div id="gallery" className="w-full pt-[4rem] text-dark dark:text-white text-4xl">
             <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               گالری عکس
             </p>
@@ -141,12 +141,12 @@ export default function AboutUs() {
 
           <div
             id="ourTeam"
-            className="w-full pt-[4rem] text-white text-4xl"
+            className="w-full pt-[4rem] text-dark dark:text-white text-4xl"
           >
             <p className="relative text-[36px] font-[600] border-b-2 inline-block pb-3 border-b-primary before:content-[''] before:absolute before:bottom-[-.3rem] before:left-[-.4rem] before:w-[.5rem] before:h-[.5rem] before:bg-primary before:rounded-full ">
               تیم ما
             </p>
-            <p className="text-[18px] mt-5 text-zinc-400 leading-7 ">
+            <p className="text-[18px] mt-5 text-dark/70 dark:text-white leading-7 ">
               چشم‌انداز کوئرا تبدیل‌شدن به جامعه‌ای برای برنامه‌نویسان ایرانه؛
               جایی برای همه‌ی برنامه‌نویس‌ها که به اون‌ها کمک می‌کنه تا زندگی
               حرفه‌ای خودشون رو به‌عنوان یک برنامه‌نویس به‌شکل اثربخش‌تری ادامه
