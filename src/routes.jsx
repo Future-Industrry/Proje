@@ -7,6 +7,17 @@ import ProfileSample from "./pages/ProfileSample";
 import ProfileAbout from "./pages/ProfileAbout";
 import Saves from "./pages/Saves";
 
+//private for panel - validation user
+import PrivateRoute from "./components/PrivateRoute";
+
+//panel
+import UserInfo from "./pages/panel/UserInfo";
+import Skills from "./pages/panel/Skills";
+import Transactions from "./pages/panel/Transactions";
+import Projects from "./pages/panel/Projects";
+import Achievements from "./pages/panel/Achievements";
+import Setting from "./pages/panel/Setting";
+
 let routes = [
     { path: "/", element: <Home /> },
     { path: "/auth", element: <LoginRegister /> },
@@ -15,7 +26,13 @@ let routes = [
     { path: "*", element: <Page404 /> },
     { path: "/profile", element: <ProfileAbout /> },
     { path: "/profile/collection", element: <ProfileCollection /> },
-    { path: "/profile/sample", element: <ProfileSample /> }
+    { path: "/profile/sample", element: <ProfileSample /> },
+    { path: "/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
+    { path: "/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
+    { path: "/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
+    { path: "/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
+    { path: "/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
+    { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
 ]
 
 export default routes

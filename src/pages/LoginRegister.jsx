@@ -59,10 +59,10 @@ export default function LoginRegister() {
             viewBox="0 0 24 24"
             fill="#fff"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-react"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="icon icon-tabler icons-tabler-outline icon-tabler-brand-react"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
@@ -120,10 +120,10 @@ export default function LoginRegister() {
       <div className={`${loginStatus?' translate-y-[2rem]':' translate-y-[-26rem]'} duration-500`}>{/*login:2rem - register:-26rem*/}
           <form action="" className="flex items-center justify-center flex-col">
           <h1 className="font-bold text-3xl mb-3 mt-3">ورود</h1>
-          <p className="mb-5 text-[.9rem] flex gap-1.5">
-            اکانتی برای ورود ندارید؟{" "}
+          <div className="mb-5 text-[.9rem] flex gap-1.5">
+            اکانتی برای ورود ندارید؟
             <p onClick={registerHandler} className="text-primary cursor-pointer">ثبت نام</p>
-          </p>
+          </div>
           <div className="w-[100%] px-5">
             <label htmlFor="">ایمیل</label>
             <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
@@ -165,7 +165,7 @@ export default function LoginRegister() {
           <h1 className="font-bold text-3xl mb-3 mt-3">ثبت نام</h1>
           <p className="mb-5 text-[.9rem] flex gap-1.5">
             از قبل حسابی برای خود ساخته اید؟{" "}
-            <p onClick={loginHandler} className="text-primary cursor-pointer">ورود</p>
+            <span onClick={loginHandler} className="text-primary cursor-pointer">ورود</span>
           </p>
           <div className="w-[100%] px-5">
             <label htmlFor="">نام کاربری</label>
