@@ -2,13 +2,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --color-primary: #ffa500;
-  --color-primaryLight: #ffa50070;
+  --color-primaryLight: #ffa50020;
   --color-secondery: #2e3192;
   --color-thirdry: #fff7e3;
   --color-dark: #02142c;
   --color-light: #eee;
   --font-IranRegular:IRANYekanRegular;
   --fotn-IranMedium:IRANYekanBlack;
+}
+
+.active{
+  background-color: var(--color-primaryLight);
+  color: var(--color-primary);
+  border-radius: .3rem;
 }
 
 @font-face {
