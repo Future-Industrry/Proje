@@ -17,6 +17,7 @@ import Transactions from "./pages/panel/Transactions";
 import Projects from "./pages/panel/Projects";
 import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
+import PaymentPage from "./pages/PaymentPage";
 
 let routes = [
     { path: "/", element: <Home /> },
@@ -27,6 +28,7 @@ let routes = [
     { path: "/profile", element: <ProfileAbout /> },
     { path: "/profile/collection", element: <ProfileCollection /> },
     { path: "/profile/sample", element: <ProfileSample /> },
+    { path: "/payment", element: <PaymentPage/> },
     { path: "/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
     { path: "/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
     { path: "/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
