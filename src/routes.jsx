@@ -6,6 +6,10 @@ import ProfileCollection from "./pages/ProfileCollection";
 import ProfileSample from "./pages/ProfileSample";
 import ProfileAbout from "./pages/ProfileAbout";
 import Saves from "./pages/Saves";
+import FileUploader from './pages/FileUploader';
+import Signup from './pages/Signup';
+
+
 
 //private for panel - validation user
 import PrivateRoute from "./components/PrivateRoute";
@@ -35,6 +39,9 @@ let routes = [
     { path: "/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
     { path: "/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
     { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
+    { path: "/fileuploader", element: <PrivateRoute><FileUploader /></PrivateRoute> },
+    { path: "/signup", element: <PrivateRoute><Signup /></PrivateRoute> },
+
 ]
 
 export default routes
