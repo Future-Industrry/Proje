@@ -6,8 +6,7 @@ import ProfileCollection from "./pages/ProfileCollection";
 import ProfileSample from "./pages/ProfileSample";
 import ProfileAbout from "./pages/ProfileAbout";
 import Saves from "./pages/Saves";
-import FileUploader from './pages/FileUploader';
-import Signup from './pages/Signup';
+// import FileUploader from './pages/FileUploader';
 
 
 
@@ -39,9 +38,7 @@ let routes = [
     { path: "/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
     { path: "/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
     { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
-    { path: "/fileuploader", element: <PrivateRoute><FileUploader /></PrivateRoute> },
-    { path: "/signup", element: <PrivateRoute><Signup /></PrivateRoute> },
-
+    // { path: "/fileuploader", element: <PrivateRoute><FileUploader /></PrivateRoute> },
 ]
 
 export default routes
