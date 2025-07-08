@@ -1,12 +1,12 @@
-import User from '../assest/images/user.jpg'
-import Verify from '../assest/images/verify.svg'
-import Email from '../assest/images/sms.svg'
-import Location from '../assest/images/location.svg'
-import Global from '../assest/images/global.svg'
-import Stickynote from '../assest/images/stickynote.svg'
-import Whatsapp from '../assest/images/whatsapp.svg'
-import Instagram from '../assest/images/instagram.svg'
-import Facebook from '../assest/images/facebook.svg'
+import User from '../assets/images/User.jpg'
+import Verify from '../assets/images/verify.svg'
+import Email from '../assets/images/sms.svg'
+import Location from '../assets/images/location.svg'
+import Global from '../assets/images/global.svg'
+import Stickynote from '../assets/images/stickynote.svg'
+import Whatsapp from '../assets/images/whatsapp.svg'
+import Instagram from '../assets/images/instagram.svg'
+import Facebook from '../assets/images/facebook.svg'
 export default function ProfileCard({ name, email, site, locaion, date }) {
     return (
         <>
@@ -21,33 +21,33 @@ export default function ProfileCard({ name, email, site, locaion, date }) {
                             <h2>{name}</h2>
                         </div>
                     </div>
-                    <div className='grid grid-cols-2 gap-x-10 gap-y-6 mt-4 lg:grid-cols-1 lg:pr-4'>
+                    <div className='grid grid-cols-2 gap-x-10 gap-y-6 mt-4 lg:grid-cols-1 lg:pr-4 text-gray-500 text-sm'>
                         <div className='flex gap-2 items-center  '>
                             <img src={Email} alt="" className='size-5' />
-                            <p className=' text-sm text-midnight'>{email}</p>
+                            <p>{email}</p>
                         </div>
                         <div className='flex gap-2 items-center'>
                             <img src={Global} alt="" className='size-5' />
-                            <p className=' text-sm text-midnight'>{site}</p>
+                            <p>{site}</p>
                         </div>
                         <div className='flex gap-2 items-center'>
                             <img src={Location} alt="" className='size-5' />
-                            <p className=' text-sm text-midnight'>{locaion}</p>
+                            <p>{locaion}</p>
                         </div>
                         <div className='flex gap-2 items-center'>
                             <img src={Stickynote} alt="" className='size-5' />
-                            <p className=' text-sm text-midnight'>{date + " عضویت"}</p>
+                            <p>{date + " عضویت"}</p>
                         </div>
                     </div>
                     <div className='mt-10 mx-auto flex mb-4 lg:mt-20'>
-                        <div className='flex gap-2 mx-auto items-center bg-yellow rounded-lg px-3 py-1'>
+                        <div className='flex gap-2 mx-auto items-center bg-thirdry rounded-lg px-3 py-1'>
                             <img src={Location} alt="" className='size-5' />
-                            <p className='text-sm text-yellow-600'>درخواست</p>
+                            <p className='text-sm text-primary'>درخواست</p>
                         </div>
                     </div>
                 </div>
                 <div className='mt-5  w-full '>
-                    <div className='mx-auto  bg-yellow flex gap-5 justify-center  py-1 rounded-lg mb-10 lg:py-2'>
+                    <div className='mx-auto  bg-thirdry flex gap-5 justify-center  py-1 rounded-lg mb-10 lg:py-2'>
                         <img src={Whatsapp} alt="" className='size-5' />
                         <img src={Instagram} alt="" className='size-5' />
                         <img src={Facebook} alt="" className='size-5' />
