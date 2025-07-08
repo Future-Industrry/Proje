@@ -6,7 +6,7 @@ export default function Profile({decs}) {
     const [activeTab, setActiveTab] = useState('about')
     return (
         <>
-            <div className="w-full h-24 bg-yellow-200"></div>
+            <div className="w-full h-24 bg-primary"></div>
             <div className="w-full mx-auto ">
                 <div className="flex justify-between border-b border-gray-300 mb-4 lg:justify-end lg:gap-[20%] lg:pl-20">
                     <button className={`px-4 py-2 text-gray-400 ${activeTab === 'about' ? '!text-black' : ''}`} onClick={() => setActiveTab('about')}>درباره ما</button>
