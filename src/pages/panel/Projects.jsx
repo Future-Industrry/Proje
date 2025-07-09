@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import SideBar from '../../components/SideBar';
 import TopBar from '../../components/TopBar';
-import Data from "../../components/Data";
 import { BsSun, BsMoon } from 'react-icons/bs';
 import { useNavigate } from "react-router-dom";
 import { BsBookmarkFill } from "react-icons/bs";
