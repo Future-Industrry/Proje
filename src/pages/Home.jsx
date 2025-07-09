@@ -26,10 +26,10 @@ export default function Home() {
         {/* hiro */}
         <div className="relative h-[100vh]">
           <div className="absolute top-0 right-0 h-full w-full flex items-center justify-center overflow-hidden  ">
-            <span className="bg-[#c0def6] size-[20rem] rounded-full absolute right-[-2rem] bottom-[-5rem]  "></span>
-            <span className="bg-[#cac3f4] size-[30rem] rounded-full absolute left-[15rem]  bottom-[-10rem] "></span>
-            <span className="bg-[#c3f4e7] size-[11rem] rounded-full absolute right-[1rem]  top-[-5rem] "></span>
-            <span className="bg-[#92caf8] size-[11rem] rounded-full absolute left-[-1rem]  top-[5rem] "></span>
+            <span className="bg-[#ff9900]/40 size-[20rem] rounded-full absolute right-[-2rem] bottom-[-5rem]  "></span>
+            <span className="bg-[#ff6347]/40 size-[30rem] rounded-full absolute left-[15rem]  bottom-[-10rem] "></span>
+            <span className="bg-[#ffd700]/40 size-[11rem] rounded-full absolute right-[1rem]  top-[-5rem] "></span>
+            <span className="bg-[#32cd32]/40 size-[11rem] rounded-full absolute left-[-1rem]  top-[5rem] "></span>
           </div>
           <div className="backdrop-blur-3xl h-full flex items-center justify-center flex-col  ">
             <div className="flex items-center justify-between h-[5rem] z-50 w-full fixed top-0 py-3 px-10 ">
@@ -141,7 +141,7 @@ export default function Home() {
             <p
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="Morabba bg-linear-to-r from-cyan-500 to-blue-500 outline-[.1rem] outline-cyan-500  text-white px-[1.5rem] py-[.2rem] text-[.9rem] rounded-full "
+              className="Morabba bg-linear-to-r from-[#ffa500] to-[#ff6347] outline-[.1rem] text-white px-[1.5rem] py-[.2rem] text-[.9rem] rounded-full "
             >
               پروجه
             </p>
@@ -163,7 +163,7 @@ export default function Home() {
               پروجه، منبع بزرگی از انواع پروژه های مختلف دانشجو های خبره دانشگاه
               سجاد{" "}
             </p>
-            <Link className="z-30 flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 opacity-0 fadeInAnimation2 from-indigo-500 via-purple-500 to-pink-500 text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+            <Link className="z-30 flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 opacity-0 fadeInAnimation2 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
               پروجه رو بشناس
               <BsStars />
             </Link>
