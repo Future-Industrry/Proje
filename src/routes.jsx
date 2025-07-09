@@ -4,6 +4,7 @@ import LoginRegister from "./pages/LoginRegister";
 import Page404 from "./pages/Page404";
 import Saves from "./pages/Saves";
 import PaymentPage from "./pages/PaymentPage"
+import Profile from "./pages/Profile";
 
 //private for panel - validation user
 import PrivateRoute from "./components/PrivateRoute";
@@ -15,10 +16,6 @@ import Transactions from "./pages/panel/Transactions";
 import Projects from "./pages/panel/Projects";
 import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
-
-import Profile from "./pages/Profile";
-
-// import PaymentPage from "./pages/PaymentPage";
 
 
 let routes = [
