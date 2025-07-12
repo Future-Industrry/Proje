@@ -11,7 +11,7 @@ export default function ProfileCard({ name, email, site, locaion, date }) {
     return (
         <>
             <div className='w-[100%] lg:full '>
-                <div className='w-full bg-white mx-auto border-1 border-gray-300 rounded-2xl relative mt-10 px-3  lg:-mt-30'>
+                <div className='w-full bg-white mx-auto border-1 border-gray-300 rounded-2xl relative mt-10 px-2  lg:-mt-30'>
                     <div className='absolute top-0 left-1/2 transform -translate-x-1/2  -mt-12 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:mt-20'>
                         <img src={User} alt="" className='w-24 h-24 rounded-full border-white shadow object-cover border-4 lg:w-28 lg:h-28' />
                     </div>
@@ -46,8 +46,8 @@ export default function ProfileCard({ name, email, site, locaion, date }) {
                         </div>
                     </div>
                 </div>
-                <div className='mt-5  w-full '>
-                    <div className='mx-auto  bg-thirdry flex gap-5 justify-center  py-1 rounded-lg mb-10 lg:py-2'>
+                <div className='mt-5 w-full'>
+                    <div className='mx-auto  bg-thirdry flex gap-5 justify-center rounded-lg mb-10 py-2 w-52 lg:w-full'>
                         <img src={Whatsapp} alt="" className='size-5' />
                         <img src={Instagram} alt="" className='size-5' />
                         <img src={Facebook} alt="" className='size-5' />
