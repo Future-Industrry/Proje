@@ -20,10 +20,10 @@ export default function PaymentPage() {
     <div className=" max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 rtl md:relative">
 
   {/* پروفایل */}
-  <div className="order-1 md:col-span-3 md:order-1">
+  <div className="order-1 md:col-span-3 ">
   <div className="flex sm:justify-center items-center gap-8 w-full max-w-md mb-2.5">
 
-<div className="w-[110px] h-[110px] rounded-full overflow-hidden border-2 border-[#F5F5F5]">
+<div className="w-[85px] h-[85px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden border-2 border-[#F5F5F5]">
   <img
     src={profimg}
     alt="User profile"
@@ -40,7 +40,7 @@ export default function PaymentPage() {
 </div>
   </div>
 
-  <div className="order-3 md:col-span-1 md:order-2">
+  <div className="order-2 md:col-span-1 ">
 
   <div className="relative w-[100%] max-w-[420px] mt-6 md:mt-0 md:max-w-[323px] mx-auto h-[655px] md:h-[665px] sm:h-[740px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
    
@@ -92,7 +92,7 @@ export default function PaymentPage() {
   </div>
 
   {/* فرم پرداخت - دوم در موبایل */}
-  <div className="order-2 md:col-span-2 space-y-6 md:order-3 md:justify-self-start">
+  <div className="order-3 md:col-span-2 space-y-6 md:justify-self-start">
 
   <div className="relative md:w-[590px] w-full max-w-[790px] mx-auto bg-[#F5F5F5] shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px]  px-14 py-8 dark:bg-[#1B202C]">
 
@@ -163,7 +163,7 @@ export default function PaymentPage() {
   </div>
 
   {/* پروژه‌های مشابه - سوم در موبایل */}
-  <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 md:absolute md:top-[540px] mx-auto space-y-6 md:order-4">
+  <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 md:absolute md:top-[540px] mx-auto space-y-6 ">
     <h2 className="text-xl text-gray-800 dark:text-[#F5F5F5] font-bold mb-4 text-right">
       شاید این پروژه‌ها برای شما مفید باشد:
     </h2>
