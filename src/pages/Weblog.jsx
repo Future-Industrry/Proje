@@ -184,13 +184,13 @@ export default function Weblog() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between my-7 ">
+        <div className="flex items-center justify-between mt-7 mb-2 px-3">
           <p className="text-[1.3rem] mb-3 ">هوش مصنوعی</p>
           <Link className="flex items-center gap-1">
             <p className="text-[.8rem]"> مشاهده بیشتر</p> <GoArrowLeft />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-7 ">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-7 px-3">
           <div className="flex items-center flex-col-reverse gap-5 shadow-md rounded-2xl pb-3 mb-3 ">
             <div className="flex-1/3 p-2">
               <div className="flex items-center gap-3">
