@@ -18,6 +18,7 @@ import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
 import Weblog from "./pages/Weblog";
 import MoreArticles from "./pages/panel/MoreArticles";
+import ArticleInfo from "./pages/panel/ArticleInfo";
 
 
 let routes = [
@@ -30,6 +31,7 @@ let routes = [
     { path: "/PaymentPage", element: <PaymentPage /> },
     { path: "/weblog", element: <Weblog /> },
     { path: "/moreArticles", element: <MoreArticles /> },
+    { path: "/articleInfo", element: <ArticleInfo /> },
     //panel
     { path: "/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
     { path: "/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
