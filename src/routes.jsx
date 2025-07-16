@@ -14,6 +14,9 @@ import Projects from "./pages/panel/Projects";
 import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
 import Profile from "./pages/Profile";
+import Weblog from "./pages/Weblog";
+import MoreArticles from "./pages/MoreArticles";
+import ArticleInfo from "./pages/ArticleInfo";
 
 
 let routes = [
@@ -24,6 +27,9 @@ let routes = [
     { path: "/Saves", element: <Saves /> },
     { path: "/profile", element: <Profile /> },
     { path: "/PaymentPage", element: <PaymentPage /> },
+    { path: "/Weblog", element: <Weblog /> },
+    { path: "/MoreArticles", element: <MoreArticles /> },
+    { path: "/ArticleInfo", element: <ArticleInfo /> },
     // panel
     { path: "/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
     { path: "/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
