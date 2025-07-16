@@ -163,11 +163,137 @@ export default function Home() {
               پروجه، منبع بزرگی از انواع پروژه های مختلف دانشجو های خبره دانشگاه
               سجاد{" "}
             </p>
-            <Link className="z-30 flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 opacity-0 fadeInAnimation2 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+            <a
+              href="#intro"
+              className="z-30 flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 opacity-0 fadeInAnimation2 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer "
+            >
               پروجه رو بشناس
               <BsStars />
+            </a>
+            <a
+              href="#intro"
+              className="absolute bottom-5 text-[2.5rem] cursor-pointer hover:translate-y-[.5rem] duration-300 opacity-0 fadeInAnimation"
+            >
+              <IoArrowDownCircle />
+            </a>
+          </div>
+        </div>
+
+        {/* section 1 */}
+        <div
+          className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto "
+          id="intro"
+        >
+          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
+            <p className="text-[3rem]">
+              <span className="text-primary">پ</span>روجه
+            </p>
+            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
+              پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+              اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم !
+            </p>
+            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+              صفحه پروژه ها
             </Link>
-            <IoArrowDownCircle className="absolute bottom-5 text-[2.5rem] cursor-pointer hover:translate-y-[.5rem] duration-300 opacity-0 fadeInAnimation" />
+          </div>
+          <div className="h-[100%] flex items-center w-[50%] ">
+            <img
+              src="/images/team checklist-rafiki.svg"
+              alt=""
+              className="siza-[100%]"
+            />
+          </div>
+        </div>
+
+        {/* section 2 */}
+        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
+          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
+            <p className="text-[3rem]">
+              پ<span className="text-primary">ر</span>وجه
+            </p>
+            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
+              راحت ترین راه پیدا کردن تیم های حرفه ای، فقط موضوع پروژه تو بگو تا
+              ما بهت یه تیم حرفه ای معرفی کنیم !
+            </p>
+            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+              ارتباط با ما
+            </Link>
+          </div>
+          <div className="h-[100%] flex items-center w-[50%] ">
+            <img
+              src="/images/New team members-rafiki.svg"
+              alt=""
+              className="siza-[100%]"
+            />
+          </div>
+        </div>
+
+        {/* section 3 */}
+        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
+          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
+            <p className="text-[3rem]">
+              پر<span className="text-primary">و</span>جه
+            </p>
+            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
+              واو به واو رزومه ها واقعین، اینجا تنها جاییه که رزومه تمام توسعه
+              دهنده هاش توسط اساتید و متخصصین شناخته شده، صحت سنجی میشه. پس با
+              خیال راحت پروژه هاتو بهشون بسپار{" "}!
+            </p>
+            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+              درباره ما
+            </Link>
+          </div>
+          <div className="h-[100%] flex items-center w-[50%] ">
+            <img
+              src="/images/Profile data-cuate.svg"
+              alt=""
+              className="siza-[100%]"
+            />
+          </div>
+        </div>
+
+        {/* section 4 */}
+        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
+          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
+            <p className="text-[3rem]">
+              پرو<span className="text-primary">ج</span>ه
+            </p>
+            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
+              جایی که همه چی شفافه، حتی جزئیات پیاده سازی پروژه ها !{" "}
+            </p>
+            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+              محصولات ما
+            </Link>
+          </div>
+          <div className="h-[100%] flex items-center w-[50%] ">
+            <img
+              src="/images/Projections-rafiki.svg"
+              alt=""
+              className="siza-[100%]"
+            />
+          </div>
+        </div>
+
+        {/* section 5 */}
+        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
+          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
+            <p className="text-[3rem]">
+              پروج<span className="text-primary">ه</span>
+            </p>
+            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
+              همه چی اینجا محیاست تا ایده‌ت رو به واقعیت برسونی با پروجه پروژت
+              تو جیبته !
+            </p>
+            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
+              معرفی تیم
+            </Link>
+          </div>
+          <div className="h-[100%] flex items-center w-[50%] ">
+            <img
+              src="/images/Social ideas-pana.svg"
+              alt=""
+              className="siza-[100%]"
+            />
           </div>
         </div>
 
@@ -182,18 +308,6 @@ export default function Home() {
         <br />
         <br />
         <br />
-
-        {/* <BsCashCoin /> */}
-
-        {/* <BsDiagram3 /> */}
-
-        {/* <BsFileEarmarkCode /> */}
-
-        {/* section 1 */}
-        {/* section 2 */}
-        {/* section 3 */}
-        {/* section 4 */}
-        {/* section 5 */}
       </div>
     </>
   );
