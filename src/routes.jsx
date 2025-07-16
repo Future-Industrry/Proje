@@ -22,7 +22,6 @@ let routes = [
     { path: "/auth", element: <LoginRegister /> },
     { path: "/aboutus/*", element: <AboutUs /> },
     { path: "/Saves", element: <Saves /> },
-
     { path: "/profile", element: <Profile /> },
     { path: "/PaymentPage", element: <PaymentPage /> },
     // panel
