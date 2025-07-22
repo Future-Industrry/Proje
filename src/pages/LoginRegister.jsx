@@ -17,10 +17,10 @@ export default function LoginRegister() {
   function changePoster() {
     if (imgsShadow.current) {
       imgsShadow.current.className =
-        "size-[30rem] scale-[1.1] overflow-hidden duration-500 bg-white rounded-2xl shadow-2xl lg:block hidden";
+        "size-[30rem] scale-[1.1] overflow-hidden duration-500 bg-white rounded-2xl dark:shadow-white/10 shadow-2xl lg:block hidden";
       setTimeout(() => {
         imgsShadow.current.className =
-        "size-[30rem] scale-[1] overflow-hidden duration-500 bg-white rounded-2xl shadow-xl lg:block hidden";
+        "size-[30rem] scale-[1] overflow-hidden duration-500 bg-white rounded-2xl dark:shadow-white/10 shadow-xl lg:block hidden";
       }, 2000);
     }
   }
@@ -42,7 +42,7 @@ export default function LoginRegister() {
   }
 
   return (
-    <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse">
+    <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse dark:bg-dark/95 ">
 
       <Link to="/" className="absolute top-4 right-4 bg-primary px-5 py-1 rounded-lg ">برگشت</Link>
 
@@ -86,7 +86,7 @@ export default function LoginRegister() {
           <IoMdFingerPrint
             onClick={loginHandler}
             className={`text-[2.5rem] ${
-              loginStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/10"
+              loginStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/30"
             }  p-2 rounded-lg duration-400 hover:bg-primary`}
           />
           <p className="text-[.9rem] mt-[.2rem] text-dark dark:text-white">ورود</p>
@@ -95,7 +95,7 @@ export default function LoginRegister() {
           <GoShieldCheck
             onClick={registerHandler}
             className={`text-[2.5rem] ${
-              registerStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/10"
+              registerStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/30"
             } p-2 rounded-lg duration-400 hover:bg-primary`}
           />
           <p className="text-[.8rem] mt-[.2rem] text-dark dark:text-white">ثبت نام</p>
@@ -104,7 +104,7 @@ export default function LoginRegister() {
 
       <div
         ref={imgsShadow}
-        className={`h-[30rem] lg:block hidden overflow-hidden duration-500 rounded-2xl shadow-2xl dark:shadow-white/10 shadow-dark/20 `}
+        className={`h-[30rem] lg:block hidden overflow-hidden duration-500 rounded-2xl shadow-xl dark:shadow-white/10 shadow-dark/20 `}
       >
         <div
           className={`lg:block hidden bg-white dark:bg-dark ${loginStatus && "translate-y-[0rem]"} ${
