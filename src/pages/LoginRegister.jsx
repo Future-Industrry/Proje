@@ -5,6 +5,7 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function LoginRegister() {
   const [loginStatus, setLoginStatus] = useState(true);
@@ -16,10 +17,10 @@ export default function LoginRegister() {
   function changePoster() {
     if (imgsShadow.current) {
       imgsShadow.current.className =
-        "size-[30rem] scale-[1.1] overflow-hidden duration-500 bg-white rounded-2xl shadow-2xl";
+        "size-[30rem] scale-[1.1] overflow-hidden duration-500 bg-white rounded-2xl shadow-2xl lg:block hidden";
       setTimeout(() => {
         imgsShadow.current.className =
-          "size-[30rem] scale-[1] overflow-hidden duration-500 bg-white rounded-2xl shadow-xl";
+        "size-[30rem] scale-[1] overflow-hidden duration-500 bg-white rounded-2xl shadow-xl lg:block hidden";
       }, 2000);
     }
   }
@@ -42,7 +43,11 @@ export default function LoginRegister() {
 
   return (
     <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse">
-      <div className="relative p-[1rem] rounded-tl-xl rounded-bl-xl bg-light dark:bg-dark/90 h-[20rem] flex items-center justify-between flex-col">
+
+      <Link to="/" className="absolute top-4 right-4 bg-primary px-5 py-1 rounded-lg ">برگشت</Link>
+
+      
+      <div className="relative sm:flex hidden p-[1rem] rounded-tl-xl rounded-bl-xl bg-light dark:bg-dark/90 h-[20rem] items-center justify-between flex-col">
         <span
           style={
             loginStatus
@@ -99,20 +104,20 @@ export default function LoginRegister() {
 
       <div
         ref={imgsShadow}
-        className={`h-[30rem] overflow-hidden duration-500 rounded-2xl shadow-2xl dark:shadow-white/10 shadow-dark/20 `}
+        className={`h-[30rem] lg:block hidden overflow-hidden duration-500 rounded-2xl shadow-2xl dark:shadow-white/10 shadow-dark/20 `}
       >
         <div
-          className={`bg-white dark:bg-dark ${loginStatus && "translate-y-[0rem]"} ${
+          className={`lg:block hidden bg-white dark:bg-dark ${loginStatus && "translate-y-[0rem]"} ${
             registerStatus && "translate-y-[-30rem]"
           } duration-700`}
         >
-          <img src="/images/Company-amico.png" alt="" className="w-[30rem] " />
+          <img src="/images/Company-amico.svg" alt="" className="w-[30rem] " />
           <img
-            src="/images/Authentication-rafiki.png"
+            src="/images/Authentication-rafiki.svg"
             alt=""
             className="w-[30rem] "
           />
-          <img src="/images/Ok-bro.png" alt="" className="w-[30rem] " />
+          <img src="/images/Ok-bro.svg" alt="" className="w-[30rem] " />
         </div>
       </div>
 
@@ -169,11 +174,11 @@ export default function LoginRegister() {
           </p>
           <div className="w-[100%] px-5">
             <label htmlFor="">نام کاربری</label>
-            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
+            <div className="border-[1.6px] mt-1 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input type="text" className="w-full" placeholder="aliReza" />
             </div>
             <label htmlFor="">ایمیل</label>
-            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
+            <div className="border-[1.6px] mt-1 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input
                 type="text"
                 className="w-full"
@@ -182,12 +187,12 @@ export default function LoginRegister() {
               {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
             </div>
             <label htmlFor="">رمز عبور</label>
-            <div className="border-[1.6px] mt-2 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
+            <div className="border-[1.6px] mt-1 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
               <input type="password" className="w-full" placeholder="M7aqK#" />
               {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
               {/* <FaRegEyeSlash /> */}
             </div>
-            <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
+            <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-3 text-white ">
               {btnStatus === "default" ? (
                 <p className="mb-2">ثبت نام</p>
               ) : btnStatus === "loading" ? (
@@ -205,6 +210,8 @@ export default function LoginRegister() {
         </form>
       </div>
       </div>
+
+
     </div>
   );
 }
