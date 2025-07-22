@@ -1,12 +1,12 @@
-import User from '../assets/images/User.jpg'
-import Verify from '../assets/images/verify.svg'
-import Email from '../assets/images/sms.svg'
-import Location from '../assets/images/location.svg'
-import Global from '../assets/images/global.svg'
-import Stickynote from '../assets/images/stickynote.svg'
-import Whatsapp from '../assets/images/whatsapp.svg'
-import Instagram from '../assets/images/instagram.svg'
-import Facebook from '../assets/images/facebook.svg'
+import User from '/images/User.jpg'
+import Verify from '/icons/verify.svg'
+import Email from '/icons/sms.svg'
+import Location from '/icons/location.svg'
+import Global from '/icons/global.svg'
+import Stickynote from '/icons/stickynote.svg'
+import Whatsapp from '/icons/whatsapp.svg'
+import Instagram from '/icons/instagram.svg'
+import Facebook from '/icons/facebook.svg'
 export default function ProfileCard({ name, email, site, locaion, date }) {
     return (
         <>

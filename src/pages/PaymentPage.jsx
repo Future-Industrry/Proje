@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 import SimilarProject from "../components/SimilarProject";
 
-import postcart1 from '../assets/paymentimg/proje1.png'
-import postcart2 from '../assets/paymentimg/proje2.png'
-import postcart3 from '../assets/paymentimg/proje3.jpg'
-import projepimg from '../assets/paymentimg/projep1.png'
-import profimg from '../assets/paymentimg/profile1.jpg'
+import postcart1 from '/images/proje1.png'
+import postcart2 from '/images/proje2.png'
+import postcart3 from '/images/proje3.jpg'
+import projepimg from '/images/projep1.png'
+import profimg from '/images/profile1.jpg'
 
 export default function PaymentPage() {
   const imagescart = [
