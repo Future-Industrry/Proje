@@ -23,17 +23,17 @@ export default function Transactions() {
           <div className="p-5">
             {/*کداتو اینجا بزن*/}
 
-            <div className=" mx-auto p-6 font-yekan text-right">
+            <div className=" mx-auto p-6 font-yekan text-right dark:bg-[#02142C]">
     
 
       {/* کیف پول */}
-      <div className="mt-12">
+      <div className="mt-12 ">
         <h3 className="text-[16px] md:text-[22px] leading-7 dark:text-[#ffff]  font-bold mb-[18px]">کیف پول</h3>
         <div className="border-[1px] border-[#CDCACA] mb-8 mt-8 w-full "></div>
 
     
           <div className="flex gap-2 items-baseline">
-                <p className="text-[16px] md:text-[22px] leading-7 font-medium dark:text-[#ffff]">
+                <p className="text-[16px] lg:text-[22px] leading-7 font-medium dark:text-[#ffff]">
           موجودی:
             </p>
              <p className=" w-[70px] h-[35px] rounded-[8px] text-center  bg-[#E8E8E8] dark:bg-[#242424] text-[12px] md:text-[16px] dark:text-[#AAAAAA] leading-[30px] text-[#5D5D5D] font-extrabold">۰ تومان</p>

@@ -31,16 +31,16 @@ export default function Projects() {
       {/* پروژه های متن باز */}
       <div className="border-2 border-[#EEEBEB] dark:border-[#1B202C] dark:bg-[#1B202C] border-solid">
           <div className="bg-[#EEEBEB] dark:bg-[#211E1E] p-4 flex justify-between items-center  border-solid">
-            <div className="flex gap-2 items-center"> <FaGithub className="text-[14px] md:text-[25px] dark:text-[#ffff]" /><span className="font-bold dark:text-[#ffff]  text-[12px] md:text-xl text-black">پروژه های متن باز </span></div>
+            <div className="flex gap-2 items-center"> <FaGithub className="sm:text-[14px] lg:text-[30px] md:text-[25px] dark:text-[#ffff]" /><span className="font-bold dark:text-[#ffff] sm:text-[.9rem]  lg:text-[1.3rem] md:text-[1rem] text-black">پروژه های متن باز </span></div>
        
-        <button className="flex items-center gap-2 bg-[#0AADE9] text-white text-[10px] md:text-[16px] leading-7 font-bold py-1 px-3 rounded-[8px]">
-        <CiCirclePlus  className="text-[20px] md:text-[30px]" />
+        <button className="flex items-center gap-1 md:gap-2 hover:duration-300  hover:bg-[#08a5de] bg-[#0AADE9] cursor-pointer text-white text-[10px] lg:text-[1.1rem] md:text-[14px] leading-7 font-bold py-1 px-3 rounded-[8px]">
+        <CiCirclePlus className="text-[18px] lg:text-[30px] md:text-[25px]" />
           افزودن  
         </button>
       </div>
       <div className="flex justify-center items-center flex-col rounded-xl my-10">
-      <AiOutlinePlus className="text-[90px] text-[#999999]" />
-        <span className="text-[#999999] leading-7 font-[700] text-[16px] md:text-2xl">موردی وجود ندارد</span>
+      <AiOutlinePlus className="md:text-[70px] lg:text-[80px] text-[40px] cursor-pointer text-[#999999]" />
+        <span className="text-[#999999] leading-7 font-[700] sm:text-[.9rem] lg:text-[1.4rem] md:text-xl">موردی وجود ندارد</span>
 
       </div>
       </div>
@@ -49,11 +49,12 @@ export default function Projects() {
       {/* پروژه های دیگر */}
       <div className="border-2 border-[#EEEBEB]  dark:border-[#1B202C] dark:bg-[#1B202C] border-solid  mt-6">
       <div className="bg-[#EEEBEB]  dark:bg-[#211E1E] p-4 flex justify-between items-center ">
-        <div className="flex gap-2 items-center">   <SiCodecrafters className="text-[14px] md:text-[25px] dark:text-[#ffff]"/><span className="font-bold text-[12px] md:text-xl dark:text-[#ffff] text-black">پروژه های دیگر</span>
+        <div className="flex gap-2 items-center">   <SiCodecrafters className="sm:text-[14px] lg:text-[30px] md:text-[25px] dark:text-[#ffff]"/>
+        <span className="font-bold sm:text-[.9rem]  lg:text-[1.3rem] md:text-[1rem] dark:text-[#ffff] text-black">پروژه های دیگر</span>
         </div>
         
-        <button className="flex items-center gap-2 bg-[#0AADE9] text-white text-[10px] md:text-[16px] leading-7 font-bold py-1 px-3 rounded-[8px]">
-        <CiCirclePlus  className="text-[20px] md:text-[30px]" />
+        <button className="flex items-center gap-1 md:gap-2 hover:duration-300 hover:bg-[#08a5de] bg-[#0AADE9] text-white cursor-pointer text-[10px] lg:text-[1.1rem] md:text-[14px] leading-7 font-bold py-1 px-3 rounded-[8px]">
+        <CiCirclePlus  className="text-[18px] lg:text-[30px] md:text-[25px]" />
           افزودن  
         </button>
       </div>
@@ -61,20 +62,20 @@ export default function Projects() {
         <img
           src={projeimg}
           alt="طراحی وبسایت رستوران"
-          className="h-[63px] w-[63px] md:w-[165px] md:h-[165px] rounded-xl object-cover"
+          className="h-[83px] w-[83px] md:w-[165px] md:h-[165px] rounded-xl object-cover"
         />
         <div className="space-y-2 md:space-y-8">
-          <h2 className="font-bold text-[12px] md:text-2xl dark:text-[#FFFFFF]  text-black">طراحی وبسایت رستوران</h2>
-          <p className="text-[#999999] font-medium text-[10px] md:text-lg">تاریخ انتشار : 1404/01</p>
-          <div className="flex gap-4">
+          <h2 className="font-bold sm:text-[.8rem] lg:text-[1.5rem] md:text-xl dark:text-[#FFFFFF]  text-black">طراحی وبسایت رستوران</h2>
+          <p className="text-[#999999] font-medium sm:text-[.7rem] lg:text-[1.3rem] md:text-[1rem]">تاریخ انتشار : 1404/01</p>
+          <div className="flex gap-1 md:gap-4">
             <span className="bg-[#DADADA] dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[9px] md:text-sm px-3 py-1 rounded-[8px]">Wordpress</span>
             <span className="bg-[#DADADA] dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[9px] md:text-sm  px-3 py-1 rounded-[8px]">UI/UX</span>
             <span className="bg-[#DADADA] dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[9px] md:text-sm px-3 py-1 rounded-[8px]">Figma</span>
           </div>
         </div>
         <div className="mr-auto mb-auto flex gap-2">
-          <button className="text-gray-500 hover:text-black"><BiEditAlt  className="text-[12px] md:text-[30px] text-[#8E8E8E]" /></button>
-          <button className="text-red-500 hover:text-red-700"><IoIosCloseCircleOutline  className="text-[12px] md:text-[30px] text"/></button>
+          <button className=" text-[#8E8E8E] hover:text-gray-700 cursor-pointer "><BiEditAlt  className="sm:text-[18px] lg:text-[32px] md:text-[30px]" /></button>
+          <button className="text-red-500 cursor-pointer hover:text-red-700"><IoIosCloseCircleOutline  className="sm:text-[18px] lg:text-[32px] md:text-[30px] text"/></button>
         </div>
       </div>
 </div>
