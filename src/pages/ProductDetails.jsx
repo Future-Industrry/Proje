@@ -1,9 +1,9 @@
-import img from '../assets/images/banner-03.png'
-import User from '../assets/images/User.jpg'
-import Basket from '../assets/images/basket.svg'
-import Heart from '../assets/images/heart.svg'
-import Receive from '../assets/images/receive.svg'
-import Save from '../assets/images/save.svg'
+import img from '/images/banner-03.png'
+import User from '/images/User.jpg'
+import Basket from '/icons/basket.svg'
+import Heart from '/icons/heart.svg'
+import Receive from '/icons/receive.svg'
+import Save from '/icons/save.svg'
 
 export default function ProductDetails() {
     return (
