@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function Saves() {
   let [isOpen, setIsOpen] = useState(0);
-  let [savedItems, setSavedItems] = useState([]);
+  let [savedItems, setSavedItems] = useState([
+    { id: 1, name: "001", discripthion: "text", image: "/images/proje1.png" },
+  ]);
   let navigate = useNavigate();
 
   return (

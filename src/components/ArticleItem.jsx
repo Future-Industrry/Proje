@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 export default function ArticleItem() {
   return (
-    <div className="flex items-center flex-col-reverse gap-5 shadow-md rounded-2xl pb-3 mb-3 ">
-      <div className="flex-1/3 p-2">
+    <div className="flex items-center flex-col-reverse gap-5 dark:bg-white/5 bg-dark/15 rounded-2xl p-3 mb-3 ">
+      <div className="flex-1/3 px-1">
         <div className="flex items-center gap-3">
           <p className="bg-primary text-white px-2.5 py-1.5 text-[.6rem] rounded-md ">
             توسعه دهنده
           </p>
           <p className="text-zinc-500 text-[.8rem] ">8 اردیبهشت 1404</p>
         </div>
-        <Link className="text-[18px] mt-2 inline-block ">
+        <Link className="text-[18px] mt-2 inline-block text-dark dark:text-white ">
           یادگیری ماشین چیست؟ همه آن چه باید درباره آن بدانید{" "}
         </Link>
         <p className="text-[14px] text-zinc-500 mt-2 line-clamp-2">

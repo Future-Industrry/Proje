@@ -5,7 +5,7 @@ import { BsSun, BsMoon } from 'react-icons/bs';
 import { useNavigate } from "react-router-dom";
 import { BsBookmarkFill } from "react-icons/bs";
 
-import projeimg from "../../assets/images/projeimg.png"
+import projeimg from "/images/projeimg.png"
  import { AiOutlinePlus } from "react-icons/ai";
  import { SiCodecrafters } from "react-icons/si";
  import { CiCirclePlus } from "react-icons/ci";

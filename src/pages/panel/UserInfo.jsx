@@ -19,11 +19,11 @@ export default function UserInfo() {
           ></div>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
           <div className="p-5">
-            <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] w-full h-[80vh] rounded-2xl p-3 ">
+            <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] w-full h-[80vh] rounded-2xl py-5 px-10 ">
               <div className="flex items-center justify-between h-[3rem] *:flex *:items-center *:justify-center *:gap-1">
                 <div className="">
                   <LiaUserSolid className="size-[2.2rem]" />
-                  <p className="text-[20px] lg:text-[30px] ">اطلاعات فردی : </p>
+                  <p className="text-[15px] mr-1 lg:text-[20px] ">اطلاعات فردی</p>
                 </div>
                 <div className="border-2 border-zinc-300 px-3 py-1 rounded-[.7rem] cursor-pointer hover:bg-zinc-300 duration-300 ">
                   <p className="text-[12px] lg:text-[16px] ">ویرایش</p>
@@ -31,7 +31,7 @@ export default function UserInfo() {
                 </div>
               </div>
               <div className="grid lg:grid-cols-2 py-3 md:grid-cols-2 sm:grid-cols-1 ">
-                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-3 *:border-b-2 *:border-zinc-300">
+                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-2 *:border-b-2 *:border-zinc-300">
                   <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
                     <p>نام</p>
                     <p>محمد</p>
@@ -53,7 +53,7 @@ export default function UserInfo() {
                     <p>0987654321</p>
                   </div>
                 </div>
-                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-3 *:border-b-2 *:border-zinc-300  ">
+                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-2 *:border-b-2 *:border-zinc-300  ">
                   <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
                     <p>تلفن</p>
                     <p>09151234567</p>

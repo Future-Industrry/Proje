@@ -1,7 +1,7 @@
 import { useState } from "react"
 import ProfileCard from "../components/ProfileCard"
 import SampleCard from "../components/SampleCard"
-import A from '../assets/images/banner-06.png'
+import A from '/images/banner-06.png'
 export default function Profile({decs}) {
     const [activeTab, setActiveTab] = useState('about')
     return (

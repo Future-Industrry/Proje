@@ -89,6 +89,7 @@ export default function Home() {
                 </li>
               </ul>
               <Link
+              to="/auth"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-delay="2500"
