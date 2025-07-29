@@ -38,7 +38,7 @@ export default function Setting() {
                   <input
                     type="text"
                     placeholder="نام کاربری"
-                    className=" bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full rounded-md px-3 py-2 placeholder-gray-400 text-sm outline-none focus:ring-0 focus:border-gray-400"
+                    className=" bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
                   />
                   <button
                     type="button"
@@ -61,7 +61,7 @@ export default function Setting() {
                     <input
                       type="password"
                       placeholder="رمز عبور"
-                      className="inputsSetting  bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full border border-gray-400 rounded-md px-3 py-2 placeholder-gray-400 text-sm outline-none focus:ring-0 focus:border-gray-400"
+                      className="inputsSetting  bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full border border-gray-400 rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
                     />
                   </div>
                   <div>
@@ -69,7 +69,7 @@ export default function Setting() {
                     <input
                       type="password"
                       placeholder="تکرار رمز عبور"
-                      className="inputsSetting  bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full border border-gray-400 rounded-md px-3 py-2 placeholder-gray-400 text-sm outline-none focus:ring-0 focus:border-gray-400"
+                      className="inputsSetting  bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full border border-gray-400 rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
                     />
                   </div>
                   <button
