@@ -42,7 +42,7 @@ export default function PaymentPage() {
 
   <div className="order-2 md:col-span-1 ">
 
-  <div className="relative w-[100%] max-w-[420px] mt-6 md:mt-0 md:max-w-[323px] mx-auto h-[655px] md:h-[665px] sm:h-[740px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
+  <div className="relative w-[100%] max-w-[420px] mt-6 md:mt-0 md:max-w-[323px] mx-auto h-[655px] md:h-[645px] sm:h-[720px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
    
    <div className="w-full h-[250px] sm:h-[300px] md:h-[205px] rounded-t-[15px] overflow-hidden">
      <img
@@ -92,9 +92,9 @@ export default function PaymentPage() {
   </div>
 
   {/* فرم پرداخت - دوم در موبایل */}
-  <div className="order-3 md:col-span-2 space-y-6 md:justify-self-start">
+  <div className="order-3 md:col-span-2 space-y-2 md:justify-self-start">
 
-  <div className="relative md:w-[590px] w-full max-w-[790px] mx-auto bg-[#F5F5F5] shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px]  px-14 py-8 dark:bg-[#1B202C]">
+  <div className=" md:w-[510px] w-full max-w-[790px] mx-auto bg-[#F5F5F5] shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px] px-6 py-4  md:px-14 md:py-8 dark:bg-[#1B202C]">
 
 <h2 className="text-[#373D37] font-bold text-[18px] sm:text-xl md:text-[20px] text-right mb-6 dark:text-[#F1FFED]">
   انتخاب درگاه پرداخت
@@ -135,35 +135,31 @@ export default function PaymentPage() {
 
 
   <div
-      className="w-full max-w-[600px] mx-auto mt-5 bg-[#F5F5F5] dark:bg-[#1B202C] rounded-[20px] px-10 py-6 relative rtl"
+      className="w-full max-w-[38rem] md:w-[510px]   mx-auto mt-5 bg-[#F5F5F5] dark:bg-[#1B202C] rounded-[20px] px-4 py-6 md:px-10 md:py-6  "
       dir="rtl"
     >
  
-      <h2 className="text-[#373D37] dark:text-[#F1FFED] text-[18px] md:text-[20px] font-bold leading-[28px] text-right mb-6">
+      <h2 className="text-[#373D37] dark:text-[#F1FFED]  text-[18px] md:text-[20px] font-bold leading-[28px] text-right mb-6">
         کد تخفیف دارید؟
       </h2>
 
     
-      <div className="flex flex-row-reverse  md:flex-row-reverse  gap-4 md:gap-[20px] md:items-start items-center space-x-2">
+      <div className="flex flex-row-reverse    gap-4 md:gap-[15px] md:items-start items-center">
      
-        <button className="text-[#0AADE9] w-[106px]  font-medium text-[1.1rem] md:text-[1.2rem] leading-[28px]">
+        <button className="text-[#0AADE9] w-[150px]  font-medium text-[1rem] md:text-[1.2rem] leading-[28px]">
           بررسی کد
         </button>
   <input
           type="text"
           placeholder="کد تخفیف را وارد کنید"
-          className="w-full md:w-[580px] h-[50px] md:h-[47px] dark:text-black bg-[#E1E1E1] dark:bg-[#E6E4E4] rounded-[20px] px-4 text-right text-sm md:text-base outline-none"
+          className="w-full md:w-[580px] h-[50px] md:h-[47px] dark:text-black bg-[#E1E1E1] dark:bg-[#E6E4E4] rounded-[20px] px-2 text-right text-sm md:text-base outline-none"
         /> 
         
         
       </div>
     </div>
-  
-
-  </div>
-
-  {/* پروژه‌های مشابه - سوم در موبایل */}
-  <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 md:absolute md:top-[540px] mx-auto space-y-6 ">
+ 
+  <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 mt-8 mx-auto space-y-6 ">
     <h2 className="text-xl text-gray-800 dark:text-[#F5F5F5] font-bold mb-4 text-right">
       شاید این پروژه‌ها برای شما مفید باشد:
     </h2>
@@ -173,6 +169,10 @@ export default function PaymentPage() {
       ))}
     </div>
   </div>
+
+  </div>
+
+  
 
 
   
