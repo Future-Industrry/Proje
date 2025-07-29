@@ -8,9 +8,9 @@ export default function UserInfo() {
   const [isOpen, setIsOpen] = useState(0);
   return (
     <>
-      <div className="flex *:h-[100vh] ">
+      <div className="flex *:h-[100vh] bg-white dark:bg-dark">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-[100%]">
+        <div className="w-[100%] ">
           <div
             className={`bg-dark/50 w-full absolute ${
               isOpen ? "h-full" : "h-[0]"
@@ -18,15 +18,15 @@ export default function UserInfo() {
             onClick={() => setIsOpen(!isOpen)}
           ></div>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
-          <div className="p-5">
-            <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] w-full h-[80vh] rounded-2xl py-5 px-10 ">
-              <div className="flex items-center justify-between h-[3rem] *:flex *:items-center *:justify-center *:gap-1">
-                <div className="">
+          <div className="p-5 dark:text-white text-black">
+            <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] bg-dark dark:bg-white/3 w-full h-[80vh] rounded-2xl py-5 px-10 ">
+              <div className="flex items-center justify-between  h-[3rem] *:flex *:items-center *:justify-center *:gap-1">
+                <div>
                   <LiaUserSolid className="size-[2.2rem]" />
-                  <p className="text-[15px] mr-1 lg:text-[20px] ">اطلاعات فردی</p>
+                  <p className="text-[15px] mr-1 lg:text-[20px]">اطلاعات فردی</p>
                 </div>
-                <div className="border-2 border-zinc-300 px-3 py-1 rounded-[.7rem] cursor-pointer hover:bg-zinc-300 duration-300 ">
-                  <p className="text-[12px] lg:text-[16px] ">ویرایش</p>
+                <div className="border-1 border-zinc-300 px-3 py-1 rounded-[.7rem] cursor-pointer hover:bg-zinc-300 dark:hover:bg-zinc-100/10 duration-300 ">
+                  <p className="text-[11px] lg:text-[14px] ">ویرایش</p>
                   <CiEdit className="size-[1.2rem]" />
                 </div>
               </div>
