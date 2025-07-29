@@ -5,7 +5,7 @@ import { LuBadgeCheck } from "react-icons/lu";
 export default function TopBar({ isOpen, setIsOpen }) {
     return (
         <div className="h-[6rem] flex items-center gap-5 p-5 bg-white dark:bg-dark">
-            <HiMenu onClick={() => setIsOpen(!isOpen)} className="bg-zinc-200 p-1 rounded-lg text-[2rem] cursor-pointer hover:scale-110 duration-150 " />
+            <HiMenu onClick={() => setIsOpen(!isOpen)} className="bg-zinc-200 dark:bg-zinc-800 dark:text-white p-1 rounded-lg text-[2rem] cursor-pointer hover:scale-110 duration-150 " />
             <div className="flex items-center gap-3 ">
                 <img src="public/images/team3.jpg" alt="" className="size-[3.5rem] rounded-full object-cover " />
                 <div>
