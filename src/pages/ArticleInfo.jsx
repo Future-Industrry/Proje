@@ -8,7 +8,7 @@ export default function ArticleInfo() {
   return (
     <div className="bg-white dark:bg-dark pt-10">
       <div className="container mx-auto grid gap-3 grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 bg-white dark:bg-dark ">
-        <div className="xl:col-span-3 lg:col-span-3 col-span-4 p-5 shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] rounded-xl ">
+        <div className="xl:col-span-3 lg:col-span-3 col-span-4 p-5 dark:shadow-none shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] rounded-xl bg-white/2 ">
           <div className="flex items-center gap-2 mb-5 text-[.8rem] w-[50rem] text-dark dark:text-white ">
             <Link>خانه</Link> <MdChevronLeft />
             <Link>توسعه دهنده ها </Link>
@@ -136,8 +136,8 @@ export default function ArticleInfo() {
           </p>
         </div>
 
-        <div className="sticky top-0 h-[10rem] *:mb-3 xl:col-span-1 lg:col-span-1 col-span-4 ">
-          <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] p-3 rounded-xl">
+        <div className="sticky top-0 *:mb-3 xl:col-span-1 lg:col-span-1 col-span-4">
+          <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] p-3 rounded-xl bg-white/2">
             <p className="text-dark dark:text-white ">پر بازدید ترین</p>
             <div className="mt-4 *:mb-5 text-dark dark:text-white/60 ">
               <div className="flex items-center rounded-lg gap-2">
@@ -181,7 +181,7 @@ export default function ArticleInfo() {
               </div>
             </div>
           </div>
-          <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] p-3 rounded-xl">
+          <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] p-3 rounded-xl bg-white/2">
             <p className="text-dark dark:text-white ">جدید ترین ها</p>
             <div className="mt-4 *:mb-5 text-dark dark:text-white/60 ">
               <div className="flex items-center rounded-lg gap-2">
