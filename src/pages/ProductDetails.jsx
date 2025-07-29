@@ -67,7 +67,7 @@ export default function ProductDetails() {
         inventore autem, in dolore! Officiis, similique alias.
       </p>
       <h1 className="font-IranYekanBold">نظرات</h1>
-      <div className="w-full shadow-xl shadow-zinc-200/70 bg-zinc-100 rounded-md h-9 md:w-96">
+      <div className="w-full shadow-xl shadow-zinc-200/30 bg-zinc-100 border-1 border-zinc-200 rounded-md h-9 md:w-96">
         <input
           type="text"
           className="p-2 px-3 placeholder:text-[.8rem] w-full h-full"
