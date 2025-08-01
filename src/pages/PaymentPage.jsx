@@ -27,7 +27,7 @@ export default function PaymentPage() {
   <img
     src={profimg}
     alt="User profile"
-    className="w-full h-full object-cover"
+    className=" w-full h-full object-cover"
   />
 </div>
 
@@ -44,11 +44,11 @@ export default function PaymentPage() {
 
   <div className="sm:w-[90%]  mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
    
-   <div className="w-full  h-[250px] sm:h-[300px] md:h-[205px] rounded-t-[15px] overflow-hidden">
+   <div className="w-full  h-[245px]  md:h-[205px] rounded-t-[15px] ">
      <img
        src={projepimg}
        alt="profile"
-       className="w-full h-full object-cover"
+       className="w-full h-full rounded-t-[15px]"
      />
    </div>
 
@@ -163,7 +163,7 @@ export default function PaymentPage() {
     <h2 className="text-xl text-gray-800 dark:text-[#F5F5F5] font-bold mb-4 text-right">
       شاید این پروژه‌ها برای شما مفید باشد:
     </h2>
-    <div className="absolute grid grid-cols-2 gap-8 md:gap-2 sm:grid-cols-3 md:grid-cols-4 ">
+    <div className="absolute grid grid-cols-2 gap-8 md:gap-4 sm:grid-cols-3 md:grid-cols-4 ">
       {imagescart.map((img, index) => (
         <SimilarProject key={index} imageUrl={img} />
       ))}
