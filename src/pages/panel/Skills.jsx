@@ -7,7 +7,7 @@ export default function Skills() {
   const [isOpen, setIsOpen] = useState(0)
   return (
     <>
-      <div className="flex *:h-[100vh] ">
+      <div className="flex *:h-[100vh]  ">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div className="w-[100%]">
           <div className={`bg-dark/50 w-full absolute ${isOpen ? 'h-full' : "h-[0]"} `} onClick={() => setIsOpen(!isOpen)}></div>
