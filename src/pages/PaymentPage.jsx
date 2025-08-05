@@ -17,7 +17,7 @@ export default function PaymentPage() {
   const [selected, setSelected] = useState("");
   return (
 
-    <div className="relative max-w-6xl  container mx-auto  p-6 grid grid-cols-1 md:grid-cols-3 ">
+    <div className="relative max-w-5xl  container mx-auto  p-6 grid grid-cols-1 md:grid-cols-3 ">
 
   {/* پروفایل */}
   <div className="order-1 md:col-span-3 ">
@@ -42,7 +42,7 @@ export default function PaymentPage() {
 {/*proje*/}
   <div className="order-2 md:col-span-1 ">
 
-  <div className=" w-full max-w-[600px]   mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
+  <div className=" w-full max-w-[600px] mx-auto  mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
    
    <div className="w-full  h-[245px]  md:h-[205px] rounded-t-[15px] ">
      <img
@@ -94,7 +94,7 @@ export default function PaymentPage() {
   {/* فرم پرداخت - دوم در موبایل */}
   <div className="order-3 md:col-span-2 space-y-2 justify-self-center w-full">
 
-  <div className=" w-full max-w-[600px] ml-auto bg-[#F5F5F5] mt-5 shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px] px-6 py-4  md:px-14 md:py-8 dark:bg-[#1B202C]">
+  <div className=" w-full max-w-[600px] mx-auto md:ml-auto bg-[#F5F5F5] mt-5 shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px] px-6 py-4  md:px-14 md:py-8 dark:bg-[#1B202C]">
 
 <h2 className="text-[#373D37] font-bold text-[18px] sm:text-xl md:text-[20px] text-right mb-6 dark:text-[#F1FFED]">
   انتخاب درگاه پرداخت
@@ -135,7 +135,7 @@ export default function PaymentPage() {
 
 
   <div
-      className="w-full max-w-[600px] ml-auto  mt-5 bg-[#F5F5F5] dark:bg-[#1B202C] rounded-[20px] px-4 py-6 md:px-10 md:py-6  "
+      className="w-full max-w-[600px] mx-auto md:ml-auto mt-5 bg-[#F5F5F5] dark:bg-[#1B202C] rounded-[20px] px-4 py-6 md:px-10 md:py-6  "
     
     >
  
@@ -159,7 +159,7 @@ export default function PaymentPage() {
       </div>
     </div>
  
-  <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 mt-8 mx-auto space-y-6 ">
+  <div className="order-4  col-span-1 md:col-span-2 md:col-start-2 mt-8 w-full max-w-[600px] mx-auto md:ml-auto space-y-6 ">
     <h2 className="text-xl text-gray-800 dark:text-[#F5F5F5] font-bold mb-4 text-right">
       شاید این پروژه‌ها برای شما مفید باشد:
     </h2>
