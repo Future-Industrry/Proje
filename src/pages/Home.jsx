@@ -16,6 +16,10 @@ import { Link, NavLink } from "react-router-dom";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { LiaUserSolid } from "react-icons/lia";
+import { FiArrowUpLeft } from "react-icons/fi";
+import { TiHeartFullOutline } from "react-icons/ti";
+import { FaEye } from "react-icons/fa";
+import ProjectItem from "../components/ProjectItem";
 
 export default function Home() {
   Aos.init();
@@ -89,7 +93,7 @@ export default function Home() {
                 </li>
               </ul>
               <Link
-              to="/auth"
+                to="/auth"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-delay="2500"
@@ -153,7 +157,7 @@ export default function Home() {
               className="Morabba mt-4 text-[1.5rem] text-zinc-600  "
             >
               {" "}
-              با پروجه، پروژن تو جیبته !
+              با پروجه، پروژت تو جیبته !
             </p>
             <p
               data-aos="fade-up"
@@ -180,136 +184,163 @@ export default function Home() {
           </div>
         </div>
 
-        {/* section 1 */}
-        <div
-          className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto "
-          id="intro"
-        >
-          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
-            <p className="text-[3rem]">
-              <span className="text-primary">پ</span>روجه
-            </p>
-            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
-              پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
-              اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم !
-            </p>
-            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
-              صفحه پروژه ها
+        {/* news projects */}
+        <div className="w-[80%] mx-auto mt-10">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="flex items-end justify-between border-r-4 pr-3 border-primary rounded-lg "
+          >
+            <div>
+              <p className="text-xl lg:text-2xl ">جدید ترین پروژه ها</p>
+              <p className="text-[.8rem] lg:text-[.9rem] text-zinc-400 mt-1">
+                پروژه هایی که اخیرا دانشجو ها طراحی کرده اند !
+              </p>
+            </div>
+            <Link
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              to=""
+              className="flex items-center gap-2 text-[.9rem] text-zinc-400 duration-300 hover:text-primary "
+            >
+              نمایش همه
+              <FiArrowUpLeft className="text-[1.1rem]" />
             </Link>
           </div>
-          <div className="h-[100%] flex items-center w-[50%] ">
-            <img
-              src="/images/team checklist-rafiki.svg"
-              alt=""
-              className="siza-[100%]"
-            />
-          </div>
+          <ul className="grid grid-cols-4 gap-7 mt-10">
+            <ProjectItem id={1} img="/images/project1.png" username="Kamraan" />
+            <ProjectItem id={2} img="/images/project2.png" username="Amin" />
+            <ProjectItem id={3} img="/images/project3.png" username="Sara Saeedi" />
+            <ProjectItem id={4} img="/images/project4.png" username="Sohrab101" />
+            <ProjectItem id={5} img="/images/project5.png" username="Fariba khani" />
+            <ProjectItem id={6} img="/images/project6.png" username="Morteza" />
+            <ProjectItem id={7} img="/images/project7.png" username="Mahdi zade" />
+            <ProjectItem id={8} img="/images/project8.png" username="Fatemeh" />
+          </ul>
         </div>
 
-        {/* section 2 */}
-        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
-          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
-            <p className="text-[3rem]">
-              پ<span className="text-primary">ر</span>وجه
+        {/* know proje */}
+        <div className="w-[80%] mx-auto mt-50">
+          {/*header*/}
+          <div className="text-center">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              className="text-[1.4rem]"
+            >
+              ویژگی هایی که <span className="text-primary">پروجه</span> را
+              برجسته کرده
             </p>
-            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
-              راحت ترین راه پیدا کردن تیم های حرفه ای، فقط موضوع پروژه تو بگو تا
-              ما بهت یه تیم حرفه ای معرفی کنیم !
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              className="text-zinc-500"
+            >
+              پروجه ویژگی های خاصی دارد که آن را از همه ی رقیبانش متمایز میکند !
             </p>
-            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
-              ارتباط با ما
-            </Link>
           </div>
-          <div className="h-[100%] flex items-center w-[50%] ">
-            <img
-              src="/images/New team members-rafiki.svg"
-              alt=""
-              className="siza-[100%]"
-            />
+          {/*content*/}
+          <div className="mt-10">
+            <ul className="flex items-center justify-center flex-wrap *:basis-[30%] gap-5 *:border-1 *:border-zinc-200 *:shadow-xl *:shadow-zinc-200/70 *:text-center *:rounded-2xl *:p-3 *:pb-7 ">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <img
+                  src="/images/team checklist-rafiki.svg"
+                  alt=""
+                  className="h-[15rem] w-full "
+                />
+                <p className="text-[1.2rem]">تایید پروژه</p>
+                <p className="text-zinc-500 text-[.8rem] ">
+                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                </p>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <img
+                  src="/images/New team members-rafiki.svg"
+                  alt=""
+                  className="h-[15rem] w-full "
+                />
+                <p className="text-[1.2rem]">تایید پروژه</p>
+                <p className="text-zinc-500 text-[.8rem] ">
+                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                </p>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
+                <img
+                  src="/images/Profile data-cuate.svg"
+                  alt=""
+                  className="h-[15rem] w-full "
+                />
+                <p className="text-[1.2rem]">تایید پروژه</p>
+                <p className="text-zinc-500 text-[.8rem] ">
+                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                </p>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+              >
+                <img
+                  src="/images/Projections-rafiki.svg"
+                  alt=""
+                  className="h-[15rem] w-full "
+                />
+                <p className="text-[1.2rem]">تایید پروژه</p>
+                <p className="text-zinc-500 text-[.8rem] ">
+                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                </p>
+              </li>
+              <li
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
+                <img
+                  src="/images/Social ideas-pana.svg"
+                  alt=""
+                  className="h-[15rem] w-full "
+                />
+                <p className="text-[1.2rem]">تایید پروژه</p>
+                <p className="text-zinc-500 text-[.8rem] ">
+                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
-
-        {/* section 3 */}
-        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
-          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
-            <p className="text-[3rem]">
-              پر<span className="text-primary">و</span>جه
-            </p>
-            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
-              واو به واو رزومه ها واقعین، اینجا تنها جاییه که رزومه تمام توسعه
-              دهنده هاش توسط اساتید و متخصصین شناخته شده، صحت سنجی میشه. پس با
-              خیال راحت پروژه هاتو بهشون بسپار{" "}!
-            </p>
-            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
-              درباره ما
-            </Link>
-          </div>
-          <div className="h-[100%] flex items-center w-[50%] ">
-            <img
-              src="/images/Profile data-cuate.svg"
-              alt=""
-              className="siza-[100%]"
-            />
-          </div>
-        </div>
-
-        {/* section 4 */}
-        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
-          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
-            <p className="text-[3rem]">
-              پرو<span className="text-primary">ج</span>ه
-            </p>
-            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
-              جایی که همه چی شفافه، حتی جزئیات پیاده سازی پروژه ها !{" "}
-            </p>
-            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
-              محصولات ما
-            </Link>
-          </div>
-          <div className="h-[100%] flex items-center w-[50%] ">
-            <img
-              src="/images/Projections-rafiki.svg"
-              alt=""
-              className="siza-[100%]"
-            />
-          </div>
-        </div>
-
-        {/* section 5 */}
-        <div className="flex items-center justify-between h-screen mt-10 w-[90%] m-auto ">
-          <div className="h-[100%] flex items-start justify-center gap-3 flex-col w-[50%] ">
-            <p className="text-[3rem]">
-              پروج<span className="text-primary">ه</span>
-            </p>
-            <p className="text-zinc-500 w-[35rem] text-[1.1rem] ">
-              همه چی اینجا محیاست تا ایده‌ت رو به واقعیت برسونی با پروجه پروژت
-              تو جیبته !
-            </p>
-            <Link className="flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer ">
-              معرفی تیم
-            </Link>
-          </div>
-          <div className="h-[100%] flex items-center w-[50%] ">
-            <img
-              src="/images/Social ideas-pana.svg"
-              alt=""
-              className="siza-[100%]"
-            />
-          </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
