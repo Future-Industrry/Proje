@@ -42,7 +42,7 @@ export default function PaymentPage() {
 {/*proje*/}
   <div className="order-2 md:col-span-1 ">
 
-  <div className="sm:w-[80%]  mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
+  <div className=" w-full max-w-[600px]   mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
    
    <div className="w-full  h-[245px]  md:h-[205px] rounded-t-[15px] ">
      <img
