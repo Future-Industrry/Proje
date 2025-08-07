@@ -1,10 +1,6 @@
 import img from "/images/banner-03.png";
 import User from "/images/User.jpg";
-import Basket from "/icons/basket.svg";
-import Heart from "/icons/heart.svg";
-import Receive from "/icons/receive.svg";
-import Save from "/icons/save.svg";
-import { FaRegBookmark, FaRegHeart } from "react-icons/fa";
+import { FaRegBookmark, FaRegHeart,FaShoppingBasket } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 
 export default function ProductDetails() {
@@ -47,7 +43,9 @@ export default function ProductDetails() {
             <div className="flex justify-between mt-10 items-center md:mt-5">
               <p className="text-primary font-IranYekanBold">1/450/000تومان</p>
               <div className="flex gap-2 items-center bg-primary hover:bg-primary/80 duration-300 p-1.5 px-4 cursor-pointer rounded-md text-white text-sm">
-                <img src={Basket} alt="" className="size-6" />
+                <div>
+                    <FaShoppingBasket/>
+                </div>
                 سبدخرید
               </div>
             </div>
