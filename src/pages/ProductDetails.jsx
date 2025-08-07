@@ -91,7 +91,7 @@ export default function ProductDetails() {
 
         <h1 className="mt-16 font-IranYekanBold dark:text-white text-black text-2xl">پروژه های مشابه</h1>
 
-        <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 *:border-1 *:border-zinc-200 *:dark:border-zinc-700">
+        <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 *:border-1 *:border-zinc-200 *:dark:border-zinc-800">
           <li className="space-y-3 shadow-xl shadow-zinc-200/50 dark:shadow-none dark:bg-white/3 p-3 rounded-lg">
             <img
               src="/images/article1.png"
@@ -152,7 +152,7 @@ export default function ProductDetails() {
 
         <h1 className="font-IranYekanBold mt-20 dark:text-white text-black text-2xl ">مقالات</h1>
 
-        <ul className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 *:border-1 *:border-zinc-200 *:dark:border-zinc-700">
+        <ul className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2 *:border-1 *:border-zinc-200 *:dark:border-zinc-800">
           <li className="space-y-3 shadow-xl shadow-zinc-200/50 dark:shadow-none dark:bg-white/3 p-3 rounded-lg">
             <img
               src="/images/article1.png"
