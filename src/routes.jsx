@@ -17,6 +17,7 @@ import Projects from "./pages/panel/Projects";
 import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
 import Weblog from "./pages/Weblog";
+import ProductDetails from "./pages/ProductDetails";
 
 
 let routes = [
@@ -35,6 +36,7 @@ let routes = [
     { path: "/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
     { path: "/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
     { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
+    {path:"/productDetails",element:<ProductDetails></ProductDetails>}
 ]
 
 export default routes
