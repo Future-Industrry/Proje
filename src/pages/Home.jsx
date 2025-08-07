@@ -22,7 +22,9 @@ import { FaEye } from "react-icons/fa";
 import ProjectItem from "../components/ProjectItem";
 
 export default function Home() {
-  Aos.init();
+  Aos.init({
+    once:true
+  });
 
   return (
     <>
@@ -176,7 +178,7 @@ export default function Home() {
               <BsStars />
             </a>
             <a
-              href="#intro"
+              href="#projects"
               className="absolute bottom-5 text-[2.5rem] cursor-pointer hover:translate-y-[.5rem] duration-300 opacity-0 fadeInAnimation"
             >
               <IoArrowDownCircle />
@@ -185,7 +187,7 @@ export default function Home() {
         </div>
 
         {/* news projects */}
-        <div className="w-[80%] mx-auto mt-10">
+        <div className="w-[80%] mx-auto mt-10 pt-10" id="projects">
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -212,17 +214,33 @@ export default function Home() {
           <ul className="grid grid-cols-4 gap-7 mt-10">
             <ProjectItem id={1} img="/images/project1.png" username="Kamraan" />
             <ProjectItem id={2} img="/images/project2.png" username="Amin" />
-            <ProjectItem id={3} img="/images/project3.png" username="Sara Saeedi" />
-            <ProjectItem id={4} img="/images/project4.png" username="Sohrab101" />
-            <ProjectItem id={5} img="/images/project5.png" username="Fariba khani" />
+            <ProjectItem
+              id={3}
+              img="/images/project3.png"
+              username="Sara Saeedi"
+            />
+            <ProjectItem
+              id={4}
+              img="/images/project4.png"
+              username="Sohrab101"
+            />
+            <ProjectItem
+              id={5}
+              img="/images/project5.png"
+              username="Fariba khani"
+            />
             <ProjectItem id={6} img="/images/project6.png" username="Morteza" />
-            <ProjectItem id={7} img="/images/project7.png" username="Mahdi zade" />
+            <ProjectItem
+              id={7}
+              img="/images/project7.png"
+              username="Mahdi zade"
+            />
             <ProjectItem id={8} img="/images/project8.png" username="Fatemeh" />
           </ul>
         </div>
 
         {/* know proje */}
-        <div className="w-[80%] mx-auto mt-50">
+        <div className="w-[80%] mx-auto mt-50 pt-10 " id="intro">
           {/*header*/}
           <div className="text-center">
             <p
@@ -257,7 +275,7 @@ export default function Home() {
                   className="h-[15rem] w-full "
                 />
                 <p className="text-[1.2rem]">تایید پروژه</p>
-                <p className="text-zinc-500 text-[.8rem] ">
+                <p className="text-zinc-500 text-[.8rem] mt-2">
                   پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
                   اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
                 </p>
@@ -272,10 +290,10 @@ export default function Home() {
                   alt=""
                   className="h-[15rem] w-full "
                 />
-                <p className="text-[1.2rem]">تایید پروژه</p>
-                <p className="text-zinc-500 text-[.8rem] ">
-                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
-                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                <p className="text-[1.2rem]">تیم شو</p>
+                <p className="text-zinc-500 text-[.8rem] mt-2">
+                  راحت ترین راه پیدا کردن تیم های حرفه ای، فقط موضوع پروژه تو
+                  بگو تا ما بهت یه تیم حرفه ای معرفی کنیم
                 </p>
               </li>
               <li
@@ -288,10 +306,10 @@ export default function Home() {
                   alt=""
                   className="h-[15rem] w-full "
                 />
-                <p className="text-[1.2rem]">تایید پروژه</p>
-                <p className="text-zinc-500 text-[.8rem] ">
-                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
-                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                <p className="text-[1.2rem]">رزومه های واقعی</p>
+                <p className="text-zinc-500 text-[.8rem] mt-2">
+                  واو به واو رزومه ها واقعین، اینجا تنها جاییه که رزومه توسعه
+                  دهنده هاش توسط اساتید شناخته شده، صحت سنجی میشه
                 </p>
               </li>
               <li
@@ -304,10 +322,10 @@ export default function Home() {
                   alt=""
                   className="h-[15rem] w-full "
                 />
-                <p className="text-[1.2rem]">تایید پروژه</p>
-                <p className="text-zinc-500 text-[.8rem] ">
-                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
-                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                <p className="text-[1.2rem]">شفافیت پروژه ها</p>
+                <p className="text-zinc-500 text-[.8rem] mt-2">
+                  جایی که همه چی شفافه، حتی جزئیات پیاده سازی پروژه هایی که
+                  دانشجو هامون انجام میدن
                 </p>
               </li>
               <li
@@ -320,10 +338,10 @@ export default function Home() {
                   alt=""
                   className="h-[15rem] w-full "
                 />
-                <p className="text-[1.2rem]">تایید پروژه</p>
-                <p className="text-zinc-500 text-[.8rem] ">
-                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
-                  اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
+                <p className="text-[1.2rem]">از ایده تا نوآوری</p>
+                <p className="text-zinc-500 text-[.8rem] mt-2">
+                  همه چی اینجا محیاست تا ایده‌ت رو به واقعیت برسونی با پروجه
+                  پروژت تو جیبته{" "}
                 </p>
               </li>
             </ul>
