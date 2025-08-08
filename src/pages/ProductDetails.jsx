@@ -64,17 +64,7 @@ export default function ProductDetails() {
 
         <h1 className="dark:text-white text-black text-2xl">توضیحات تکمیلی درباره پروژه</h1>
         <p className="text-justify text-second-light mb-24">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          libero odit repellat nulla repellendus accusamus dolores doloribus
-          incidunt recusandae, eius soluta, autem perspiciatis ratione sunt?
-          Quos iste nemo eius libero. Nesciunt pariatur fugit magni ad
-          voluptatibus quos architecto consequuntur saepe nemo! Architecto
-          mollitia incidunt reprehenderit nobis, eligendi officiis eos iste
-          asperiores esse natus odio? Numquam expedita qui laboriosam voluptatum
-          ipsum. Harum id voluptate magni quidem modi excepturi alias beatae
-          minus necessitatibus esse itaque iure eum omnis vel nobis, sint
-          nostrum deserunt quo sit inventore autem, in dolore! Officiis,
-          similique alias.
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
         </p>
         <h1 className="font-IranYekanBold dark:text-white text-black">نظرات</h1>
         <div className="w-full shadow-xl shadow-zinc-200/30 dark:shadow-none bg-zinc-100 border-1 border-zinc-200 rounded-md h-9 md:w-96">
