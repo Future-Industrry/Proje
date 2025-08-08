@@ -8,14 +8,14 @@ export default function ProfileCard({ name='هانیه', email='hanirezaee@gmail
     return (
         <>
             <div className='w-[100%] h-auto'>
-                <div className='w-full bg-white mx-auto border-1 border-gray-800 rounded-2xl relative mt-10 px-2  lg:-mt-30 dark:bg-gray-800 '>
+                <div className='w-full bg-white mx-auto border-1 border-gray-300 rounded-2xl relative mt-10 px-2  lg:-mt-30 dark:bg-gray-800 dark:border-gray-800 '>
                     <div className='absolute top-0 left-1/2 transform -translate-x-1/2  -mt-12 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:mt-20'>
                         <img src={User} alt="" className='w-24 h-24 rounded-full border-white shadow object-cover border-4 lg:w-28 lg:h-28' />
                     </div>
                     <div className='mt-14 mx-auto flex mb-8 lg:mt-36'>
                         <div className='flex gap-2 mx-auto items-center'>
-                            <GoVerified color='white' className='dark:text-primary'/>
-                            <h2 className='text-white'>{name}</h2>
+                            <GoVerified  className='dark:text-primary'/>
+                            <h2 className='dark:text-white'>{name}</h2>
                         </div>
                     </div>
                     <div className='grid grid-cols-2 gap-x-10 gap-y-6 mt-4 lg:grid-cols-1 lg:pr-4 text-gray-500 text-sm dark:text-gray-300'>
