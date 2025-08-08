@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function ArticleItem() {
   return (
-    <div className="flex items-center flex-col-reverse gap-5 dark:bg-white/2.5 bg-dark/5 rounded-2xl p-3 mb-3 ">
+    <div className="flex items-center flex-col-reverse gap-5 dark:bg-white/2.5 bg-dark/3 rounded-2xl p-3 mb-3 border-1 border-zinc-200 dark:border-zinc-800 ">
       <div className="flex-1/3 px-1">
         <div className="flex items-center gap-3">
           <p className="bg-primary text-white px-2.5 py-1.5 text-[.6rem] rounded-md ">

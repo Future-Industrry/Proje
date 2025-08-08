@@ -31,14 +31,14 @@ let routes = [
     { path: "/Weblog", element: <Weblog /> },
     { path: "/MoreArticles", element: <MoreArticles /> },
     { path: "/ArticleInfo", element: <ArticleInfo /> },
-    // panel
-    { path: "/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
-    { path: "/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
-    { path: "/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
-    { path: "/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
-    { path: "/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
-    { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
     { path: "/ProductDetails", element: <ProductDetails/> },
+    // panel
+    { path: "/panel/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
+    { path: "/panel/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
+    { path: "/panel/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
+    { path: "/panel/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
+    { path: "/panel/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
+    { path: "/panel/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
 ]
 
 export default routes
