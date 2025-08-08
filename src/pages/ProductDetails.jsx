@@ -1,12 +1,12 @@
 import img from "/images/banner-03.png";
 import User from "/images/User.jpg";
 
-import MySlider from "../components/MySlider";
+import MySlider from "../components/MySlider.jsx";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { FaRegBookmark, FaRegHeart,FaShoppingBasket } from "react-icons/fa";
+import { FaRegBookmark, FaRegHeart, FaShoppingBasket } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 
 
@@ -14,10 +14,11 @@ import { HiOutlineDownload } from "react-icons/hi";
 export default function ProductDetails() {
   return (
     <div className="bg-white dark:bg-dark">
-      <div className="p-7 space-y-5 container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* <img src={img} alt="" className="w-full h-80 rounded-md" /> */}
-          <MySlider/>
+      <div className="p-7 space-y-8 container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
+          <div className="w-full h-full">
+            <MySlider />
+          </div>
           <div className="space-y-5">
             <div className="mt-12 flex items-center justify-between md:mt-0">
               <div className="flex items-center gap-4">
@@ -53,7 +54,7 @@ export default function ProductDetails() {
               <p className="text-primary font-IranYekanBold">1/450/000تومان</p>
               <div className="flex gap-2 items-center bg-primary hover:bg-primary/80 duration-300 p-1.5 px-4 cursor-pointer rounded-md text-white text-sm">
                 <div>
-                    <FaShoppingBasket/>
+                  <FaShoppingBasket />
                 </div>
                 سبدخرید
               </div>
