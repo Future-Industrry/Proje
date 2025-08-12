@@ -23,19 +23,19 @@ import ProjectItem from "../components/ProjectItem";
 
 export default function Home() {
   Aos.init({
-    once:true
+    once: true,
   });
 
   return (
     <>
-      <div className="">
+      <div className="bg-white dark:bg-dark pb-10">
         {/* hiro */}
         <div className="relative h-[100vh]">
           <div className="absolute top-0 right-0 h-full w-full flex items-center justify-center overflow-hidden  ">
-            <span className="bg-[#ff9900]/40 size-[20rem] rounded-full absolute right-[-2rem] bottom-[-5rem]  "></span>
-            <span className="bg-[#ff6347]/40 size-[30rem] rounded-full absolute left-[15rem]  bottom-[-10rem] "></span>
-            <span className="bg-[#ffd700]/40 size-[11rem] rounded-full absolute right-[1rem]  top-[-5rem] "></span>
-            <span className="bg-[#32cd32]/40 size-[11rem] rounded-full absolute left-[-1rem]  top-[5rem] "></span>
+            <span className="bg-[#ff9900]/50 dark:bg-[#ff9900]/70 size-[20rem] rounded-full absolute right-[-2rem] bottom-[-5rem]  "></span>
+            <span className="bg-[#ff6347]/50 dark:bg-[#ff6347]/70 size-[30rem] rounded-full absolute left-[15rem]  bottom-[-10rem] "></span>
+            <span className="bg-[#ffd700]/50 dark:bg-[#ffd700]/70 size-[11rem] rounded-full absolute right-[1rem]  top-[-5rem] "></span>
+            <span className="bg-[#32cd32]/50 dark:bg-[#32cd32]/70 size-[11rem] rounded-full absolute left-[-1rem]  top-[5rem] "></span>
           </div>
           <div className="backdrop-blur-3xl h-full flex items-center justify-center flex-col  ">
             <div className="flex items-center justify-between h-[5rem] z-50 w-full fixed top-0 py-3 px-10 ">
@@ -47,7 +47,7 @@ export default function Home() {
                 className="size-[4rem] mix-blend-multiply "
                 alt=""
               />
-              <ul className="flex items-center justify-center gap-1 ">
+              <ul className="flex items-center justify-center gap-1 text-black dark:text-white">
                 <li
                   data-aos="fade-right"
                   data-aos-duration="1000"
@@ -111,32 +111,32 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="1600"
-                className="bg-white shadow-xl p-3 size-[5rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[10rem] right-[15rem] rotate-12  "
+                className="bg-white  shadow-xl p-3 size-[5rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[10rem] right-[15rem] rotate-12  "
               />
               <BsClipboardData
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="1800"
-                className=" bg-white shadow-xl p-3 size-[4rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[30rem] right-[5rem] rotate-12"
+                className=" bg-white  shadow-xl p-3 size-[4rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[30rem] right-[5rem] rotate-12"
               />
               <BsHeartPulse
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="2000"
-                className=" bg-white shadow-xl p-3 size-[4rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[35rem] right-[25rem] rotate-12"
+                className=" bg-white  shadow-xl p-3 size-[4rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[35rem] right-[25rem] rotate-12"
               />
 
               <BsRocketTakeoff
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="1000"
-                className=" bg-white shadow-xl p-3 size-[4rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[10rem] left-[15rem] rotate-12"
+                className=" bg-white  shadow-xl p-3 size-[4rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[10rem] left-[15rem] rotate-12"
               />
               <BsShieldCheck
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="1200"
-                className=" bg-white shadow-xl p-3 size-[4.5rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[30rem] left-[5rem] rotate-12"
+                className=" bg-white  shadow-xl p-3 size-[4.5rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[30rem] left-[5rem] rotate-12"
               />
               <IoCodeSlashOutline
                 data-aos="fade-up"
@@ -145,10 +145,11 @@ export default function Home() {
                 className=" bg-white shadow-xl p-3 size-[3.5rem] rounded-2xl shadow-zinc-400/40 text-[3rem] absolute top-[35rem] left-[25rem] rotate-12"
               />
             </div>
+
             <p
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="Morabba bg-linear-to-r from-[#ffa500] to-[#ff6347] outline-[.1rem] text-white px-[1.5rem] py-[.2rem] text-[.9rem] rounded-full "
+              className="Morabba bg-linear-to-r from-[#ffa500] to-[#ff6347] bg-clip-text text-transparent outline-[.1rem] dark:outline-[0] px-[1.5rem] py-[.2rem] text-[3rem] rounded-full "
             >
               پروجه
             </p>
@@ -156,7 +157,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300"
-              className="Morabba mt-4 text-[1.5rem] text-zinc-600  "
+              className="Morabba text-[1.5rem] text-zinc-600 dark:text-white/50"
             >
               {" "}
               با پروجه، پروژت تو جیبته !
@@ -165,10 +166,9 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
-              className="text-[3rem] Morabba w-[45rem] text-center "
+              className="text-[3rem] Morabba w-[45rem] text-center text-black dark:text-white"
             >
-              پروجه، منبع بزرگی از انواع پروژه های مختلف دانشجو های خبره دانشگاه
-              سجاد{" "}
+              منبع بزرگی از انواع پروژه های مختلف دانشجو های خبره دانشگاه سجاد{" "}
             </p>
             <a
               href="#intro"
@@ -179,7 +179,7 @@ export default function Home() {
             </a>
             <a
               href="#projects"
-              className="absolute bottom-5 text-[2.5rem] cursor-pointer hover:translate-y-[.5rem] duration-300 opacity-0 fadeInAnimation"
+              className="absolute bottom-5 text-[2.5rem] text-black dark:text-white cursor-pointer hover:translate-y-[.5rem] duration-300 opacity-0 fadeInAnimation"
             >
               <IoArrowDownCircle />
             </a>
@@ -187,7 +187,10 @@ export default function Home() {
         </div>
 
         {/* news projects */}
-        <div className="w-[80%] mx-auto mt-10 pt-10" id="projects">
+        <div
+          className="w-[80%] mx-auto mt-10 pt-10 text-black dark:text-white"
+          id="projects"
+        >
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -211,7 +214,7 @@ export default function Home() {
               <FiArrowUpLeft className="text-[1.1rem]" />
             </Link>
           </div>
-          <ul className="grid grid-cols-4 gap-7 mt-10">
+          <ul className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-7 mt-10  ">
             <ProjectItem id={1} img="/images/project1.png" username="Kamraan" />
             <ProjectItem id={2} img="/images/project2.png" username="Amin" />
             <ProjectItem
@@ -240,14 +243,17 @@ export default function Home() {
         </div>
 
         {/* know proje */}
-        <div className="w-[80%] mx-auto mt-50 pt-10 " id="intro">
+        <div
+          className="w-[80%] mx-auto mt-50 pt-10 text-black dark:text-white"
+          id="intro"
+        >
           {/*header*/}
           <div className="text-center">
             <p
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
-              className="text-[1.4rem]"
+              className="text-[1.2rem] md:text-[1.4rem]"
             >
               ویژگی هایی که <span className="text-primary">پروجه</span> را
               برجسته کرده
@@ -256,14 +262,14 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
-              className="text-zinc-500"
+              className="text-zinc-500 text-[.8rem] md:text-[1rem] mt-2"
             >
-              پروجه ویژگی های خاصی دارد که آن را از همه ی رقیبانش متمایز میکند !
+              پروجه ویژگی های خاصی دارد که آن را از همه ی رقیبانش متمایز میکند
             </p>
           </div>
           {/*content*/}
           <div className="mt-10">
-            <ul className="flex items-center justify-center flex-wrap *:basis-[30%] gap-5 *:border-1 *:border-zinc-200 *:shadow-xl *:shadow-zinc-200/70 *:text-center *:rounded-2xl *:p-3 *:pb-7 ">
+            <ul className="flex items-center justify-center flex-wrap *:basis-[100%] md:*:basis-[40%] lg:*:basis-[40%] xl:*:basis-[30%] *:h-[23rem] gap-5 *:border-1 dark:*:border-0 *:border-zinc-200 *:shadow-xl *:shadow-zinc-200/50 *:dark:shadow-none *:dark:bg-white/3  *:text-center *:rounded-2xl *:p-3 *:pb-7 ">
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -348,17 +354,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 }

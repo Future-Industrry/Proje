@@ -20,7 +20,7 @@ export default function LoginRegister() {
         "size-[30rem] scale-[1.1] overflow-hidden duration-500 bg-white rounded-2xl dark:shadow-white/10 shadow-2xl lg:block hidden";
       setTimeout(() => {
         imgsShadow.current.className =
-        "size-[30rem] scale-[1] overflow-hidden duration-500 bg-white rounded-2xl dark:shadow-white/10 shadow-xl lg:block hidden";
+          "size-[30rem] scale-[1] overflow-hidden duration-500 bg-white rounded-2xl dark:shadow-white/10 shadow-xl lg:block hidden";
       }, 2000);
     }
   }
@@ -42,11 +42,14 @@ export default function LoginRegister() {
   }
 
   return (
-    <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse dark:bg-dark/95 ">
+    <div className="bg-primaryLight h-[100vh] flex items-center justify-center flex-row-reverse dark:bg-dark/99 ">
+      <Link
+        to="/"
+        className="absolute top-4 right-4 bg-primary px-5 py-1 rounded-lg "
+      >
+        برگشت
+      </Link>
 
-      <Link to="/" className="absolute top-4 right-4 bg-primary px-5 py-1 rounded-lg ">برگشت</Link>
-
-      
       <div className="relative sm:flex hidden p-[1rem] rounded-tl-xl rounded-bl-xl bg-light dark:bg-dark/90 h-[20rem] items-center justify-between flex-col">
         <span
           style={
@@ -89,7 +92,9 @@ export default function LoginRegister() {
               loginStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/30"
             }  p-2 rounded-lg duration-400 hover:bg-primary`}
           />
-          <p className="text-[.9rem] mt-[.2rem] text-dark dark:text-white">ورود</p>
+          <p className="text-[.9rem] mt-[.2rem] text-dark dark:text-white">
+            ورود
+          </p>
         </div>
         <div className="grid place-items-center cursor-pointer">
           <GoShieldCheck
@@ -98,18 +103,20 @@ export default function LoginRegister() {
               registerStatus ? "bg-primary" : "bg-dark/10 dark:bg-white/30"
             } p-2 rounded-lg duration-400 hover:bg-primary`}
           />
-          <p className="text-[.8rem] mt-[.2rem] text-dark dark:text-white">ثبت نام</p>
+          <p className="text-[.8rem] mt-[.2rem] text-dark dark:text-white">
+            ثبت نام
+          </p>
         </div>
       </div>
 
       <div
         ref={imgsShadow}
-        className={`h-[30rem] lg:block hidden overflow-hidden duration-500 rounded-2xl shadow-xl dark:shadow-white/10 shadow-dark/20 `}
+        className={`h-[30rem] lg:block hidden overflow-hidden duration-500 rounded-2xl dark:border-1 dark:border-zinc-200/4 shadow-xl dark:shadow-none shadow-dark/20 `}
       >
         <div
-          className={`lg:block hidden bg-white dark:bg-dark ${loginStatus && "translate-y-[0rem]"} ${
-            registerStatus && "translate-y-[-30rem]"
-          } duration-700`}
+          className={`lg:block hidden bg-white dark:bg-dark ${
+            loginStatus && "translate-y-[0rem]"
+          } ${registerStatus && "translate-y-[-30rem]"} duration-700`}
         >
           <img src="/images/Company-amico.svg" alt="" className="w-[30rem] " />
           <img
@@ -122,96 +129,123 @@ export default function LoginRegister() {
       </div>
 
       <div className="bg-white dark:bg-dark text-dark dark:text-white h-[28rem] w-[24rem] overflow-hidden  rounded-tr-xl rounded-br-xl p-[.5rem] px-[1rem] ">
-      <div className={`${loginStatus?' translate-y-[2rem]':' translate-y-[-26rem]'} duration-500`}>{/*login:2rem - register:-26rem*/}
+        <div
+          className={`${
+            loginStatus ? " translate-y-[2rem]" : " translate-y-[-26rem]"
+          } duration-500`}
+        >
+          {/*login:2rem - register:-26rem*/}
           <form action="" className="flex items-center justify-center flex-col">
-          <h1 className="font-bold text-3xl mb-3 mt-3">ورود</h1>
-          <div className="mb-5 text-[.9rem] flex gap-1.5">
-            اکانتی برای ورود ندارید؟
-            <p onClick={registerHandler} className="text-primary cursor-pointer">ثبت نام</p>
-          </div>
-          <div className="w-[100%] px-5">
-            <label htmlFor="">ایمیل</label>
-            <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
-              <input
-                type="text"
-                className="w-full"
-                placeholder="example@gmail.com"
-              />
-              {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
+            <h1 className="font-bold text-3xl mb-3 mt-3">ورود</h1>
+            <div className="mb-5 text-[.9rem] flex gap-1.5">
+              اکانتی برای ورود ندارید؟
+              <p
+                onClick={registerHandler}
+                className="text-primary cursor-pointer"
+              >
+                ثبت نام
+              </p>
             </div>
-            <label htmlFor="">رمز عبور</label>
-            <div className="border-[1.6px] mt-2 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
-              <input type="password" className="w-full" placeholder="M7aqK#" />
-              {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
-              {/* <FaRegEyeSlash /> */}
+            <div className="w-[100%] px-5">
+              <label htmlFor="">ایمیل</label>
+              <div className="border-[1.6px] mt-2 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
+                <input
+                  type="text"
+                  className="w-full"
+                  placeholder="example@gmail.com"
+                />
+                {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
+              </div>
+              <label htmlFor="">رمز عبور</label>
+              <div className="border-[1.6px] mt-2 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
+                <input
+                  type="password"
+                  className="w-full"
+                  placeholder="M7aqK#"
+                />
+                {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
+                {/* <FaRegEyeSlash /> */}
+              </div>
+              <div>
+                <a
+                  href=""
+                  className="text-[.8rem] mt-2 text-center inline-block"
+                >
+                  رمز عبور خود را فراموش کرده اید؟
+                </a>
+              </div>
+              <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
+                {btnStatus === "default" ? (
+                  <p className="mb-2">ورود</p>
+                ) : btnStatus === "loading" ? (
+                  <span class="loader"></span>
+                ) : (
+                  <div class="wrapper">
+                    <p>تمام</p>
+                    <svg class="animated-check" viewBox="0 0 24 24">
+                      <path d="M4.1 12.7L9 17.6 20.3 6.3" fill="none" />{" "}
+                    </svg>
+                  </div>
+                )}
+              </button>
             </div>
-            <div>
-              <a href="" className="text-[.8rem] mt-2 text-center inline-block">
-                رمز عبور خود را فراموش کرده اید؟
-              </a>
+          </form>
+          <form
+            action=""
+            className="flex items-center justify-center flex-col mt-[3rem]"
+          >
+            <h1 className="font-bold text-3xl mb-3 mt-3">ثبت نام</h1>
+            <p className="mb-5 text-[.9rem] flex gap-1.5">
+              از قبل حسابی برای خود ساخته اید؟{" "}
+              <span
+                onClick={loginHandler}
+                className="text-primary cursor-pointer"
+              >
+                ورود
+              </span>
+            </p>
+            <div className="w-[100%] px-5">
+              <label htmlFor="">نام کاربری</label>
+              <div className="border-[1.6px] mt-1 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
+                <input type="text" className="w-full" placeholder="aliReza" />
+              </div>
+              <label htmlFor="">ایمیل</label>
+              <div className="border-[1.6px] mt-1 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
+                <input
+                  type="text"
+                  className="w-full"
+                  placeholder="example@gmail.com"
+                />
+                {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
+              </div>
+              <label htmlFor="">رمز عبور</label>
+              <div className="border-[1.6px] mt-1 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
+                <input
+                  type="password"
+                  className="w-full"
+                  placeholder="M7aqK#"
+                />
+                {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
+                {/* <FaRegEyeSlash /> */}
+              </div>
+              <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-3 text-white ">
+                {btnStatus === "default" ? (
+                  <p className="mb-2">ثبت نام</p>
+                ) : btnStatus === "loading" ? (
+                  <span class="loader"></span>
+                ) : (
+                  <div class="wrapper">
+                    <p>تمام</p>
+                    <svg class="animated-check" viewBox="0 0 24 24">
+                      <path d="M4.1 12.7L9 17.6 20.3 6.3" fill="none" />{" "}
+                    </svg>
+                  </div>
+                )}
+              </button>
             </div>
-            <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-5 text-white ">
-              {btnStatus === "default" ? (
-                <p className="mb-2">ورود</p>
-              ) : btnStatus === "loading" ? (
-                <span class="loader"></span>
-              ) : (
-                <div class="wrapper">
-                  <p>تمام</p>
-                  <svg class="animated-check" viewBox="0 0 24 24">
-                    <path d="M4.1 12.7L9 17.6 20.3 6.3" fill="none" />{" "}
-                  </svg>
-                </div>
-              )}
-            </button>
-          </div>
-        </form>
-        <form action="" className="flex items-center justify-center flex-col mt-[3rem]">
-          <h1 className="font-bold text-3xl mb-3 mt-3">ثبت نام</h1>
-          <p className="mb-5 text-[.9rem] flex gap-1.5">
-            از قبل حسابی برای خود ساخته اید؟{" "}
-            <span onClick={loginHandler} className="text-primary cursor-pointer">ورود</span>
-          </p>
-          <div className="w-[100%] px-5">
-            <label htmlFor="">نام کاربری</label>
-            <div className="border-[1.6px] mt-1 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
-              <input type="text" className="w-full" placeholder="aliReza" />
-            </div>
-            <label htmlFor="">ایمیل</label>
-            <div className="border-[1.6px] mt-1 mb-4 rounded-lg p-2 dark:border-white/20 border-dark/10 flex items-center justify-center">
-              <input
-                type="text"
-                className="w-full"
-                placeholder="example@gmail.com"
-              />
-              {/* <TfiEmail className="text-[1.2rem] ml-[.5rem] " /> */}
-            </div>
-            <label htmlFor="">رمز عبور</label>
-            <div className="border-[1.6px] mt-1 p-2 rounded-lg dark:border-white/20 border-dark/10 flex items-center justify-center">
-              <input type="password" className="w-full" placeholder="M7aqK#" />
-              {/* <FaRegEye className={`${showPassword&&'hidden'} text-[1.2rem] ml-[.5rem] cursor-pointer`} /> */}
-              {/* <FaRegEyeSlash /> */}
-            </div>
-            <button className="relative bg-primary duration-300 flex items-center before:content-[''] before:h-[100%] before:w-[100%] before:bg-blue-50/10 before:rotate-180 before:absolute before:bottom-[-100%] before:left-[0] hover:before:translate-y-[-100%] overflow-hidden before:duration-500 justify-center cursor-pointer w-[100%] rounded-xl p-2 mt-3 text-white ">
-              {btnStatus === "default" ? (
-                <p className="mb-2">ثبت نام</p>
-              ) : btnStatus === "loading" ? (
-                <span class="loader"></span>
-              ) : (
-                <div class="wrapper">
-                  <p>تمام</p>
-                  <svg class="animated-check" viewBox="0 0 24 24">
-                    <path d="M4.1 12.7L9 17.6 20.3 6.3" fill="none" />{" "}
-                  </svg>
-                </div>
-              )}
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-      </div>
-
-
     </div>
   );
 }

@@ -7,7 +7,8 @@ export default function ProjectItem({id, img, username }) {
   return (
     <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay={`${id}00`}>
       <Link to="" className="flex items-center justify-center flex-col ">
-        <img src={img} alt="" className="rounded-lg h-[13rem] w-full  " />
+        <img src={img} alt="" className="rounded-lg h-[13rem] w-full object-cover " />
+        </Link>
         <div className="flex items-center justify-between w-full mt-3 ">
           <div className="flex items-center gap-3 *:flex *:items-center *:gap-2 **:text-[.9rem] **:text-zinc-500 ">
             <div>
@@ -19,16 +20,16 @@ export default function ProjectItem({id, img, username }) {
               <FaEye />
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <Link to="" className="flex items-center gap-2">
             <p>{username}</p>
             <img
               src="/images/User.jpg"
               alt=""
               className="rounded-full size-[1.5rem] "
             />
-          </div>
+          </Link>
         </div>
-      </Link>
+      
     </li>
   );
 }
