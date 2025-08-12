@@ -1,7 +1,7 @@
 import React from "react"
-import banner from '../assets/images/banner-03.png'
-import banner1 from '../assets/images/banner-06.png'
-import banner2 from '../assets/images/projeimg.png'
+import banner from '/images/banner-03.png'
+import banner1 from '/images/banner-06.png'
+import banner2 from '/images/projeimg.png'
 import { Swiper, SwiperSlide } from "swiper/react"
 import {  Pagination, Autoplay } from "swiper/modules"
 
