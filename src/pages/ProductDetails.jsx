@@ -1,18 +1,24 @@
 import img from "/images/banner-03.png";
 import User from "/images/User.jpg";
-import Basket from "/icons/basket.svg";
-import Heart from "/icons/heart.svg";
-import Receive from "/icons/receive.svg";
-import Save from "/icons/save.svg";
-import { FaRegBookmark, FaRegHeart } from "react-icons/fa";
+
+import MySlider from "../components/MySlider.jsx";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import { FaRegBookmark, FaRegHeart, FaShoppingBasket } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
+
+
 
 export default function ProductDetails() {
   return (
     <div className="bg-white dark:bg-dark">
-      <div className="p-7 space-y-5 container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src={img} alt="" className="w-full h-80 rounded-md" />
+      <div className="p-7 space-y-8 container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
+          <div className="w-full h-full">
+            <MySlider />
+          </div>
           <div className="space-y-5">
             <div className="mt-12 flex items-center justify-between md:mt-0">
               <div className="flex items-center gap-4">
@@ -47,7 +53,9 @@ export default function ProductDetails() {
             <div className="flex justify-between mt-10 items-center md:mt-5">
               <p className="text-primary font-IranYekanBold">1/450/000تومان</p>
               <div className="flex gap-2 items-center bg-primary hover:bg-primary/80 duration-300 p-1.5 px-4 cursor-pointer rounded-md text-white text-sm">
-                <img src={Basket} alt="" className="size-6" />
+                <div>
+                  <FaShoppingBasket />
+                </div>
                 سبدخرید
               </div>
             </div>
@@ -56,17 +64,7 @@ export default function ProductDetails() {
 
         <h1 className="dark:text-white text-black text-2xl">توضیحات تکمیلی درباره پروژه</h1>
         <p className="text-justify text-second-light mb-24">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          libero odit repellat nulla repellendus accusamus dolores doloribus
-          incidunt recusandae, eius soluta, autem perspiciatis ratione sunt?
-          Quos iste nemo eius libero. Nesciunt pariatur fugit magni ad
-          voluptatibus quos architecto consequuntur saepe nemo! Architecto
-          mollitia incidunt reprehenderit nobis, eligendi officiis eos iste
-          asperiores esse natus odio? Numquam expedita qui laboriosam voluptatum
-          ipsum. Harum id voluptate magni quidem modi excepturi alias beatae
-          minus necessitatibus esse itaque iure eum omnis vel nobis, sint
-          nostrum deserunt quo sit inventore autem, in dolore! Officiis,
-          similique alias.
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
         </p>
         <h1 className="font-IranYekanBold dark:text-white text-black">نظرات</h1>
         <div className="w-full shadow-xl shadow-zinc-200/30 dark:shadow-none bg-zinc-100 border-1 border-zinc-200 rounded-md h-9 md:w-96">
