@@ -44,7 +44,7 @@ export default function Home() {
                 data-aos-duration="1000"
                 data-aos-delay="1700"
                 src="/images/logo.png"
-                className="size-[4rem] mix-blend-multiply "
+                className="size-[4rem]"
                 alt=""
               />
               <ul className="flex items-center justify-center gap-1 text-black dark:text-white">
@@ -106,7 +106,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="absolute h-full w-full *:text[3rem]  ">
+            <div className="absolute h-full w-full *:text[3rem] opacity-0 md:opacity-100 ">
               <BsBackpack2
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -166,13 +166,13 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
-              className="text-[3rem] Morabba w-[45rem] text-center text-black dark:text-white"
+              className="text-[1.5rem] md:text-[2rem] lg:text-[3rem] Morabba w-[90%] md:w-[45rem] text-center text-black dark:text-white"
             >
               منبع بزرگی از انواع پروژه های مختلف دانشجو های خبره دانشگاه سجاد{" "}
             </p>
             <a
               href="#intro"
-              className="z-30 flex items-center gap-2 bg-gradient-to-r hover:scale-95 duration-300 opacity-0 fadeInAnimation2 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer "
+              className="z-30 flex items-center gap-2 text-[.8rem] md:text-[1rem] bg-gradient-to-r hover:scale-95 duration-300 opacity-0 fadeInAnimation2 from-[#ffd700] to-[#ff8c00] text-white px-[3rem] py-2 rounded-full mt-3 cursor-pointer "
             >
               پروجه رو بشناس
               <BsStars />
@@ -199,8 +199,8 @@ export default function Home() {
           >
             <div>
               <p className="text-xl lg:text-2xl ">جدید ترین پروژه ها</p>
-              <p className="text-[.8rem] lg:text-[.9rem] text-zinc-400 mt-1">
-                پروژه هایی که اخیرا دانشجو ها طراحی کرده اند !
+              <p className="text-[.8rem] lg:text-[.9rem] w-full text-zinc-400 mt-1">
+                پروژه هایی که اخیرا دانشجو ها طراحی کرده اند 
               </p>
             </div>
             <Link
@@ -208,7 +208,7 @@ export default function Home() {
               data-aos-duration="1000"
               data-aos-delay="200"
               to=""
-              className="flex items-center gap-2 text-[.9rem] text-zinc-400 duration-300 hover:text-primary "
+              className="flex items-center gap-2 mb-[1.8rem] text-[.8rem] sm:text-[.9rem] text-zinc-400 duration-300 hover:text-primary "
             >
               نمایش همه
               <FiArrowUpLeft className="text-[1.1rem]" />
