@@ -30,8 +30,8 @@
 }
 
 .active{
-  background-color: var(--color-primaryLight);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border-radius: .3rem;
 }
 

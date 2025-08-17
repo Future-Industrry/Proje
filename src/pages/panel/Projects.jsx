@@ -14,26 +14,20 @@ import { BiEditAlt } from "react-icons/bi";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function Projects() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [isOpen, setIsOpen] = useState(1);
   const navigate = useNavigate();
 
   return (
     <>
       <div className="flex *:h-[100vh] dark:text-white text-black bg-white dark:bg-dark">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-[100%]">
-          <div
-            className={`bg-dark/50 w-full absolute ${
-              isOpen ? "h-full" : "h-[0]"
-            } `}
-            onClick={() => setIsOpen(!isOpen)}
-          ></div>
+        <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
-          <div className="p-5">
-            <div className="p-4 space-y-6 bg-white dark:bg-[#02142C] w-auto">
+          <div className="">
+            <div className="p-4 space-y-6 rounded-xl w-auto">
               {/* پروژه های متن باز */}
-              <div className="border-2 border-[#EEEBEB] dark:border-[#1B202C] dark:bg-[#1B202C] border-solid">
-                <div className="bg-[#EEEBEB] dark:bg-[#211E1E] p-4 flex justify-between items-center  border-solid">
+              <div className="border-2 border-[#EEEBEB] dark:border-[#1B202C] dark:bg-[#1B202C] shadow-xl shadow-zinc-200/50 rounded-xl dark:shadow-none border-solid">
+                <div className="bg-[#EEEBEB] dark:bg-[#333a4b] p-4 flex justify-between items-center  border-solid">
                   <div className="flex gap-2 items-center">
                     {" "}
                     <FaGithub className="sm:text-[14px] lg:text-[30px] md:text-[25px] dark:text-[#ffff]" />
@@ -56,8 +50,8 @@ export default function Projects() {
               </div>
 
               {/* پروژه های دیگر */}
-              <div className="border-2 border-[#EEEBEB]  dark:border-[#1B202C] dark:bg-[#1B202C] border-solid  mt-6">
-                <div className="bg-[#EEEBEB]  dark:bg-[#211E1E] p-4 flex justify-between items-center ">
+              <div className="border-2 border-[#EEEBEB]  dark:border-[#1B202C] dark:bg-[#1B202C] border-solid shadow-xl shadow-zinc-200/50 rounded-xl dark:shadow-none mt-6">
+                <div className="bg-[#EEEBEB] dark:bg-[#333a4b] p-4 flex justify-between items-center ">
                   <div className="flex gap-2 items-center">
                     {" "}
                     <SiCodecrafters className="sm:text-[14px] lg:text-[30px] md:text-[25px] dark:text-[#ffff]" />

@@ -3,7 +3,7 @@ import SideBar from "../../components/SideBar";
 import TopBar from "../../components/TopBar";
 
 export default function Transactions() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [isOpen, setIsOpen] = useState(1);
   const transactions = [
     {
       id: 0,
@@ -17,20 +17,17 @@ export default function Transactions() {
     <>
       <div className="flex *:h-[100vh] dark:text-white text-black bg-white dark:bg-dark">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-[100%]">
-          <div
-            className={`bg-dark/50 w-full absolute ${
-              isOpen ? "h-full" : "h-[0]"
-            } `}
-            onClick={() => setIsOpen(!isOpen)}
-          ></div>
+        <div
+          className={`${
+            isOpen ? "w-[100%] lg:w-[80%] xl:w-[83%] " : "w-[100%]"
+          } `}
+        >
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
           <div className="p-5">
             {/*کداتو اینجا بزن*/}
-
-            <div className=" mx-auto p-6 font-yekan text-right dark:bg-[#02142C]">
+            <div className=" mx-auto p-6 font-yekan text-right rounded-xl">
               {/* کیف پول */}
-              <div className="mt-12 ">
+              <div>
                 <h3 className="text-[16px] md:text-[22px] leading-7 dark:text-[#ffff]  font-bold mb-[18px]">
                   کیف پول
                 </h3>
@@ -53,7 +50,7 @@ export default function Transactions() {
                 </h3>
                 {/* عنوان ستون‌ها */}
                 <div className="border-[1px] border-[#CDCACA] mb-4  w-full "></div>
-                <div className="bg-[#EEEBEB] dark:bg-[#211E1E] rounded-t-lg p-3 py-6 grid grid-cols-6 justify-items-center gap-4 dark:text-[#ffff]  text-[14px] md:text-[20px] leading-7 font-bold text-black">
+                <div className="bg-[#EEEBEB] dark:bg-[#333a4b] rounded-t-lg p-3 py-6 grid grid-cols-6 justify-items-center gap-4 dark:text-[#ffff]  text-[14px] md:text-[20px] leading-7 font-bold text-black">
                   <span>شناسه</span>
                   <span>مبلغ</span>
                   <span className="col-span-2">زمان</span>
@@ -65,14 +62,14 @@ export default function Transactions() {
                 {transactions.map((tx) => (
                   <div
                     key={tx.id}
-                    className="w-full bg-white shadow-md dark:bg-[#1B202C] rounded-b-lg px-6 py-8  grid grid-cols-6 justify-items-center gap-4 dark:text-[#ffff] text-black text-[12px] md:text-[18px]"
+                    className="w-full bg-[#fff] dark:bg-[#1B202C] shadow-xl shadow-zinc-200/50 dark:shadow-none rounded-b-lg px-6 py-8  grid grid-cols-6 justify-items-center gap-4 dark:text-[#ffff] text-black text-[12px] md:text-[18px]"
                   >
                     <div>{tx.id}</div>
                     <div>{tx.amount} تومان</div>
                     <div className="col-span-2">{tx.time}</div>
                     <div>{tx.description}</div>
                     <div>
-                      <p className="bg-[#FBBD08] text-center text-white px-1.5  md:px-4 py-1 rounded-[8px] text-[12px] md:text-[16px]">
+                      <p className="bg-[#FBBD08] text-center text-black  px-1.5  md:px-4 py-1 rounded-[8px] md:text-[.9rem]">
                         {tx.status}
                       </p>
                     </div>

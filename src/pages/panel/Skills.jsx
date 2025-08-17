@@ -4,24 +4,23 @@ import TopBar from '../../components/TopBar';
 import { CiEdit } from "react-icons/ci";
 import { LiaUserSolid } from "react-icons/lia";
 export default function Skills() {
-  const [isOpen, setIsOpen] = useState(0)
+  const [isOpen, setIsOpen] = useState(1)
   return (
     <>
       <div className="flex *:h-[100vh] bg-white dark:bg-dark  text-black dark:text-white">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-[100%]">
-          <div className={`bg-dark/50 w-full absolute ${isOpen ? 'h-full' : "h-[0]"} `} onClick={() => setIsOpen(!isOpen)}></div>
+        <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
           <div className="p-5">
             {/*کداتو اینجا بزن*/}
-            <div className='border-1 border-light grid grid-cols-2 py-6 px-10 gap-7 rounded-3xl sm:gap-y-7 shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] sm:gap-x-0 sm:grid-cols-[18%_18%_18%_45%]'>
-              <div className='flex items-center gap-2 sm:col-span-2'>
+            <div className='grid grid-cols-2 bg-white dark:bg-[#1B202C] py-6 px-10 gap-7 rounded-xl sm:gap-y-7 shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] sm:gap-x-0 sm:grid-cols-[25%_25%_25%25%]'>
+               <div className='flex items-center gap-1 sm:col-span-2'>
                 <LiaUserSolid className="sm:size-[2.2rem] size-7" />
-                <p className=' font-IranYekanBold sm:text-lg'>مهارت های فردی </p>
+                <p className=' font-IranYekanBold text-[1rem]'>مهارت فنی</p>
               </div>
-              <div className='flex  gap-2 sm:col-span-2 border w-max justify-self-end px-3 py-1 rounded-lg '>
+              <div className='flex items-center gap-2 text-[.8rem] border w-max justify-self-end px-3 py-1 rounded-xl cursor-pointer duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-50/10 '>
                 <p className=''>ویرایش</p>
-                <CiEdit className="size-[1.2rem]" />
+                <CiEdit className="size-[1rem]" />
               </div>
               <p className='sm:border-b-1 border-second-light text-right sm:pb-4'>PYTHON</p>
               <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">100%</p>

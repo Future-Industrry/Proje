@@ -3,18 +3,13 @@ import SideBar from "../../components/SideBar";
 import TopBar from "../../components/TopBar";
 
 export default function Setting() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [isOpen, setIsOpen] = useState(1);
   return (
     <>
       <div className="flex *:h-[100vh] dark:text-white text-black bg-white dark:bg-dark ">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-full">
-          <div
-            className={`bg-dark/50 w-full absolute ${
-              isOpen ? "h-full" : "h-[0]"
-            }`}
-            onClick={() => setIsOpen(!isOpen)}
-          ></div>
+        <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
+
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
 
           {/*-------------- فرم تنظیمات --------------*/}
@@ -38,11 +33,11 @@ export default function Setting() {
                   <input
                     type="text"
                     placeholder="نام کاربری"
-                    className=" bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
+                    className=" bg-zinc-200/50 dark:bg-[#1B202C] text-dark dark:text-white dark:placeholder-white/50 placeholder:text-black  w-full rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
                   />
                   <button
                     type="button"
-                    className="bg-primary px-4 py-2 rounded-md text-white text-sm hover:bg-primary/80 cursor-pointer transition block"
+                    className="bg-primary text-[.8rem] px-4 py-2 rounded-md text-white text-sm hover:bg-primary/80 cursor-pointer transition block"
                   >
                     تغییر نام کاربری
                   </button>
@@ -57,24 +52,24 @@ export default function Setting() {
                 <hr />
                 <section className="mt-4 space-y-4">
                   <div>
-                    <label className="block text-sm mb-1">گذرواژه</label>
+                    <label className="block text-sm mb-2">گذرواژه</label>
                     <input
                       type="password"
                       placeholder="رمز عبور"
-                      className="inputsSetting  bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full border border-gray-400 rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
+                      className="inputsSetting  bg-zinc-200/50 dark:bg-[#1B202C] text-dark dark:text-white dark:placeholder-white/50 placeholder:text-black  w-full border border-gray-400 rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm mb-1">تکرار گذرواژه</label>
+                    <label className="block text-sm mb-2">تکرار گذرواژه</label>
                     <input
                       type="password"
                       placeholder="تکرار رمز عبور"
-                      className="inputsSetting  bg-zinc-200/80 shadow-xl dark:shadow-none placeholder:text-black shadow-zinc-200/50 w-full border border-gray-400 rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
+                      className="inputsSetting  bg-zinc-200/50 dark:bg-[#1B202C] text-dark dark:text-white dark:placeholder-white/50 placeholder:text-black  w-full border border-gray-400 rounded-md px-3 py-2  text-sm outline-none focus:ring-0 focus:border-gray-400"
                     />
                   </div>
                   <button
                     type="button"
-                    className="bg-primary px-4 py-2 rounded-md text-white text-sm hover:bg-primary/80 cursor-pointer transition"
+                    className="bg-primary text-[.8rem] px-4 py-2 rounded-md text-white text-sm hover:bg-primary/80 cursor-pointer transition"
                   >
                     به‌روزرسانی گذرواژه
                   </button>

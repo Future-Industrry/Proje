@@ -5,77 +5,47 @@ import { CiEdit } from "react-icons/ci";
 import { LiaUserSolid } from "react-icons/lia";
 
 export default function UserInfo() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [isOpen, setIsOpen] = useState(1);
   return (
     <>
-      <div className="flex *:h-[100vh] bg-white dark:bg-dark">
+      <div className="flex items-center justify-between *:h-screen bg-white dark:bg-dark">
+        {/*sadebar*/}
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-[100%] ">
-          <div
-            className={`bg-dark/50 w-full absolute ${
-              isOpen ? "h-full" : "h-[0]"
-            } `}
-            onClick={() => setIsOpen(!isOpen)}
-          ></div>
+
+        {/*content*/}
+        <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
-          <div className="p-5 dark:text-white text-black">
-            <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] bg-dark dark:bg-white/3 w-full h-[80vh] rounded-2xl py-5 px-10 ">
-              <div className="flex items-center justify-between  h-[3rem] *:flex *:items-center *:justify-center *:gap-1">
-                <div>
-                  <LiaUserSolid className="size-[2.2rem]" />
-                  <p className="text-[15px] mr-1 lg:text-[20px]">اطلاعات فردی</p>
-                </div>
-                <div className="border-1 border-zinc-300 px-3 py-1 rounded-[.7rem] cursor-pointer hover:bg-zinc-300 dark:hover:bg-zinc-100/10 duration-300 ">
-                  <p className="text-[11px] lg:text-[14px] ">ویرایش</p>
-                  <CiEdit className="size-[1.2rem]" />
-                </div>
+          {/*content of dashboard*/}
+          <div className="p-5 dark:text-white text-black ">
+            <div className='grid grid-cols-2 bg-white dark:bg-[#1B202C] py-6 px-10 gap-7 rounded-xl sm:gap-y-7 shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] sm:gap-x-0 sm:grid-cols-[25%_25%_25%_25%]'>
+              <div className='flex items-center gap-1 sm:col-span-2'>
+                <LiaUserSolid className="sm:size-[2.2rem] size-7" />
+                <p className=' font-IranYekanBold text-[1rem]'>اطلاعات فردی</p>
               </div>
-              <div className="grid lg:grid-cols-2 py-3 md:grid-cols-2 sm:grid-cols-1 ">
-                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-2 *:border-b-2 *:border-zinc-300">
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>نام</p>
-                    <p>محمد</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>نام خوانوادگی</p>
-                    <p>امین پور</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>سن</p>
-                    <p>20 سال</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>تولد</p>
-                    <p>1384/01/09</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>کد ملی</p>
-                    <p>0987654321</p>
-                  </div>
-                </div>
-                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-2 *:border-b-2 *:border-zinc-300  ">
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>تلفن</p>
-                    <p>09151234567</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>اکانت</p>
-                    <p>توسعه دهنده</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>تحصیلات</p>
-                    <p>کاردانی نرم افزار</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>مدت عضویت</p>
-                    <p>1 روز</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>محل سکونت</p>
-                    <p>مشهد</p>
-                  </div>
-                </div>
+              <div className='flex items-center gap-2 sm:col-span-2 text-[.8rem] border w-max justify-self-end px-3 py-1 rounded-xl cursor-pointer duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-50/10 '>
+                <p className=''>ویرایش</p>
+                <CiEdit className="size-[1rem]" />
               </div>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>نام</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">محمد</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>نام خانوادگی</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">امین پور</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>سن</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">21</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>تولد</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">1384</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>کد ملی</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">06235546523</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>تلفن</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">09151234567</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>اکانت</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">توسعه دهنده</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>تحصیلات</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">کاردانی نرم افزار</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>مدت عضویت</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">1 روز</p>
+              <p className='sm:border-b-1 border-second-light sm:pb-4'>محل سکونت</p>
+              <p className="text-second-light text-left sm:text-right sm:border-b-1 sm:border-second-light sm:pb-4">مشهد</p>
             </div>
           </div>
         </div>
@@ -83,3 +53,5 @@ export default function UserInfo() {
     </>
   );
 }
+
+
