@@ -158,7 +158,7 @@ export default function Projects() {
                               name=""
                               id=""
                               className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
-                              placeholder="مثال : Mohammad"
+                              placeholder="مثال : طراحی سایت فروشگاهی با وردپرس"
                             />
                           </div>
                           <div className="flex items-stert flex-col gap-3">
@@ -204,7 +204,7 @@ export default function Projects() {
                               name=""
                               id=""
                               className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
-                              placeholder="مثال : محمد"
+                              placeholder="مثال : 520,000"
                             />
                           </div>
                            <div className="flex items-stert flex-col gap-3">
