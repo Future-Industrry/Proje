@@ -188,8 +188,6 @@ export default function Projects() {
                               <option value="" className="text-black">
                                 گرافیک
                               </option>
-                              <option value="" className="text-black"></option>
-                              <option value="" className="text-black"></option>
                             </select>
                           </div>
                           <div className="flex items-stert flex-col gap-3">
