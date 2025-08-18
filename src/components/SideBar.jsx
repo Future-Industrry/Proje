@@ -22,9 +22,9 @@ export default function SideBar({ isOpen, setIsOpen }) {
 
   return (
     <div
-      className={`h-full ${
+      className={`h-screen ${
         isOpen ? "w-[17rem] lg:w-[20%] xl:w-[17%] " : "w-0 hidden"
-      } fixed md:static z-10 p-3 duration-500 bg-[#fff] dark:bg-[#1B202C] border-l-2 dark:border-zinc-900 border-zinc-200 dark:bg[#1B202C] dark:text-white text-black`}
+      } fixed md:sticky top-0 z-50 p-3 duration-500 bg-[#fff] dark:bg-[#1B202C] border-l-2 dark:border-zinc-900 border-zinc-200 dark:bg[#1B202C] dark:text-white text-black`}
     >
       <div className="flex items-center justify-between mb-7">
         <div className="flex items-center gap-2">

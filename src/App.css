@@ -11,6 +11,10 @@
   --font-IranRegular:IRANYekanRegular;
   --fotn-IranMedium:IRANYekanBlack;
   --font-IranYekanBold:IRANYekanBold;
+
+
+  --breakpoint-xsm: 400px;
+  --breakpoint-xmd: 840px;
 }
 
 .fadeInAnimation{

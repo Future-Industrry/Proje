@@ -6,7 +6,7 @@ export default function Achievements() {
   const [isOpen, setIsOpen] = useState(1)
   return (
     <>
-      <div className="flex h-screen ">
+      <div className="flex">
        <SideBar isOpen={isOpen} setIsOpen={setIsOpen}/>
         <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen}/>

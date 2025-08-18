@@ -7,7 +7,7 @@ export default function Skills() {
   const [isOpen, setIsOpen] = useState(1)
   return (
     <>
-      <div className="flex *:h-[100vh] bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex bg-white dark:bg-dark  text-black dark:text-white">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -18,7 +18,7 @@ export default function Skills() {
                 <LiaUserSolid className="sm:size-[2.2rem] size-7" />
                 <p className=' font-IranYekanBold text-[1rem]'>مهارت فنی</p>
               </div>
-              <div className='flex items-center gap-2 text-[.8rem] border w-max justify-self-end px-3 py-1 rounded-xl cursor-pointer duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-50/10 '>
+              <div className='flex items-center gap-2 sm:col-span-2 text-[.8rem] border w-max justify-self-end px-3 py-1 rounded-xl cursor-pointer duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-50/10 '>
                 <p className=''>ویرایش</p>
                 <CiEdit className="size-[1rem]" />
               </div>
