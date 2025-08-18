@@ -38,6 +38,15 @@ export default function Home() {
             <span className="bg-[#32cd32]/50 dark:bg-[#32cd32]/70 size-[11rem] rounded-full absolute left-[-1rem]  top-[5rem] "></span>
           </div>
           <div className="backdrop-blur-3xl h-full flex items-center justify-center flex-col  ">
+            {/* Grid background */}
+            <div className="absolute inset-0 grid grid-cols-12 grid-rows-8 opacity-20">
+              {Array.from({ length: 96 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="border border-gray-400/45 dark:border-gray-500/20"
+                ></div>
+              ))}
+            </div>
             <div className="flex items-center justify-between h-[5rem] z-50 w-full fixed top-0 py-3 px-10 ">
               <img
                 data-aos="fade-right"
@@ -200,7 +209,7 @@ export default function Home() {
             <div>
               <p className="text-xl lg:text-2xl ">جدید ترین پروژه ها</p>
               <p className="text-[.8rem] lg:text-[.9rem] w-full text-zinc-400 mt-1">
-                پروژه هایی که اخیرا دانشجو ها طراحی کرده اند 
+                پروژه هایی که اخیرا دانشجو ها طراحی کرده اند
               </p>
             </div>
             <Link

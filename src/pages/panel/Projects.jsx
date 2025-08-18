@@ -207,7 +207,7 @@ export default function Projects() {
                               placeholder="مثال : 520,000"
                             />
                           </div>
-                           <div className="flex items-stert flex-col gap-3">
+                          <div className="flex items-stert flex-col gap-3">
                             <label
                               htmlFor=""
                               className="text-zinc-700 dark:text-zinc-400 "
@@ -223,7 +223,7 @@ export default function Projects() {
                             />
                           </div>
                         </div>
-                        
+
                         <div className="w-full py-6">
                           <div
                             className="rounded-2xl bg-white dark:bg-[#1B202C] flex items-center justify-center flex-col gap-3 h-[20rem] w-full border-2 border-dashed border-gray-300  p-6 text-center"
@@ -292,7 +292,10 @@ export default function Projects() {
                             تایید
                             {/* <IoMdCheckmark className="text-[1.1rem]" /> */}
                           </button>
-                           <button onClick={()=>setAddProject(false)} className="flex items-center justify-center gap-2 bg-gray-500 cursor-pointer duration-300 hover:bg-gray-600 p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 ">
+                          <button
+                            onClick={() => setAddProject(false)}
+                            className="flex items-center justify-center gap-2 bg-gray-500 cursor-pointer duration-300 hover:bg-gray-600 p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 "
+                          >
                             کنسل
                             {/* <IoClose  className="text-[1.1rem]" /> */}
                           </button>
