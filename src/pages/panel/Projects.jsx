@@ -261,7 +261,7 @@ export default function Projects() {
                                 <ul className="space-y-1 text-sm">
                                   {files.map((file, i) => (
                                     <li key={i} className="truncate">
-                                      📄 {file.name}{" "}
+                                      📄 {file.name.slice(1,20)}... {""}
                                       <span className="text-gray-400">
                                         ({file.size} bytes)
                                       </span>
@@ -281,7 +281,7 @@ export default function Projects() {
                         <textarea
                           name=""
                           id=""
-                          rows={10}
+                          rows={5}
                           placeholder="توضیحی درباره پروژه خودتان بنویسید..."
                           className="placeholder:text-[.9rem] p-3 outline-0 w-full rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 mt-2"
                         ></textarea>

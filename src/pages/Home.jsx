@@ -253,7 +253,7 @@ export default function Home() {
 
         {/* know proje */}
         <div
-          className="w-[80%] mx-auto mt-50 pt-10 text-black dark:text-white"
+          className="w-[80%] mx-auto mt-20 pt-10 text-black dark:text-white"
           id="intro"
         >
           {/*header*/}
@@ -291,7 +291,8 @@ export default function Home() {
                 />
                 <p className="text-[1.2rem]">تایید پروژه</p>
                 <p className="text-zinc-500 text-[.8rem] mt-2">
-                  پروژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
+                  <span className="text-xl text-primary "> پ </span>
+                  روژه هامون تایید شده توسط اساتید و متخصصین شناخته شده ان، ما
                   اینجا پروژه بدون تاییدیه رسمی و پشتیبانی نداریم
                 </p>
               </li>
@@ -307,8 +308,9 @@ export default function Home() {
                 />
                 <p className="text-[1.2rem]">تیم شو</p>
                 <p className="text-zinc-500 text-[.8rem] mt-2">
-                  راحت ترین راه پیدا کردن تیم های حرفه ای، فقط موضوع پروژه تو
-                  بگو تا ما بهت یه تیم حرفه ای معرفی کنیم
+                  <span className="text-xl text-primary ">ر</span>احت ترین راه
+                  پیدا کردن تیم های حرفه ای، فقط موضوع پروژه تو بگو تا ما بهت یه
+                  تیم حرفه ای معرفی کنیم
                 </p>
               </li>
               <li
@@ -323,8 +325,9 @@ export default function Home() {
                 />
                 <p className="text-[1.2rem]">رزومه های واقعی</p>
                 <p className="text-zinc-500 text-[.8rem] mt-2">
-                  واو به واو رزومه ها واقعین، اینجا تنها جاییه که رزومه توسعه
-                  دهنده هاش توسط اساتید شناخته شده، صحت سنجی میشه
+                  <span className="text-xl text-primary "> و </span>او به واو
+                  رزومه ها واقعین، اینجا تنها جاییه که رزومه توسعه دهنده هاش
+                  توسط اساتید شناخته شده، صحت سنجی میشه
                 </p>
               </li>
               <li
@@ -339,8 +342,9 @@ export default function Home() {
                 />
                 <p className="text-[1.2rem]">شفافیت پروژه ها</p>
                 <p className="text-zinc-500 text-[.8rem] mt-2">
-                  جایی که همه چی شفافه، حتی جزئیات پیاده سازی پروژه هایی که
-                  دانشجو هامون انجام میدن
+                  <span className="text-xl text-primary "> ج </span>ایی که همه
+                  چی شفافه، حتی جزئیات پیاده سازی پروژه هایی که دانشجو هامون
+                  انجام میدن
                 </p>
               </li>
               <li
@@ -355,8 +359,8 @@ export default function Home() {
                 />
                 <p className="text-[1.2rem]">از ایده تا نوآوری</p>
                 <p className="text-zinc-500 text-[.8rem] mt-2">
-                  همه چی اینجا محیاست تا ایده‌ت رو به واقعیت برسونی با پروجه
-                  پروژت تو جیبته{" "}
+                  <span className="text-xl text-primary "> ه </span> مه چی اینجا
+                  محیاست تا ایده‌ت رو به واقعیت برسونی با پروجه پروژت تو جیبته{" "}
                 </p>
               </li>
             </ul>
