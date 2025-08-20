@@ -197,7 +197,7 @@ export default function Home() {
 
         {/* news projects */}
         <div
-          className="w-[80%] mx-auto mt-10 pt-10 text-black dark:text-white"
+          className="container mx-auto mt-10 pt-10 text-black dark:text-white"
           id="projects"
         >
           <div
@@ -223,30 +223,14 @@ export default function Home() {
               <FiArrowUpLeft className="text-[1.1rem]" />
             </Link>
           </div>
-          <ul className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-7 mt-10  ">
+          <ul className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-5 mt-10  ">
             <ProjectItem id={1} img="/images/project1.png" username="Kamraan" />
             <ProjectItem id={2} img="/images/project2.png" username="Amin" />
-            <ProjectItem
-              id={3}
-              img="/images/project3.png"
-              username="Sara Saeedi"
-            />
-            <ProjectItem
-              id={4}
-              img="/images/project4.png"
-              username="Sohrab101"
-            />
-            <ProjectItem
-              id={5}
-              img="/images/project5.png"
-              username="Fariba khani"
-            />
+            <ProjectItem id={3} img="/images/project3.png" username="Sara" />
+            <ProjectItem id={4} img="/images/project4.png" username="Sohrab" />
+            <ProjectItem id={5} img="/images/project5.png" username="Fariba" />
             <ProjectItem id={6} img="/images/project6.png" username="Morteza" />
-            <ProjectItem
-              id={7}
-              img="/images/project7.png"
-              username="Mahdi zade"
-            />
+            <ProjectItem id={7} img="/images/project7.png" username="Mahdi" />
             <ProjectItem id={8} img="/images/project8.png" username="Fatemeh" />
           </ul>
         </div>

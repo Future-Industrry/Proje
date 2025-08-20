@@ -3,7 +3,8 @@ import { GoVerified  ,GoLocation} from 'react-icons/go'
 import { HiOutlineMail } from 'react-icons/hi'
 import { MdEventNote } from 'react-icons/md'
 import { RiGlobalLine } from 'react-icons/ri'
-import { FaInstagram ,FaWhatsapp,FaFacebook  } from 'react-icons/fa'
+import { FaInstagram ,FaWhatsapp,FaFacebook, FaGithub, FaLinkedinIn, FaLinkedin  } from 'react-icons/fa'
+import { AiOutlineLinkedin } from 'react-icons/ai'
 export default function ProfileCard({ name='هانیه', email='hanirezaee@gmail.com', site="www.wonkapost.ir", locaion="خراسان رضوی ، مشهد", date="1401/01/12" }) {
     return (
         <>
@@ -47,8 +48,8 @@ export default function ProfileCard({ name='هانیه', email='hanirezaee@gmail
                     <div className='mx-auto  bg-thirdry flex gap-5 justify-center rounded-lg mb-10 py-2 w-52 lg:w-full dark:bg-gray-800'>
                         <FaWhatsapp size={20} color='orange'/>
                         <FaInstagram size={20} color='orange'/>
-                        <FaFacebook size={20} color='orange'/>
-                        <RiGlobalLine size={20} color='orange'/>
+                        <FaLinkedin    size={20} color='orange'/>
+                        <FaGithub size={20} color='orange'/>
                     </div>
                 </div>
             </div>

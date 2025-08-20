@@ -18,7 +18,7 @@ export default function Skills() {
                 <LiaUserSolid className="sm:size-[2.2rem] size-7" />
                 <p className=' font-IranYekanBold text-[1rem]'>مهارت فنی</p>
               </div>
-              <div className='flex items-center gap-2 sm:col-span-2 text-[.8rem] border w-max justify-self-end px-3 py-1 rounded-xl cursor-pointer duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-50/10 '>
+              <div className='flex items-center gap-2 sm:col-span-2 text-[.8rem] border w-max justify-self-end px-3 py-1 rounded-lg cursor-pointer duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-50/10 '>
                 <p className=''>ویرایش</p>
                 <CiEdit className="size-[1rem]" />
               </div>
