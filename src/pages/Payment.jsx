@@ -8,11 +8,11 @@ export default function Payment() {
 
   return (
     <div className="dark:bg-dark w-full pb-7">
-         <div className="relative max-w-5xl h-full container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 dark:bg-dark">
+      <div className="relative max-w-5xl h-full container mx-auto p-5 grid grid-cols-1 md:grid-cols-3 dark:bg-dark">
         {/*proje*/}
         <div className="order-2 md:col-span-1 ">
           <div className=" w-full max-w-[600px] mx-auto  mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-xl shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
-            <div className="w-full  h-[245px]  md:h-[205px] rounded-xl p-2">
+            <div className="w-full  h-[350px]  md:h-[170px] lg:h-[230px] rounded-xl p-2">
               <img
                 src={projepimg}
                 alt="profile"
@@ -111,19 +111,17 @@ export default function Payment() {
             </div>
           </div>
 
-          <div className="order-4  col-span-1 md:col-span-2 md:col-start-2 mt-8 w-full max-w-[600px] mx-auto md:ml-auto space-y-6 ">
+          <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 mt-8 w-full max-w-[600px] mx-auto md:ml-auto space-y-6 ">
             <h2 className="text-xl text-gray-800 dark:text-[#F5F5F5] text-right">
               شاید این پروژه‌ها برای شما مفید باشد:
             </h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-5 mt-5">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 msm:grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
               <ProjectItem
                 id={1}
                 img="/images/project1.png"
                 username="Kamraan"
               />
               <ProjectItem id={2} img="/images/project2.png" username="Amin" />
-              {/* <ProjectItem id={2} img="/images/project2.png" username="Amin" /> */}
-              {/* <ProjectItem id={2} img="/images/project2.png" username="Amin" /> */}
             </ul>
           </div>
         </div>

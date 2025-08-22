@@ -19,7 +19,7 @@ export default function ProjectItem({ id, img, username }) {
         <img
           src={img}
           alt=""
-          className="rounded-lg h-[13rem] w-full object-cover "
+          className="rounded-lg h-[16rem] sm:h-[13rem] w-full object-cover "
         />
       </Link>
       <div className="flex items-center justify-between w-full mt-3 ">
