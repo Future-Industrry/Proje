@@ -1,12 +1,21 @@
 import { useEffect, useState } from "react";
 import { AiOutlineExperiment, AiOutlineTrophy } from "react-icons/ai";
+import { BsBoxSeam } from "react-icons/bs";
+import { HiOutlineNewspaper, HiOutlineUserGroup } from "react-icons/hi";
+import {
+  HiComputerDesktop,
+  HiOutlineArchiveBoxArrowDown,
+} from "react-icons/hi2";
 import { ImCreditCard } from "react-icons/im";
 import {
+  IoBookmarksOutline,
   IoCodeSlashOutline,
   IoCodeSlashSharp,
+  IoNewspaperOutline,
   IoSettingsOutline,
 } from "react-icons/io5";
-import { LuUserRound } from "react-icons/lu";
+import { LuClipboardList, LuTicket, LuUserRound } from "react-icons/lu";
+import { MdOutlineArticle } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 export default function SideBar({ isOpen, setIsOpen }) {
@@ -59,27 +68,75 @@ export default function SideBar({ isOpen, setIsOpen }) {
         <li onClick={sidebarHandler}>
           <NavLink to="/panel/transactions" className="p-2 text-[.9rem] w-full">
             <ImCreditCard className="text-xl" />
-            <p>تراکنش ها</p>
+            <p>خرید های من</p>
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
           <NavLink to="/panel/projects" className="p-2 text-[.9rem] w-full">
             <IoCodeSlashSharp className="text-xl" />
-            پروژه ها
+            پروژه های من
+          </NavLink>
+        </li>{" "}
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/*" className="p-2 text-[.9rem] w-full">
+            <IoBookmarksOutline className="text-xl" />
+            ذخیره شده ها
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
           <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
             <AiOutlineTrophy className="text-xl" />
-            <p> دستاورد ها</p>
+            <p>دستاورد های من</p>
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <LuTicket className="text-xl" />
+            <p>تیکت های من</p>
+          </NavLink>
+        </li>
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <IoNewspaperOutline className="text-xl" />
+            <p>تراکنش ها</p>
+          </NavLink>
+        </li>
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <HiOutlineArchiveBoxArrowDown className="text-xl" />
+            <p>تیکت ها</p>
+          </NavLink>
+        </li>
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <LuClipboardList className="text-xl" />
+            <p>درخواست توسعه دهنده ها</p>
+          </NavLink>
+        </li>
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <HiOutlineUserGroup className="text-xl" />
+            <p>کاربران</p>
+          </NavLink>
+        </li>
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <BsBoxSeam className="text-xl" />
+            <p>پروژه ها</p>
+          </NavLink>
+        </li>
+        <li onClick={sidebarHandler}>
+          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+            <MdOutlineArticle className="text-xl" />
+            <p>مقاله ها</p>
+          </NavLink>
+        </li>
+        {/* <li onClick={sidebarHandler}>
           <NavLink to="/panel/setting" className="p-2 text-[.9rem] w-full">
             <IoSettingsOutline className="text-xl" />
             <p>تنظیمات</p>
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
