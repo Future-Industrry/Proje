@@ -8,7 +8,7 @@ export default function UserInfo() {
   const [isOpen, setIsOpen] = useState(1);
   return (
     <>
-      <div className="flex bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex h-svh bg-white dark:bg-dark  text-black dark:text-white">
         {/*sadebar*/}
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
 

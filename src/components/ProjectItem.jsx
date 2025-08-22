@@ -10,7 +10,11 @@ export default function ProjectItem({ id, img, username }) {
   });
 
   return (
-    <li>
+    <li
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay={`${id}00`}
+    >
       <Link to="" className="flex items-center justify-center flex-col">
         <img
           src={img}

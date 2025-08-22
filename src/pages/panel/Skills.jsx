@@ -7,7 +7,7 @@ export default function Skills() {
   const [isOpen, setIsOpen] = useState(1)
   return (
     <>
-      <div className="flex bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex h-svh bg-white dark:bg-dark  text-black dark:text-white">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div className={`${isOpen?"w-[100%] lg:w-[80%] xl:w-[83%] ":"w-[100%]"} `}>
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />

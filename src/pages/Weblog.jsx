@@ -41,7 +41,7 @@ export default function Weblog() {
               }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper w-full overflow-hidden h-[15rem] lg:h-[20rem] md:h-[25rem] rounded-2xl **:rounded-2xl"
+              className="mySwiper w-full overflow-hidden h-[13rem] lg:h-[20rem] md:h-[25rem] rounded-2xl **:rounded-2xl"
             >
               <SwiperSlide className="h-full w-full *:h-full ">
                 <img src="/images/article8.png" alt="" className="w-full" />
@@ -70,7 +70,7 @@ export default function Weblog() {
               }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper w-full overflow-hidden h-[15rem] lg:h-[20rem] md:h-[25rem] rounded-2xl **:rounded-2xl"
+              className="mySwiper w-full overflow-hidden h-[13rem] lg:h-[20rem] md:h-[25rem] rounded-2xl **:rounded-2xl"
             >
               <SwiperSlide className="h-full w-full *:h-full ">
                 <img src="/images/article7.png" alt="" className="w-full" />

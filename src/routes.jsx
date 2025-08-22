@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import LoginRegister from "./pages/LoginRegister";
 import Page404 from "./pages/Page404";
 import Saves from "./pages/Saves";
-import PaymentPage from "./pages/PaymentPage"
 import PrivateRoute from "./components/PrivateRoute";
 
 //panel
@@ -18,6 +17,7 @@ import Weblog from "./pages/Weblog";
 import MoreArticles from "./pages/MoreArticles";
 import ArticleInfo from "./pages/ArticleInfo";
 import ProductDetails from "./pages/ProductDetails";
+import Payment from "./pages/Payment";
 
 
 let routes = [
@@ -27,7 +27,7 @@ let routes = [
     { path: "/aboutus/*", element: <AboutUs /> },
     { path: "/Saves", element: <Saves /> },
     { path: "/profile", element: <Profile /> },
-    { path: "/PaymentPage", element: <PaymentPage /> },
+    { path: "/Payment", element: <Payment /> },
     { path: "/Weblog", element: <Weblog /> },
     { path: "/MoreArticles", element: <MoreArticles /> },
     { path: "/ArticleInfo", element: <ArticleInfo /> },
