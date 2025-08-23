@@ -16,62 +16,55 @@ import {
 } from "lucide-react";
 
 //roles:  3 owner - 2 admin - 1 dev - 0 user
-const users = [
+const projects = [
   {
     field: 0,
     id: 34556,
-    name: "علی",
-    email: "john@example.com",
+    developer: "علی",
     image: "project1.png",
-    role: 3,
+    title: "پروژه سایت فیلم و سریال",
   },
   {
     field: 1,
     id: 97834,
-    name: "mmd",
-    email: "john@example.com",
+    developer: "mmd",
     image: "project2.png",
-    role: 2,
+    title: "پروژه سایت فیلم و سریال",
   },
   {
     field: 2,
     id: 32314,
-    name: "sara",
-    email: "john@example.com",
+    developer: "sara",
     image: "project3.png",
-    role: 2,
+    title: "پروژه سایت فیلم و سریال",
   },
   {
     field: 3,
     id: 47809,
-    name: "mahdi",
-    email: "john@example.com",
+    developer: "mahdi",
     image: "project4.png",
-    role: 1,
+    title: "پروژه سایت فیلم و سریال",
   },
   {
     field: 4,
     id: 35345,
-    name: "zahra",
-    email: "john@example.com",
+    developer: "zahra",
     image: "project5.png",
-    role: 0,
+    title: "پروژه سایت فیلم و سریال",
   },
   {
     field: 5,
     id: 60881,
-    name: "omid",
-    email: "john@example.com",
+    developer: "omid",
     image: "project6.png",
-    role: 0,
+    title: "پروژه سایت فیلم و سریال",
   },
   {
     field: 6,
     id: 78762,
-    name: "mahtab",
-    email: "mark@gmail.com",
+    developer: "mahtab",
     image: "project7.png",
-    role: 0,
+    title: "پروژه سایت فیلم و سریال",
   },
 ];
 
@@ -97,14 +90,21 @@ export default function Projects() {
           <div className="px-5">
             <div className="text-right">
               <Grid
-                data={users.map((u) => [u.field + 1, u.name, u.image, u.id])}
+                data={projects.map((p) => [
+                  p.field + 1,
+                  p.title,
+                  p.developer,
+                  p.image,
+                  p.id,
+                ])}
                 columns={[
                   "ردیف",
-                  "نام کاربری",
+                  "نام پروژه",
+                  "توسعه دهنده",
                   {
                     name: "عکس",
                     formatter: (_, row) => {
-                      const image = row.cells[2].data; // ستون id
+                      const image = row.cells[3].data; // ستون id
 
                       return h("img", {
                         className: "rounded w-[6rem] h-[4rem]",
@@ -116,7 +116,7 @@ export default function Projects() {
                   {
                     name: "عملیات",
                     formatter: (_, row) => {
-                      const id = row.cells[3].data; // ستون id
+                      const id = row.cells[4].data; // ستون id
 
                       return h("div", { className: "flex gap-2" }, [
                         h(
