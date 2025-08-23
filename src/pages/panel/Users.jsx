@@ -87,7 +87,7 @@ export default function Users() {
         >
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
           {/*content of dashboard*/}
-          <div className="px-5 dark:text-white text-black">
+          <div className="px-5">
             <div className="text-right">
               <Grid
                 data={users.map((u) => [
@@ -138,7 +138,7 @@ export default function Users() {
                           "p",
                           {
                             className:
-                              "px-3 py-1 inline rounded text-[.8rem] bg-gray-500/20 text-gray-500",
+                              "px-3 py-1 inline rounded text-[.8rem] bg-gray-500/20 text-gray-500 dark:text-gray-300",
                           },
                           "کاربر عادی"
                         );
@@ -215,20 +215,37 @@ export default function Users() {
                           ),
                         ]);
                       } else if (role === 1) {
-                        return h(
-                          "button",
-                          {
-                            className:
-                              "p-2 rounded cursor-pointer text-[.8rem] bg-gray-500 text-white hover:bg-gray-600",
-                            onClick: () => alert("حذف مالک با ID: " + id),
-                            title: "حذف توسعه دهنده",
-                          },
-                          h("span", {
-                            dangerouslySetInnerHTML: {
-                              __html: renderIcon(ShieldMinus),
+                        return h("div", { className: "flex gap-2" }, [
+                          h(
+                            "button",
+                            {
+                              className:
+                                "p-2 rounded cursor-pointer text-[.8rem] bg-gray-500 text-white hover:bg-gray-600",
+                              onClick: () => alert("حذف مالک با ID: " + id),
+                              title: "حذف توسعه دهنده",
                             },
-                          })
-                        );
+                            h("span", {
+                              dangerouslySetInnerHTML: {
+                                __html: renderIcon(ShieldMinus),
+                              },
+                            })
+                          ),
+                          h(
+                            "button",
+                            {
+                              className:
+                                "p-2 rounded cursor-pointer text-[.8rem] bg-red-500 text-white hover:bg-red-600",
+                              onClick: () =>
+                                alert("بن کردن توسعه دهنده با ID: " + id),
+                              title: "بن",
+                            },
+                            h("span", {
+                              dangerouslySetInnerHTML: {
+                                __html: renderIcon(Trash2),
+                              },
+                            })
+                          ),
+                        ]);
                       } else {
                         return h("div", { className: "flex gap-2" }, [
                           h(
