@@ -14,7 +14,7 @@
 
   --breakpoint-xsm: 400px;
   --breakpoint-msm: 500px;
-  --breakpoint-xmd: 840px;
+  --breakpoint-xmd: 940px;
 }
 
 .fadeInAnimation {
@@ -385,4 +385,15 @@ body {
 }
 .dark .gridjs-input {
   border: none !important;
+}
+
+
+/**/
+ .scrollbar-hide::-webkit-scrollbar {
+  display: none; /* برای Chrome, Safari */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* برای IE و Edge */
+  scrollbar-width: none; /* برای Firefox */
 }

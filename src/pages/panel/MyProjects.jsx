@@ -50,19 +50,19 @@ export default function MyProjects() {
 
   return (
     <>
-      <div className="flex dark:text-white text-black bg-white dark:bg-dark">
+      <div className="flex h-screen dark:text-white text-black bg-white dark:bg-dark">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div
           className={`${
             isOpen ? "w-[100%] lg:w-[80%] xl:w-[83%] " : "w-[100%]"
-          } `}
+          } h-screen overflow-y-scroll scrollbar-hide`}
         >
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
           <div>
             <div className="p-4 space-y-6 rounded-xl w-auto">
               {/* پروژه های من */}
               <div className="border-2 border-[#EEEBEB]  dark:border-[#1B202C] dark:bg-[#1B202C] border-solid shadow-xl shadow-zinc-200/50 rounded-xl dark:shadow-none mt-6">
-                <div className="sticky top-0 bg-[#EEEBEB] z-10 dark:bg-[#333a4b] p-4 flex justify-between items-center ">
+                <div className="sticky top-1 bg-[#EEEBEB] z-10 dark:bg-[#333a4b] p-4 flex justify-between items-center ">
                   <div className="flex gap-2 items-center">
                     {" "}
                     {addProject ? (
@@ -91,6 +91,294 @@ export default function MyProjects() {
                 <div>
                   {!addProject && (
                     <ul className="px-3">
+                      <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
+                        <img
+                          src="/images/project5.png"
+                          alt="طراحی وبسایت رستوران"
+                          className="h-[100px] w-[150px] xsm:w-[230px] xsm:h-[165px] rounded-xl object-cover"
+                        />
+                        <div className="flex items-start flex-col mr-1 gap-2 h-full">
+                          <h2 className="font-bold text-[1rem] xsm:text-[1.2rem] md:text-[1.4rem]  dark:text-[#FFFFFF]  text-black">
+                            طراحی وبسایت رستوران
+                          </h2>
+                          <p className="text-[#999999] font-medium text-[.8rem] lg:text-[1rem] md:text-[.9rem] line-clamp-2 w-[12rem] sm:w-[10rem] md:w-[15rem]  lg:w-[30rem] ">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد، کتابهای زیادی
+                          </p>
+                          <p className="text-[#777] font-medium text-[.7rem] lg:text-[.9rem] md:text-[.8rem]">
+                            تاریخ انتشار : 1404/01
+                          </p>
+                          <div className="flex gap-1 md:gap-1 mt-2">
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Wordpress
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem]  px-3 py-1 rounded-[8px]">
+                              UI/UX
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Figma
+                            </span>
+                          </div>
+                        </div>
+                        <div className="absolute top-[1rem] left-[.5rem] mt-1 flex gap-2">
+                          <button
+                            className="text-[#ff9911] cursor-pointer"
+                            title="ویرایش"
+                          >
+                            <TbEditCircle className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px]" />
+                          </button>
+                          <button
+                            className="text-red-500 cursor-pointer"
+                            title="حذف"
+                          >
+                            <HiOutlineTrash className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px] text" />
+                          </button>
+                        </div>
+                      </li>
+                      <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
+                        <img
+                          src="/images/project5.png"
+                          alt="طراحی وبسایت رستوران"
+                          className="h-[100px] w-[150px] xsm:w-[230px] xsm:h-[165px] rounded-xl object-cover"
+                        />
+                        <div className="flex items-start flex-col mr-1 gap-2 h-full">
+                          <h2 className="font-bold text-[1rem] xsm:text-[1.2rem] md:text-[1.4rem]  dark:text-[#FFFFFF]  text-black">
+                            طراحی وبسایت رستوران
+                          </h2>
+                          <p className="text-[#999999] font-medium text-[.8rem] lg:text-[1rem] md:text-[.9rem] line-clamp-2 w-[12rem] sm:w-[10rem] md:w-[15rem]  lg:w-[30rem] ">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد، کتابهای زیادی
+                          </p>
+                          <p className="text-[#777] font-medium text-[.7rem] lg:text-[.9rem] md:text-[.8rem]">
+                            تاریخ انتشار : 1404/01
+                          </p>
+                          <div className="flex gap-1 md:gap-1 mt-2">
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Wordpress
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem]  px-3 py-1 rounded-[8px]">
+                              UI/UX
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Figma
+                            </span>
+                          </div>
+                        </div>
+                        <div className="absolute top-[1rem] left-[.5rem] mt-1 flex gap-2">
+                          <button
+                            className="text-[#ff9911] cursor-pointer"
+                            title="ویرایش"
+                          >
+                            <TbEditCircle className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px]" />
+                          </button>
+                          <button
+                            className="text-red-500 cursor-pointer"
+                            title="حذف"
+                          >
+                            <HiOutlineTrash className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px] text" />
+                          </button>
+                        </div>
+                      </li>
+                      <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
+                        <img
+                          src="/images/project5.png"
+                          alt="طراحی وبسایت رستوران"
+                          className="h-[100px] w-[150px] xsm:w-[230px] xsm:h-[165px] rounded-xl object-cover"
+                        />
+                        <div className="flex items-start flex-col mr-1 gap-2 h-full">
+                          <h2 className="font-bold text-[1rem] xsm:text-[1.2rem] md:text-[1.4rem]  dark:text-[#FFFFFF]  text-black">
+                            طراحی وبسایت رستوران
+                          </h2>
+                          <p className="text-[#999999] font-medium text-[.8rem] lg:text-[1rem] md:text-[.9rem] line-clamp-2 w-[12rem] sm:w-[10rem] md:w-[15rem]  lg:w-[30rem] ">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد، کتابهای زیادی
+                          </p>
+                          <p className="text-[#777] font-medium text-[.7rem] lg:text-[.9rem] md:text-[.8rem]">
+                            تاریخ انتشار : 1404/01
+                          </p>
+                          <div className="flex gap-1 md:gap-1 mt-2">
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Wordpress
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem]  px-3 py-1 rounded-[8px]">
+                              UI/UX
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Figma
+                            </span>
+                          </div>
+                        </div>
+                        <div className="absolute top-[1rem] left-[.5rem] mt-1 flex gap-2">
+                          <button
+                            className="text-[#ff9911] cursor-pointer"
+                            title="ویرایش"
+                          >
+                            <TbEditCircle className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px]" />
+                          </button>
+                          <button
+                            className="text-red-500 cursor-pointer"
+                            title="حذف"
+                          >
+                            <HiOutlineTrash className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px] text" />
+                          </button>
+                        </div>
+                      </li>
+                      <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
+                        <img
+                          src="/images/project5.png"
+                          alt="طراحی وبسایت رستوران"
+                          className="h-[100px] w-[150px] xsm:w-[230px] xsm:h-[165px] rounded-xl object-cover"
+                        />
+                        <div className="flex items-start flex-col mr-1 gap-2 h-full">
+                          <h2 className="font-bold text-[1rem] xsm:text-[1.2rem] md:text-[1.4rem]  dark:text-[#FFFFFF]  text-black">
+                            طراحی وبسایت رستوران
+                          </h2>
+                          <p className="text-[#999999] font-medium text-[.8rem] lg:text-[1rem] md:text-[.9rem] line-clamp-2 w-[12rem] sm:w-[10rem] md:w-[15rem]  lg:w-[30rem] ">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد، کتابهای زیادی
+                          </p>
+                          <p className="text-[#777] font-medium text-[.7rem] lg:text-[.9rem] md:text-[.8rem]">
+                            تاریخ انتشار : 1404/01
+                          </p>
+                          <div className="flex gap-1 md:gap-1 mt-2">
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Wordpress
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem]  px-3 py-1 rounded-[8px]">
+                              UI/UX
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Figma
+                            </span>
+                          </div>
+                        </div>
+                        <div className="absolute top-[1rem] left-[.5rem] mt-1 flex gap-2">
+                          <button
+                            className="text-[#ff9911] cursor-pointer"
+                            title="ویرایش"
+                          >
+                            <TbEditCircle className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px]" />
+                          </button>
+                          <button
+                            className="text-red-500 cursor-pointer"
+                            title="حذف"
+                          >
+                            <HiOutlineTrash className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px] text" />
+                          </button>
+                        </div>
+                      </li>
+                      <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
+                        <img
+                          src="/images/project5.png"
+                          alt="طراحی وبسایت رستوران"
+                          className="h-[100px] w-[150px] xsm:w-[230px] xsm:h-[165px] rounded-xl object-cover"
+                        />
+                        <div className="flex items-start flex-col mr-1 gap-2 h-full">
+                          <h2 className="font-bold text-[1rem] xsm:text-[1.2rem] md:text-[1.4rem]  dark:text-[#FFFFFF]  text-black">
+                            طراحی وبسایت رستوران
+                          </h2>
+                          <p className="text-[#999999] font-medium text-[.8rem] lg:text-[1rem] md:text-[.9rem] line-clamp-2 w-[12rem] sm:w-[10rem] md:w-[15rem]  lg:w-[30rem] ">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد، کتابهای زیادی
+                          </p>
+                          <p className="text-[#777] font-medium text-[.7rem] lg:text-[.9rem] md:text-[.8rem]">
+                            تاریخ انتشار : 1404/01
+                          </p>
+                          <div className="flex gap-1 md:gap-1 mt-2">
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Wordpress
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem]  px-3 py-1 rounded-[8px]">
+                              UI/UX
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Figma
+                            </span>
+                          </div>
+                        </div>
+                        <div className="absolute top-[1rem] left-[.5rem] mt-1 flex gap-2">
+                          <button
+                            className="text-[#ff9911] cursor-pointer"
+                            title="ویرایش"
+                          >
+                            <TbEditCircle className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px]" />
+                          </button>
+                          <button
+                            className="text-red-500 cursor-pointer"
+                            title="حذف"
+                          >
+                            <HiOutlineTrash className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px] text" />
+                          </button>
+                        </div>
+                      </li>
+                      <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
+                        <img
+                          src="/images/project5.png"
+                          alt="طراحی وبسایت رستوران"
+                          className="h-[100px] w-[150px] xsm:w-[230px] xsm:h-[165px] rounded-xl object-cover"
+                        />
+                        <div className="flex items-start flex-col mr-1 gap-2 h-full">
+                          <h2 className="font-bold text-[1rem] xsm:text-[1.2rem] md:text-[1.4rem]  dark:text-[#FFFFFF]  text-black">
+                            طراحی وبسایت رستوران
+                          </h2>
+                          <p className="text-[#999999] font-medium text-[.8rem] lg:text-[1rem] md:text-[.9rem] line-clamp-2 w-[12rem] sm:w-[10rem] md:w-[15rem]  lg:w-[30rem] ">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                            باشد، کتابهای زیادی
+                          </p>
+                          <p className="text-[#777] font-medium text-[.7rem] lg:text-[.9rem] md:text-[.8rem]">
+                            تاریخ انتشار : 1404/01
+                          </p>
+                          <div className="flex gap-1 md:gap-1 mt-2">
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Wordpress
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF] font-medium  text-[.7rem] md:text-[.8rem]  px-3 py-1 rounded-[8px]">
+                              UI/UX
+                            </span>
+                            <span className="bg-zinc-200/70 dark:bg-[#323232] text-black dark:text-[#FFFFFF]  font-medium text-[.7rem] md:text-[.8rem] px-3 py-1 rounded-[8px]">
+                              Figma
+                            </span>
+                          </div>
+                        </div>
+                        <div className="absolute top-[1rem] left-[.5rem] mt-1 flex gap-2">
+                          <button
+                            className="text-[#ff9911] cursor-pointer"
+                            title="ویرایش"
+                          >
+                            <TbEditCircle className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px]" />
+                          </button>
+                          <button
+                            className="text-red-500 cursor-pointer"
+                            title="حذف"
+                          >
+                            <HiOutlineTrash className="sm:text-[18px] lg:text-[1.4rem] md:text-[25px] text" />
+                          </button>
+                        </div>
+                      </li>
                       <li className="relative flex items-start flex-col sm:items-start xmd:flex-row gap-4 py-4 border-b-1 border-zinc-200 sm:border-zinc-200/10 ">
                         <img
                           src="/images/project5.png"

@@ -90,7 +90,7 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/myTickets" className="p-2 text-[.9rem] w-full">
             <LuTicket className="text-xl" />
             <p>تیکت های من</p>
           </NavLink>
