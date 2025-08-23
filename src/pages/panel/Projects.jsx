@@ -75,7 +75,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="flex h-svh bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex bg-white dark:bg-dark  text-black dark:text-white">
         {/*sadebar*/}
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
 
