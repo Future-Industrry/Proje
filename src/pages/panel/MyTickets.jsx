@@ -29,7 +29,7 @@ export default function MyTickets() {
                     شاید بتونی جوابتو بین این دسته ها پیدا کنی !
                   </p>
                 </div>
-                <ul className="grid gap-3 mt-5 grid-cols-2 *:h-[12rem] sm:grid-cols-3 lg:grid-cols-4 dark:*:bg-white/5 md:*:h-[15rem] *:hover:bg-white/7 *:cursor-pointer *:duration-200 *:rounded-xl *:flex *:items-center *:justify-center *:flex-col *:text-center *:px-3  ">
+                <ul className="grid gap-3 mt-5 grid-cols-2 *:h-[12rem] sm:grid-cols-3 lg:grid-cols-4 dark:*:bg-white/5 md:*:h-[15rem] dark:*:border-0 *:border-1 *:border-zinc-200 *:hover:bg-zinc-100 *:shadow-xl *:shadow-zinc-200/30 dark:*:shadow-none dark:*:hover:bg-white/7 *:cursor-pointer *:duration-200 *:rounded-xl *:flex *:items-center *:justify-center *:flex-col *:text-center *:px-3  ">
                   <li>
                     <img src="/icons/Rectangle1.svg" alt="" />
                     <p className="text-[1rem] md:text-[1.2rem] mt-4">
@@ -127,7 +127,7 @@ export default function MyTickets() {
                       sendTicket
                         ? "bg-red-600 hover:bg-red-700"
                         : "bg-green-600 hover:bg-green-700"
-                    }  duration-300 cursor-pointer px-5 py-2 rounded-lg text-[.8rem] md:text-[.9rem] `}
+                    }  duration-300 cursor-pointer px-5 py-2 rounded-lg text-[.8rem] md:text-[.9rem] text-white `}
                   >
                     {sendTicket ? "برگشت" : " ارسال تیکت جدید"}
                   </button>
@@ -140,7 +140,7 @@ export default function MyTickets() {
                           name=""
                           id=""
                         required
-                          className="placeholder:text-[.9rem] w-full md:w-[20rem] *:bg-zinc-700 *:text-white p-2 outline-0 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 dark:bg-white/5 "
+                          className="placeholder:text-[.9rem] w-full md:w-[20rem] dark:*:bg-zinc-700 dark:*:text-white p-2 outline-0 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 dark:bg-white/5 "
                         >
                           <option value="0" className="text-black">
                             انتخاب کنید
@@ -188,14 +188,14 @@ export default function MyTickets() {
                   </div>
                 ) : (
                   <ul className="grid gap-3 mt-5 grid-cols-2 *:h-[12rem] sm:grid-cols-2 lg:grid-cols-4 md:*:h-[15rem] *:rounded-xl *:flex *:items-center *:justify-center *:flex-col *:text-center *:px-3  ">
-                    <li className=" bg-gray-500/30 border-2 border-gray-600">
+                    <li className=" dark:bg-gray-500/30 bg-zinc-100/70 dark:shadow-none shadow-xl shadow-zinc-200/30 border-1 border-zinc-200 dark:border-gray-600">
                       <HiOutlineTicket className="bg-gray-500/50 border-2 border-gray-500 p-3 size-[4rem] rounded-lg text-[3rem] mb-3" />
                       <p className="text-[.9rem] md:text-[1rem]">همه تیکت ها</p>
                       <p className="text-zinc-400 text-[.8rem] md:text-[.9rem] ">
                         3 مورد
                       </p>
                     </li>
-                    <li className=" bg-gray-500/30 border-2 border-gray-600">
+                    <li className=" dark:bg-gray-500/30 bg-zinc-100/70 dark:shadow-none shadow-xl shadow-zinc-200/30 border-1 border-zinc-200 dark:border-gray-600">
                       <HiOutlineTicket className="bg-red-500/50 border-2 border-red-600 p-3 size-[4rem] rounded-lg text-[3rem] mb-3" />
                       <p className="text-[.9rem] md:text-[1rem]">
                         پاسخ داده نشده
@@ -204,7 +204,7 @@ export default function MyTickets() {
                         2 مورد
                       </p>
                     </li>
-                    <li className=" bg-gray-500/30 border-2 border-gray-600">
+                    <li className=" dark:bg-gray-500/30 bg-zinc-100/70 dark:shadow-none shadow-xl shadow-zinc-200/30 border-1 border-zinc-200 dark:border-gray-600">
                       <HiOutlineTicket className="bg-yellow-500/50 border-2 border-yellow-600 p-3 size-[4rem] rounded-lg text-[3rem] mb-3" />
                       <p className="text-[.9rem] md:text-[1rem]">
                         پاسخ داده شده
@@ -213,7 +213,7 @@ export default function MyTickets() {
                         1 مورد
                       </p>
                     </li>
-                    <li className=" bg-gray-500/30 border-2 border-gray-600">
+                    <li className=" dark:bg-gray-500/30 bg-zinc-100/70 dark:shadow-none shadow-xl shadow-zinc-200/30 border-1 border-zinc-200 dark:border-gray-600">
                       <HiOutlineTicket className="bg-green-500/50 border-2 border-green-600 p-3 size-[4rem] rounded-lg text-[3rem] mb-3" />
                       <p className="text-[.9rem] md:text-[1rem]">
                         در انتظار پاسخ
@@ -227,7 +227,7 @@ export default function MyTickets() {
               </div>
 
               <ul className="mt-5">
-                <li className="relative border-r-5 dark:bg-white/5 border-r-red-500 rounded-xl border-2 border-zinc-700 p-4 pb-10 ">
+                <li className="relative border-r-7 dark:bg-white/5 !border-r-red-500 rounded-xl border-2 dark:border-zinc-700 border-zinc-200 p-4 pb-10 ">
                   <p className="text-[1rem] md:text-[1.2rem]">مشکل پرداخت</p>
                   <p className="text-[.9rem] md:text-[1rem] text-zinc-500 leading-7 text-justify mb-4">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
