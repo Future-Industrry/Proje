@@ -114,7 +114,7 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/users" className="p-2 text-[.9rem] w-full">
             <HiOutlineUserGroup className="text-xl" />
             <p>کاربران</p>
           </NavLink>

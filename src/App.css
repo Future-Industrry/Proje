@@ -300,3 +300,29 @@ body{
   border-radius: 12px;
   opacity: 1;
 }
+
+/* برای همه جدول‌ها */
+.gridjs-input .gridjs-search-input{
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: right;
+  direction: rtl;
+}
+.gridjs-input:focus{
+  box-shadow: none !important;
+}
+
+.gridjs-th-content,.gridjs-td{
+  direction: rtl;
+  text-align: right;
+}
+
+.gridjs-footer{
+  direction: ltr;
+}
+
+.gridjs-head{
+  display: flex;
+  margin-top: 1rem;
+}

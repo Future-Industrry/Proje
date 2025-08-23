@@ -18,6 +18,7 @@ import MoreArticles from "./pages/MoreArticles";
 import ArticleInfo from "./pages/ArticleInfo";
 import ProductDetails from "./pages/ProductDetails";
 import Payment from "./pages/Payment";
+import Users from "./pages/panel/Users";
 
 
 let routes = [
@@ -39,6 +40,7 @@ let routes = [
     { path: "/panel/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
     { path: "/panel/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
     { path: "/panel/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
+    { path: "/panel/users", element: <PrivateRoute><Users /></PrivateRoute> },
 ]
 
 export default routes
