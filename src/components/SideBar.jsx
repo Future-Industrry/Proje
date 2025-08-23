@@ -72,7 +72,7 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/projects" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/MyProjects" className="p-2 text-[.9rem] w-full">
             <IoCodeSlashSharp className="text-xl" />
             پروژه های من
           </NavLink>
@@ -120,7 +120,7 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/projects" className="p-2 text-[.9rem] w-full">
             <BsBoxSeam className="text-xl" />
             <p>پروژه ها</p>
           </NavLink>

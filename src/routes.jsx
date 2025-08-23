@@ -19,6 +19,7 @@ import ArticleInfo from "./pages/ArticleInfo";
 import ProductDetails from "./pages/ProductDetails";
 import Payment from "./pages/Payment";
 import Users from "./pages/panel/Users";
+import MyProjects from "./pages/panel/MyProjects";
 
 
 let routes = [
@@ -37,10 +38,11 @@ let routes = [
     { path: "/panel/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
     { path: "/panel/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
     { path: "/panel/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
-    { path: "/panel/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
+    { path: "/panel/MyProjects", element: <PrivateRoute><MyProjects /></PrivateRoute> },
     { path: "/panel/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
     { path: "/panel/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
     { path: "/panel/users", element: <PrivateRoute><Users /></PrivateRoute> },
+    { path: "/panel/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
 ]
 
 export default routes
