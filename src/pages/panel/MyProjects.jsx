@@ -78,7 +78,7 @@ export default function MyProjects() {
                   <button
                     onClick={() => setAddProject(!addProject)}
                     title="افزودن یک پروژه جدید"
-                    className="flex items-center gap-1 md:gap-2 hover:duration-300 hover:bg-[#08a5de] bg-[#0AADE9] text-white cursor-pointer text-[.7rem] md:text-[.9rem] py-1.5 px-3 rounded-[8px]"
+                    className="flex items-center gap-1 md:gap-2 duration-300 hover:bg-green-700 bg-green-600 text-white cursor-pointer text-[.7rem] md:text-[.9rem] py-1.5 px-3 rounded-lg"
                   >
                     {addProject ? (
                       <IoMdClose className="text-[18px] lg:text-[1.3rem] md:text-[25px]" />
@@ -171,9 +171,9 @@ export default function MyProjects() {
                             <select
                               name=""
                               id=""
-                              className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                              className="placeholder:text-[.9rem] *:bg-zinc-700 *:text-white p-2 outline-0 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
                             >
-                              <option value="" className="text-black">
+                              <option value="0" className="text-black">
                                 انتخاب کنید
                               </option>
                               <option value="" className="text-black">
@@ -184,6 +184,12 @@ export default function MyProjects() {
                               </option>
                               <option value="" className="text-black">
                                 اپلیکیشن دسکتاپ
+                              </option>
+                              <option value="" className="text-black">
+                                ربات
+                              </option>
+                              <option value="" className="text-black">
+                                هوش مصنوعی
                               </option>
                               <option value="" className="text-black">
                                 گرافیک
@@ -261,7 +267,7 @@ export default function MyProjects() {
                                 <ul className="space-y-1 text-sm">
                                   {files.map((file, i) => (
                                     <li key={i} className="truncate">
-                                      📄 {file.name.slice(1,20)}... {""}
+                                      📄 {file.name.slice(1, 20)}... {""}
                                       <span className="text-gray-400">
                                         ({file.size} bytes)
                                       </span>
