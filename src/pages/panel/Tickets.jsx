@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SideBar from "../../components/SideBar";
 import TopBar from "../../components/TopBar";
 
-export default function Transactions() {
+export default function Tickets() {
   const [isOpen, setIsOpen] = useState(1);
 
   return (
@@ -17,7 +17,7 @@ export default function Transactions() {
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
           <div className="p-5">
             {/*کداتو اینجا بزن*/}
-            <p>Transactions</p>
+            <p>Tickets</p>
           </div>
         </div>
       </div>

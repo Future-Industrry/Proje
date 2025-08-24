@@ -66,13 +66,13 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/transactions" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/myTransactions" className="p-2 text-[.9rem] w-full">
             <ImCreditCard className="text-xl" />
             <p>خرید های من</p>
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/MyProjects" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/myProjects" className="p-2 text-[.9rem] w-full">
             <IoCodeSlashSharp className="text-xl" />
             پروژه های من
           </NavLink>
@@ -96,19 +96,19 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/transactions" className="p-2 text-[.9rem] w-full">
             <IoNewspaperOutline className="text-xl" />
             <p>تراکنش ها</p>
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/tickets" className="p-2 text-[.9rem] w-full">
             <HiOutlineArchiveBoxArrowDown className="text-xl" />
             <p>تیکت ها</p>
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/requests" className="p-2 text-[.9rem] w-full">
             <LuClipboardList className="text-xl" />
             <p>درخواست توسعه دهنده ها</p>
           </NavLink>
@@ -126,7 +126,7 @@ export default function SideBar({ isOpen, setIsOpen }) {
           </NavLink>
         </li>
         <li onClick={sidebarHandler}>
-          <NavLink to="/panel/achievements" className="p-2 text-[.9rem] w-full">
+          <NavLink to="/panel/articles" className="p-2 text-[.9rem] w-full">
             <MdOutlineArticle className="text-xl" />
             <p>مقاله ها</p>
           </NavLink>
