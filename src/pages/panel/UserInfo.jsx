@@ -191,8 +191,12 @@ export default function UserInfo() {
                     className="placeholder:text-[.9rem] p-3 outline-0 w-full rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 mt-2"
                   ></textarea>
                   <div className="flex items-center flex-wrap gap-1">
-                    <button className="flex items-center justify-center gap-2 bg-yellow-400 cursor-pointer duration-300 hover:bg-yellow-500 p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 ">
+                    <button className="flex items-center justify-center gap-2 bg-primary/80 cursor-pointer duration-300 hover:bg-primary p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 ">
                       ویرایش
+                      {/* <IoMdCheckmark className="text-[1.1rem]" /> */}
+                    </button>
+                      <button className="flex items-center justify-center gap-2 bg-green-600 cursor-pointer duration-300 hover:bg-green-500 p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 ">
+                      تکمیل پروفایل
                       {/* <IoMdCheckmark className="text-[1.1rem]" /> */}
                     </button>
                   </div>

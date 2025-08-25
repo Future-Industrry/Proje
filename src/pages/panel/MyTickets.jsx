@@ -125,8 +125,8 @@ export default function MyTickets() {
                     onClick={() => setSendTicket(!sendTicket)}
                     className={`${
                       sendTicket
-                        ? "bg-red-600 hover:bg-red-700"
-                        : "bg-green-600 hover:bg-green-700"
+                        ? "bg-red-600 hover:bg-red-500"
+                        : "bg-green-600 hover:bg-green-500"
                     }  duration-300 cursor-pointer px-5 py-2 rounded-lg text-[.8rem] md:text-[.9rem] text-white `}
                   >
                     {sendTicket ? "برگشت" : " ارسال تیکت جدید"}

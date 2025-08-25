@@ -69,7 +69,7 @@ export default function Tickets() {
 
   return (
     <>
-      <div className="flex bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex h-screen bg-white dark:bg-dark  text-black dark:text-white">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div
           className={`${

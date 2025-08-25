@@ -97,7 +97,7 @@ export default function Articles() {
 
   return (
     <>
-      <div className="flex h-auto bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex h-screen bg-white dark:bg-dark  text-black dark:text-white">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div
           className={`${
@@ -295,7 +295,7 @@ export default function Articles() {
                   >
                     <button
                       onClick={() => setAddArticle(true)}
-                      className="absolute left-0 top-6 px-3 py-2 z-50 bg-green-600 cursor-pointer text-white text-[.9rem] rounded-lg hover:bg-green-700"
+                      className="absolute left-0 top-6 px-3 py-2 z-50 bg-green-600 duration-300 cursor-pointer text-white text-[.9rem] rounded-lg hover:bg-green-500"
                     >
                       مقاله جدید
                     </button>

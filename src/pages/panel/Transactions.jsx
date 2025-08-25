@@ -98,7 +98,7 @@ export default function Transactions() {
 
   return (
     <>
-      <div className="flex h-auto bg-white dark:bg-dark  text-black dark:text-white">
+      <div className="flex h-screen bg-white dark:bg-dark  text-black dark:text-white">
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <div
           className={`${
