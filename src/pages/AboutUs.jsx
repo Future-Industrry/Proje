@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { BsHeartPulse } from "react-icons/bs";
+import { GiStumpRegrowth } from "react-icons/gi";
+import { LuChartSpline } from "react-icons/lu";
 import { Link, NavLink, useParams } from "react-router-dom";
 
 export default function AboutUs() {
@@ -12,9 +15,9 @@ export default function AboutUs() {
     <>
       {/*header*/}
       <div className="flex justify-center w-[100%] bg-white dark:bg-dark">
-        <div className="w-[100%] lg:w-[80%] md:w-[90%] bg-white dark:bg-dark flex items-center justify-center flex-col p-5 gap-5">
+        <div className="container bg-white dark:bg-dark flex items-center justify-center flex-col p-5 gap-5">
 
-          <ul className="aboutList sticky top-[1rem] flex items-center justify-between dark:bg-white/10 bg-dark/20 dark:*:text-white  *:text-dark backdrop-blur-sm w-[25rem] lg:w-[30rem] p-3 px-2 rounded-full ">
+          <ul className="aboutList sticky top-[1rem] flex items-center justify-between shadow-xl dark:shadow-white/5 dark:bg-white/10 bg-dark/10 dark:*:text-white  *:text-dark backdrop-blur-sm w-[25rem] lg:w-[30rem] p-3 px-2 rounded-full ">
             <li className="">
               <a
                 href="#perspective"
@@ -90,33 +93,36 @@ export default function AboutUs() {
             </p>
             <ul className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 mt-5 place-content-center place-items-center gap-3 ">
               <li className=" bg-zinc-400/10 p-5 rounded-4xl flex flex-col items-center justify-center text-justify gap-3">
-                <div className="rounded-full bg-primary p-5 size-[6rem]">
-                  <img src="/public/icons/values0.png" className=" " alt="" />
+                <div className="rounded-full flex items-center justify-center *:text-white bg-primary p-5 size-[6rem]">
+                  {/* <img src="/public/icons/values0.png" className=" " alt="" /> */}
+                  <BsHeartPulse />
                 </div>{" "}
                 <p className="text-[30px]">همدلی</p>
-                <p className="text-[18px] leading-7 text-dark/70 dark:text-white text-center">
+                <p className="text-[16px] leading-7 text-dark/70 dark:text-white text-center">
                   داشتن حس همدلی در کارهامون و درک کردن همکارامون به عنوان یه
                   انسان دیگه برامون اهمیت بالایی داره تا همیشه حس خوبی از کار
                   کردن با هم‌تیمی‌ها داشته باشیم.
                 </p>
               </li>
               <li className=" bg-zinc-400/10 p-5 rounded-4xl flex flex-col items-center justify-center text-justify gap-3">
-                <div className="rounded-full bg-primary p-5 size-[6rem]">
-                  <img src="/public/icons/values1.png" className=" " alt="" />
+                <div className="rounded-full flex items-center justify-center *:text-white bg-primary p-5 size-[6rem]">
+                  {/* <img src="/public/icons/values1.png" className=" " alt="" /> */}
+                  <LuChartSpline />
                 </div>{" "}
                 <p className="text-[30px]">تاثیر گذاری</p>
-                <p className="text-[18px] leading-7 text-dark/70 dark:text-white text-center">
+                <p className="text-[16px] leading-7 text-dark/70 dark:text-white text-center">
                   داشتن حس همدلی در کارهامون و درک کردن همکارامون به عنوان یه
                   انسان دیگه برامون اهمیت بالایی داره تا همیشه حس خوبی از کار
                   کردن با هم‌تیمی‌ها داشته باشیم.
                 </p>
               </li>
               <li className=" bg-zinc-400/10 p-5 rounded-4xl flex flex-col items-center justify-center text-justify gap-3">
-                <div className="rounded-full bg-primary p-5 size-[6rem]">
-                  <img src="/public/icons/values2.png" className=" " alt="" />
+                <div className="rounded-full flex items-center justify-center *:text-white bg-primary p-5 size-[6rem]">
+                  {/* <img src="/public/icons/values2.png" className=" " alt="" /> */}
+                  <GiStumpRegrowth />
                 </div>{" "}
                 <p className="text-[30px]">رشد و یادگیری</p>
-                <p className="text-[18px] leading-7 text-dark/70 dark:text-white text-center">
+                <p className="text-[16px] leading-7 text-dark/70 dark:text-white text-center">
                   داشتن حس همدلی در کارهامون و درک کردن همکارامون به عنوان یه
                   انسان دیگه برامون اهمیت بالایی داره تا همیشه حس خوبی از کار
                   کردن با هم‌تیمی‌ها داشته باشیم.

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 import SimilarProject from "../components/SimilarProject";
 
-import postcart1 from '../assets/paymentimg/proje1.png'
-import postcart2 from '../assets/paymentimg/proje2.png'
-import postcart3 from '../assets/paymentimg/proje3.jpg'
-import projepimg from '../assets/paymentimg/projep1.png'
-import profimg from '../assets/paymentimg/profile1.jpg'
+import postcart1 from '/images/proje1.png'
+import postcart2 from '/images/proje2.png'
+import postcart3 from '/images/proje3.jpg'
+import projepimg from '/images/projep1.png'
+import profimg from '/images/profile1.jpg'
 
 export default function PaymentPage() {
   const imagescart = [
@@ -17,17 +17,17 @@ export default function PaymentPage() {
   const [selected, setSelected] = useState("");
   return (
 
-    <div className=" max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 rtl md:relative">
+    <div className="relative max-w-5xl  container mx-auto  p-6 grid grid-cols-1 md:grid-cols-3 ">
 
   {/* پروفایل */}
-  <div className="order-1 md:col-span-3 md:order-1">
+  <div className="order-1 md:col-span-3 ">
   <div className="flex sm:justify-center items-center gap-8 w-full max-w-md mb-2.5">
 
-<div className="w-[110px] h-[110px] rounded-full overflow-hidden border-2 border-[#F5F5F5]">
+<div className="w-[85px] h-[85px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden border-2 border-[#F5F5F5]">
   <img
     src={profimg}
     alt="User profile"
-    className="w-full h-full object-cover"
+    className=" w-full h-full object-cover"
   />
 </div>
 
@@ -39,16 +39,16 @@ export default function PaymentPage() {
 
 </div>
   </div>
+{/*proje*/}
+  <div className="order-2 md:col-span-1 ">
 
-  <div className="order-3 md:col-span-1 md:order-2">
-
-  <div className="relative w-[100%] max-w-[420px] mt-6 md:mt-0 md:max-w-[323px] mx-auto h-[655px] md:h-[665px] sm:h-[740px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
+  <div className=" w-full max-w-[600px] mx-auto  mt-6 md:mt-5 md:w-[90%]  h-[655px] md:h-[645px] sm:h-[750px] bg-[#F7F7F7]  dark:bg-[#1B202C] rounded-[15px] shadow-[0px_0px_11px_rgba(0,0,0,0.15)] ">
    
-   <div className="w-full h-[250px] sm:h-[300px] md:h-[205px] rounded-t-[15px] overflow-hidden">
+   <div className="w-full  h-[245px]  md:h-[205px] rounded-t-[15px] ">
      <img
        src={projepimg}
        alt="profile"
-       className="w-full h-full object-cover"
+       className="w-full h-full rounded-t-[15px]"
      />
    </div>
 
@@ -92,9 +92,9 @@ export default function PaymentPage() {
   </div>
 
   {/* فرم پرداخت - دوم در موبایل */}
-  <div className="order-2 md:col-span-2 space-y-6 md:order-3 md:justify-self-start">
+  <div className="order-3 md:col-span-2 space-y-2 justify-self-center w-full">
 
-  <div className="relative md:w-[590px] w-full max-w-[790px] mx-auto bg-[#F5F5F5] shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px]  px-14 py-8 dark:bg-[#1B202C]">
+  <div className=" w-full max-w-[600px] mx-auto md:ml-auto bg-[#F5F5F5] mt-5 shadow-[0_0_5px_rgba(0,0,0,0.15)] rounded-[20px] px-6 py-4  md:px-14 md:py-8 dark:bg-[#1B202C]">
 
 <h2 className="text-[#373D37] font-bold text-[18px] sm:text-xl md:text-[20px] text-right mb-6 dark:text-[#F1FFED]">
   انتخاب درگاه پرداخت
@@ -135,44 +135,44 @@ export default function PaymentPage() {
 
 
   <div
-      className="w-full max-w-[600px] mx-auto mt-5 bg-[#F5F5F5] dark:bg-[#1B202C] rounded-[20px] px-10 py-6 relative rtl"
-      dir="rtl"
+      className="w-full max-w-[600px] mx-auto md:ml-auto mt-5 bg-[#F5F5F5] dark:bg-[#1B202C] rounded-[20px] px-4 py-6 md:px-10 md:py-6  "
+    
     >
  
-      <h2 className="text-[#373D37] dark:text-[#F1FFED] text-[18px] md:text-[20px] font-bold leading-[28px] text-right mb-6">
+      <h2 className="text-[#373D37] dark:text-[#F1FFED]  text-[18px] md:text-[20px] font-bold leading-[28px] text-right mb-6">
         کد تخفیف دارید؟
       </h2>
 
     
-      <div className="flex flex-row-reverse  md:flex-row-reverse  gap-4 md:gap-[20px] md:items-start items-center space-x-2">
+      <div className="flex flex-row-reverse    gap-4 md:gap-[15px] md:items-start items-center">
      
-        <button className="text-[#0AADE9] w-[106px]  font-medium text-[1.1rem] md:text-[1.2rem] leading-[28px]">
+        <button className="text-[#0AADE9] w-[150px]  font-medium text-[1rem] md:text-[1.2rem] leading-[28px]">
           بررسی کد
         </button>
   <input
           type="text"
           placeholder="کد تخفیف را وارد کنید"
-          className="w-full md:w-[580px] h-[50px] md:h-[47px] dark:text-black bg-[#E1E1E1] dark:bg-[#E6E4E4] rounded-[20px] px-4 text-right text-sm md:text-base outline-none"
+          className="w-full md:w-[580px] h-[50px] md:h-[47px] dark:text-black bg-[#E1E1E1] dark:bg-[#E6E4E4] rounded-[20px] px-2 text-right text-sm md:text-base outline-none"
         /> 
         
         
       </div>
     </div>
-  
-
-  </div>
-
-  {/* پروژه‌های مشابه - سوم در موبایل */}
-  <div className="order-4 col-span-1 md:col-span-2 md:col-start-2 md:absolute md:top-[540px] mx-auto space-y-6 md:order-4">
+ 
+  <div className="order-4  col-span-1 md:col-span-2 md:col-start-2 mt-8 w-full max-w-[600px] mx-auto md:ml-auto space-y-6 ">
     <h2 className="text-xl text-gray-800 dark:text-[#F5F5F5] font-bold mb-4 text-right">
       شاید این پروژه‌ها برای شما مفید باشد:
     </h2>
-    <div className="grid grid-cols-2  gap-8 md:gap-4 sm:grid-cols-3 md:grid-cols-3 ">
+    <div className="absolute grid grid-cols-2 gap-8 md:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
       {imagescart.map((img, index) => (
         <SimilarProject key={index} imageUrl={img} />
       ))}
     </div>
   </div>
+
+  </div>
+
+  
 
 
   

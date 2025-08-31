@@ -5,76 +5,202 @@ import { CiEdit } from "react-icons/ci";
 import { LiaUserSolid } from "react-icons/lia";
 
 export default function UserInfo() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [isOpen, setIsOpen] = useState(1);
   return (
     <>
-      <div className="flex *:h-[100vh] ">
+      <div className="flex bg-white dark:bg-dark  text-black dark:text-white">
+        {/*sadebar*/}
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className="w-[100%]">
-          <div
-            className={`bg-dark/50 w-full absolute ${
-              isOpen ? "h-full" : "h-[0]"
-            } `}
-            onClick={() => setIsOpen(!isOpen)}
-          ></div>
+
+        {/*content*/}
+        <div
+          className={`${
+            isOpen ? "w-[100%] lg:w-[80%] xl:w-[83%] " : "w-[100%]"
+          } `}
+        >
           <TopBar isOpen={isOpen} setIsOpen={setIsOpen} />
-          <div className="p-5">
-            <div className="shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] w-full h-[80vh] rounded-2xl p-3 ">
-              <div className="flex items-center justify-between h-[3rem] *:flex *:items-center *:justify-center *:gap-1">
-                <div className="">
-                  <LiaUserSolid className="size-[2.2rem]" />
-                  <p className="text-[20px] lg:text-[30px] ">اطلاعات فردی : </p>
-                </div>
-                <div className="border-2 border-zinc-300 px-3 py-1 rounded-[.7rem] cursor-pointer hover:bg-zinc-300 duration-300 ">
-                  <p className="text-[12px] lg:text-[16px] ">ویرایش</p>
-                  <CiEdit className="size-[1.2rem]" />
-                </div>
+          {/*content of dashboard*/}
+          <div className="p-5 dark:text-white text-black ">
+            <div className="flex flex-col bg-white dark:bg-[#1B202C] py-6 px-10 gap-7 rounded-xl sm:gap-y-7 shadow-[0_3px_15px_5px_rgba(0,0,0,0.1)] sm:gap-x-0 sm:grid-cols-[25%_25%_25%_25%]">
+              <div className="flex items-center gap-1 sm:col-span-2">
+                <LiaUserSolid className="sm:size-[2.2rem] size-7" />
+                <p className=" font-IranYekanBold text-[1rem]">اطلاعات فردی</p>
               </div>
-              <div className="grid lg:grid-cols-2 py-3 md:grid-cols-2 sm:grid-cols-1 ">
-                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-3 *:border-b-2 *:border-zinc-300">
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>نام</p>
-                    <p>محمد</p>
+
+              <div className="w-full  ">
+                <form className="w-full">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-5 w-full **:focus:outline-primary">
+                    <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        نام
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        placeholder="نام خود را بنویسید..."
+                      />
+                    </div>
+                    
+                    <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        نام خانوادگی
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        placeholder="نام خانوادگی خود را بنویسید..."
+                      />
+                    </div>
+
+                      <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        سطح کاربری
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        disabled
+                        className="placeholder:text-[.9rem] cursor-no-drop p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        value="کاربر عادی"
+                      />
+                    </div>
+
+                    <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        تاریخ تولد
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        placeholder="تاریخ تولد خود را بنویسید..."
+                      />
+                    </div>
+
+                    <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        کدملی
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        placeholder="کدملی خود را بنویسید..."
+                      />
+                    </div>
+
+                    <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        شماره تلفن
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        placeholder="شماره تلفن خود را بنویسید..."
+                      />
+                    </div>
+
+                    <div className="flex items-stert flex-col gap-3">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        تحصیلات
+                      </label>
+                      <select
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] *:bg-zinc-700 *:text-white p-2 outline-0 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                      >
+                        <option value="0" className="text-black">
+                          انتخاب کنید
+                        </option>
+                        <option value="" className="text-black">
+                          دیپلم
+                        </option>
+                        <option value="" className="text-black">
+                          فوق دیپلم
+                        </option>
+                        <option value="" className="text-black">
+                          لیسانس
+                        </option>
+                        <option value="" className="text-black">
+                          فوق لیسانس
+                        </option>
+                        <option value="" className="text-black">
+                          دکتری
+                        </option>
+                      </select>
+                    </div>
+
+                    <div className="flex items-stert flex-col gap-3 mb-5">
+                      <label
+                        htmlFor=""
+                        className="text-zinc-700 dark:text-zinc-400 "
+                      >
+                        محل سکونت
+                      </label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        className="placeholder:text-[.9rem] p-2 rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 "
+                        placeholder="محل سکونت خود را بنویسید..."
+                      />
+                    </div>
                   </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>نام خوانوادگی</p>
-                    <p>امین پور</p>
+
+                  <label
+                    htmlFor=""
+                    className="text-zinc-700 dark:text-zinc-400"
+                  >
+                    درباره من
+                  </label>
+                  <textarea
+                    name=""
+                    id=""
+                    rows={5}
+                    placeholder="توضیحی درباره خودتان بنویسید..."
+                    className="placeholder:text-[.9rem] p-3 outline-0 w-full rounded-lg !border-2 !border-zinc-200/70 dark:!border-zinc-200/20 mt-2"
+                  ></textarea>
+                  <div className="flex items-center flex-wrap gap-1">
+                    <button className="flex items-center justify-center gap-2 bg-primary/80 cursor-pointer duration-300 hover:bg-primary p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 ">
+                      ویرایش
+                      {/* <IoMdCheckmark className="text-[1.1rem]" /> */}
+                    </button>
+                      <button className="flex items-center justify-center gap-2 bg-green-600 cursor-pointer duration-300 hover:bg-green-500 p-2 px-5 rounded-lg text-white text-[.9rem] mt-5 ">
+                      تکمیل پروفایل
+                      {/* <IoMdCheckmark className="text-[1.1rem]" /> */}
+                    </button>
                   </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>سن</p>
-                    <p>20 سال</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>تولد</p>
-                    <p>1384/01/09</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>کد ملی</p>
-                    <p>0987654321</p>
-                  </div>
-                </div>
-                <div className="*:grid *:grid-cols-2 *:gap-3 *:mb-7 *:p-3 *:border-b-2 *:border-zinc-300  ">
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>تلفن</p>
-                    <p>09151234567</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>اکانت</p>
-                    <p>توسعه دهنده</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>تحصیلات</p>
-                    <p>کاردانی نرم افزار</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>مدت عضویت</p>
-                    <p>1 روز</p>
-                  </div>
-                  <div className="*:not-odd:text-zinc-400 *:not-odd:text-[.9rem] *:not-even:text-[1.1rem] ">
-                    <p>محل سکونت</p>
-                    <p>مشهد</p>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

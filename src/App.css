@@ -5,34 +5,42 @@
   --color-primaryLight: #ffa50020;
   --color-secondery: #2e3192;
   --color-thirdry: #fff7e3;
-  --color-dark: #02142c;
+  --color-dark: #0d1321;
   --color-light: #eee;
-  --color-second-light:#8E8E8E;
-  --font-IranRegular:IRANYekanRegular;
-  --fotn-IranMedium:IRANYekanBlack;
-  --font-IranYekanBold:IRANYekanBold;
+  --color-second-light: #8e8e8e;
+  --font-IranRegular: IRANYekanRegular;
+  --fotn-IranMedium: IRANYekanBlack;
+  --font-IranYekanBold: IRANYekanBold;
+
+  --breakpoint-xsm: 400px;
+  --breakpoint-msm: 500px;
+  --breakpoint-xmd: 940px;
 }
 
-.fadeInAnimation{
+.fadeInAnimation {
   animation: fadeIn 1s ease-in-out 3s forwards;
 }
 
 @keyframes fadeIn {
-  to{opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
-.fadeInAnimation2{
+.fadeInAnimation2 {
   animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
 @keyframes fadeIn {
-  to{opacity: 1;}
+  to {
+    opacity: 1;
+  }
 }
 
-.active{
-  background-color: var(--color-primaryLight);
-  color: var(--color-primary);
-  border-radius: .3rem;
+.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 0.3rem;
 }
 
 @font-face {
@@ -65,12 +73,12 @@
   src: url(/public/fonts/Morabba-Medium.ttf);
 }
 
-body{
+body {
   font-family: IRANYekanMedium;
   overflow-x: hidden;
 }
 
-.Morabba{
+.Morabba {
   font-family: Morabba;
 }
 
@@ -285,7 +293,107 @@ body{
   }
 }
 
-.inputsSetting{
-  border: 1px solid #010101;
-  width: auto;
+/* slider css */
+.swiper-pagination-bullet {
+  background-color: #eee;
+}
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+/* برای همه جدول‌های کاربران */
+.gridjs-input .gridjs-search-input {
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: right;
+  direction: rtl;
+}
+.gridjs-input:focus {
+  box-shadow: none !important;
+}
+
+.gridjs-th-content,
+.gridjs-td {
+  direction: rtl;
+  text-align: right;
+}
+
+.gridjs-footer {
+  direction: ltr;
+}
+
+.gridjs-head {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.gridjs-table {
+  background-color: white; /* Light mode */
+  border-collapse: none;
+}
+.gridjs-wrapper {
+  border: none;
+}
+.dark .gridjs-table {
+  background-color: #374151; /* Dark mode خاکستری تیره */
+}
+.dark .gridjs-th {
+  background-color: #1f2937; /* Dark mode هدر */
+  color: #f9fafb;
+  border: 1px solid #1f2937;
+}
+.dark .gridjs-th .gridjs-sort {
+  color: #fff;
+  opacity: 1;
+}
+.dark .gridjs-th-content {
+  padding-right: 0.5rem;
+}
+.dark .gridjs-th:hover {
+  background-color: #1f2937; /* Dark mode هدر */
+}
+.dark .gridjs-th:blur {
+  background-color: #1f2937; /* Dark mode هدر */
+}
+.gridjs-td {
+  background-color: white;
+  color: #111827;
+}
+.dark .gridjs-td {
+  background-color: #374151;
+  color: #e5e7eb;
+  border: 1px solid #1f2937;
+}
+.gridjs-tr:hover {
+  background-color: #f3f4f6;
+}
+.dark .gridjs-tr:hover {
+  background-color: #4b5563;
+}
+.dark .gridjs-input {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+.dark .gridjs-footer,
+.dark .gridjs-summary {
+  background-color: #1f2937;
+  color: #fff;
+  border: 1px solid #1f2937;
+}
+.dark .gridjs-input {
+  border: none !important;
+}
+
+
+/**/
+ .scrollbar-hide::-webkit-scrollbar {
+  display: none; /* برای Chrome, Safari */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* برای IE و Edge */
+  scrollbar-width: none; /* برای Firefox */
 }
