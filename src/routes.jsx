@@ -14,9 +14,6 @@ import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
 import Profile from "./pages/Profile";
 import Weblog from "./pages/Weblog";
-// <<<<<<< HEAD
-// import ProductDetails from "./pages/ProductDetails";
-// =======
 import MoreArticles from "./pages/MoreArticles";
 import ArticleInfo from "./pages/ArticleInfo";
 import ProductDetails from "./pages/ProductDetails";
@@ -28,8 +25,6 @@ import Requests from "./pages/panel/Requests";
 import Articles from "./pages/panel/Articles";
 import Tickets from "./pages/panel/Tickets";
 import MyTransactions from "./pages/panel/MyTransactions";
->>>>>>> master
-
 
 let routes = [
     { path: "/", element: <Home /> },
@@ -38,18 +33,6 @@ let routes = [
     { path: "/aboutus/*", element: <AboutUs /> },
     { path: "/Saves", element: <Saves /> },
     { path: "/profile", element: <Profile /> },
-<<<<<<< HEAD
-    { path: "/PaymentPage", element: <PaymentPage /> },
-    { path: "/weblog", element: <Weblog /> },
-    //panel
-    { path: "/userInfo", element: <PrivateRoute><UserInfo /></PrivateRoute> },
-    { path: "/skills", element: <PrivateRoute><Skills /></PrivateRoute> },
-    { path: "/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
-    { path: "/projects", element: <PrivateRoute><Projects /></PrivateRoute> },
-    { path: "/achievements", element: <PrivateRoute><Achievements /></PrivateRoute> },
-    { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
-    {path:"/productDetails",element:<ProductDetails></ProductDetails>}
-=======
     { path: "/Payment", element: <Payment /> },
     { path: "/Weblog", element: <Weblog /> },
     { path: "/MoreArticles", element: <MoreArticles /> },
@@ -69,7 +52,6 @@ let routes = [
     { path: "/panel/articles", element: <PrivateRoute><Articles /></PrivateRoute> },
     { path: "/panel/tickets", element: <PrivateRoute><Tickets /></PrivateRoute> },
     { path: "/panel/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
->>>>>>> master
 ]
 
 export default routes
