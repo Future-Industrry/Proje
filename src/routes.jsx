@@ -14,9 +14,9 @@ import Achievements from "./pages/panel/Achievements";
 import Setting from "./pages/panel/Setting";
 import Profile from "./pages/Profile";
 import Weblog from "./pages/Weblog";
-<<<<<<< HEAD
-import ProductDetails from "./pages/ProductDetails";
-=======
+// <<<<<<< HEAD
+// import ProductDetails from "./pages/ProductDetails";
+// =======
 import MoreArticles from "./pages/MoreArticles";
 import ArticleInfo from "./pages/ArticleInfo";
 import ProductDetails from "./pages/ProductDetails";
