@@ -25,6 +25,8 @@ import Requests from "./pages/panel/Requests";
 import Articles from "./pages/panel/Articles";
 import Tickets from "./pages/panel/Tickets";
 import MyTransactions from "./pages/panel/MyTransactions";
+import { path } from "framer-motion/client";
+import Developer from "./pages/Developer";
 
 let routes = [
     { path: "/", element: <Home /> },
@@ -52,6 +54,7 @@ let routes = [
     { path: "/panel/articles", element: <PrivateRoute><Articles /></PrivateRoute> },
     { path: "/panel/tickets", element: <PrivateRoute><Tickets /></PrivateRoute> },
     { path: "/panel/transactions", element: <PrivateRoute><Transactions /></PrivateRoute> },
+    {path:'/developer',element:<Developer/>}
 ]
 
 export default routes
