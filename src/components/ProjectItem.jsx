@@ -19,6 +19,7 @@ export default function ProjectItem({ id, img, username }) {
         <img
           src={img}
           alt=""
+          loading="lazy"
           className="rounded-lg h-[16rem] sm:h-[13rem] w-full object-cover "
         />
       </Link>

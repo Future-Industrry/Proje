@@ -3,7 +3,7 @@ import ProfileCard from "../components/ProfileCard";
 import SampleCard from "../components/SampleCard";
 import header from "/images/Frame 196.png";
 import ProjectItem from "../components/ProjectItem";
-import { div } from "framer-motion/client";
+// import { div } from "framer-motion/client";
 export default function Profile() {
   const [activeTab, setActiveTab] = useState("about");
   return (

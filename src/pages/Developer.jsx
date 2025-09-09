@@ -6,7 +6,7 @@ import A from '../../public/images/developer0.jpg'
 
 import Image from '../assets/images/developerIMG.png'
 import Pattern from '../assets/images/template0.png'
-import { div } from "framer-motion/client"
+// import { div } from "framer-motion/client"
 const items = [
     { title: "چرا باید توسعه دهنده تایید شده بشم ؟", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
     { title: "این تایید چه کمکی به من میکنه ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
