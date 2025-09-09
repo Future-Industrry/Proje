@@ -1,14 +1,36 @@
 import { FiArrowLeft, FiPhone, FiUser, FiMessageCircle, FiChevronDown } from "react-icons/fi"
+import { CircleFadingPlus } from "lucide-react"
 import { useState } from "react"
+
+import A from '../../public/images/developer0.jpg'
 
 import Image from '../assets/images/developerIMG.png'
 import Pattern from '../assets/images/template0.png'
+import { div } from "framer-motion/client"
 const items = [
-    { title: "1", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
-    { title: "2", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
+    { title: "چرا باید توسعه دهنده تایید شده بشم ؟", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
+    { title: "این تایید چه کمکی به من میکنه ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
+    { title: "آیا همه می توانند درخواست مصاحبه بدهند ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
+    { title: "آیا برای مصاحبه باید چیز خاصی آماده کنیم ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
+    { title: "بعد از تایید شدن چه اتفاقی میوفته ؟", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .", },
+]
+
+const developers = [
+    { name: 'هانیه رضایی', job: 'برنامه نویس وب | Python Developer', desc: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است', img: '../../public/images/developer0.jpg' },
+    { name: 'علی رضایی', job: 'برنامه نویس وب | Python Developer', desc: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است', img: '../../public/images/developer1.jpg' },
+    { name: 'بهنام غفوری', job: 'برنامه نویس وب | Python Developer', desc: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است', img: '../../public/images/developer2.jpg' },
+    { name: 'امید بخشی', job: 'برنامه نویس وب | Python Developer', desc: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است ', img: '../../public/images/developer3.jpg' }
 ]
 export default function Developer() {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(null)
+
+    const toggle = (index) => {
+        if (isOpen === index) {
+            setIsOpen(null)
+        } else {
+            setIsOpen(index)
+        }
+    }
     return (
         <div className="py-5 px-10">
             <div className="flex">
@@ -73,50 +95,44 @@ export default function Developer() {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-5 mt-24 ">
+            <div className="flex flex-col gap-5 my-24 ">
                 <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
                 <p className="font-IranYekanBold text-2xl">سوالات متداول</p>
-                <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 flex flex-col  ${isOpen ? "h-auto divide-y divide-gray-400" : "h-16"}`}>
-                    <div className="flex justify-between items-center p-5">
-                        <p>چرا باید توسعه دهنده تایید شده بشم ؟</p>
-                        <FiChevronDown className={`size-6 transition-transform duration-300 ${isOpen ? "rotate-90" : "rotate-0"}`} onClick={() => setIsOpen(!isOpen)} />
-                    </div>
-                    <div className={`transition-all duration-500 overflow-hidden  ${isOpen ? "max-h-40 mt-5 pb-5 px-8" : "max-h-0"}`}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
-                </div>
-                <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 flex flex-col  ${isOpen ? "h-auto divide-y divide-gray-400" : "h-16"}`}>
-                    <div className="flex justify-between items-center p-5">
-                        <p>این تایید چه کمکی به من میکنه ؟</p>
-                        <FiChevronDown className={`size-6 transition-transform duration-300 ${isOpen ? "rotate-90" : "rotate-0"}`} onClick={() => setIsOpen(!isOpen)} />
-                    </div>
-                    <div className={`transition-all duration-500 overflow-hidden  ${isOpen ? "max-h-40 mt-5 pb-5 px-8" : "max-h-0"}`}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
-                </div>
-                <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 flex flex-col  ${isOpen ? "h-auto divide-y divide-gray-400" : "h-16"}`}>
-                    <div className="flex justify-between items-center p-5">
-                        <p>آیا همه می توانند درخواست مصاحبه بدهند ؟ </p>
-                        <FiChevronDown className={`size-6 transition-transform duration-300 ${isOpen ? "rotate-90" : "rotate-0"}`} onClick={() => setIsOpen(!isOpen)} />
-                    </div>
-                    <div className={`transition-all duration-500 overflow-hidden  ${isOpen ? "max-h-40 mt-5 pb-5 px-8" : "max-h-0"}`}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
-                </div>
-                <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 flex flex-col  ${isOpen ? "h-auto divide-y divide-gray-400" : "h-16"}`}>
-                    <div className="flex justify-between items-center p-5">
-                        <p>آیا برای مصاحبه باید چیز خاصی آماده کنیم ؟</p>
-                        <FiChevronDown className={`size-6 transition-transform duration-300 ${isOpen ? "rotate-90" : "rotate-0"}`} onClick={() => setIsOpen(!isOpen)} />
-                    </div>
-                    <div className={`transition-all duration-500 overflow-hidden  ${isOpen ? "max-h-40 mt-5 pb-5 px-8" : "max-h-0"}`}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
-                </div>
-                <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 flex flex-col  ${isOpen ? "h-auto divide-y divide-gray-400" : "h-16"}`}>
-                    <div className="flex justify-between items-center p-5">
-                        <p>بعد از تایید شدن چه اتفاقی می افتد ؟</p>
-                        <FiChevronDown className={`size-6 transition-transform duration-300 ${isOpen ? "rotate-90" : "rotate-0"}`} onClick={() => setIsOpen(!isOpen)} />
-                    </div>
-                    <div className={`transition-all duration-500 overflow-hidden  ${isOpen ? "max-h-40 mt-5 pb-5 px-8" : "max-h-0"}`}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
-                </div>
-            </div>
-            <div className="flex mt-24">
-                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
-                <p>برخی از توسعه دهنده های پروجه </p>
-            </div>
 
+                {items.map((items, index) => (
+                    <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 ${isOpen === index ? "h-auto divide-y divide-gray-400" : "h-16"}`} >
+                        <div className={`p-5 flex justify-between `} key={index}>
+                            <p>{items.title}</p>
+                            <FiChevronDown key={index} className={`size-6 transition-transform duration-300${isOpen === index ? "rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
+
+                        </div>
+                        {isOpen === index && (
+                            <div className={`transition-all duration-500 overflow-hidden  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
+                        )}
+                    </div>
+                ))}
+            </div>
+            <div className="flex flex-col">
+                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
+                <div>
+                    <p className="font-IranYekanBold text-2xl">برخی از توسعه دهندگان پروجه</p>
+                </div>
+                <div className="flex my-5 justify-between">
+                    {developers.map((developer) => (
+                        <div className="w-72 h-[400px] shadow rounded-2xl p-4 flex flex-col gap-4 items-center">
+                            <img src={developer.img} alt="" className="rounded-2xl w-full h-40 bg-cover bg-center font-extrabold" />
+                            <p>{developer.name}</p>
+                            <p>{developer.job}</p>
+                            <p className="text-sm text-justify">{developer.desc}</p>
+                            <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2">
+                                <CircleFadingPlus/>
+                                <button >همکاری</button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
 
         </div>
     )
