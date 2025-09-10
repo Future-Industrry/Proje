@@ -1,12 +1,21 @@
-import { FiArrowLeft, FiPhone, FiUser, FiMessageCircle, FiChevronDown } from "react-icons/fi"
+import { FiArrowLeft, FiPhone, FiChevronDown,FiChevronLeft,FiChevronRight } from "react-icons/fi"
 import { CircleFadingPlus } from "lucide-react"
 import { useState } from "react"
 
-import A from '../../public/images/developer0.jpg'
-
+// imgaes
 import Image from '../assets/images/developerIMG.png'
 import Pattern from '../assets/images/template0.png'
+import Pattern1 from '../assets/images/template1.png'
+
+// Icon
+import Tag from '../../public/icons/ai-tag-price.svg'
+import Chart from '../../public/icons/chart.svg'
+import DeviceMessage from '../../public/icons/device-message.svg'
+import User from '../../public/icons/enhance-user-ai.svg'
+import MedalStar from '../../public/icons/medal-star.svg'
+
 import { div } from "framer-motion/client"
+
 const items = [
     { title: "چرا باید توسعه دهنده تایید شده بشم ؟", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
     { title: "این تایید چه کمکی به من میکنه ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
@@ -14,7 +23,6 @@ const items = [
     { title: "آیا برای مصاحبه باید چیز خاصی آماده کنیم ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
     { title: "بعد از تایید شدن چه اتفاقی میوفته ؟", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .", },
 ]
-
 const developers = [
     { name: 'هانیه رضایی', job: 'برنامه نویس وب | Python Developer', desc: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است', img: '../../public/images/developer0.jpg' },
     { name: 'علی رضایی', job: 'برنامه نویس وب | Python Developer', desc: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است', img: '../../public/images/developer1.jpg' },
@@ -40,8 +48,8 @@ export default function Developer() {
                         <p className="font-IranYekanBold text-[20px]">جایی برای رشد ، دیده شدن و فروش بهتر پروژه ها</p>
                     </div>
                     <p className="text-3xl font-extrabold">به جمع <span className="bg-[#e7d8f1]">توسعه دهندگان </span>ما بپیوندید</p>
-                    <p>پروژه های شما با نام و اعتبار خودتان در سایت ثبت می شوند و برای شروع فقط کافیه فرم همکاری را پر کنید و یک مصاحبه کوتاه داشته باشید</p>
-                    <div className="flex gap-24">
+                    <p className="w-[390px] text-justify">پروژه های شما با نام و اعتبار خودتان در سایت ثبت می شوند و برای شروع فقط کافیه فرم همکاری را پر کنید و یک مصاحبه کوتاه داشته باشید</p>
+                    <div className="flex gap-10">
                         <p className="flex items-center gap-2 bg-[#50116D] py-1 px-2 text-white rounded-sm">
                             شروع کن
                             <FiArrowLeft />
@@ -54,7 +62,11 @@ export default function Developer() {
                 </div>
                 <div className=" flex flex-1/2 justify-center py-5">
                     <div className="w-72 h-[400px] bg-[#C39DDD] rotate-[-20deg] rounded-2xl">
-                        <img src={Image} alt="" className="w-full h-full rotate-[10deg] rounded-2xl bg-[#50116D] " />
+                        <div className="w-full h-full rotate-[10deg] rounded-2xl bg-[#50116D] relative overflow-hidden">
+                            <img src={Pattern1} alt="" className="w-full h-full  rounded-2xl " />
+                            <img src={Image} alt="" className="w-full h-full rotate-[10deg] rounded-2xl absolute top-10 left-0" />
+                        </div>
+
 
                     </div>
 
@@ -76,35 +88,36 @@ export default function Developer() {
 
                 </div>
             </div>
-            <div className="w-full -mt-36 relative flex justify-around text-2xl font-IranYekanBold">
-                <div className="flex flex-col items-center justify-center gap-5 rounded-3xl bg-white w-64 h-52 shadow-2xl " >
-                    <FiUser className="size-14" />
+            <div className="w-full -mt-36 relative flex justify-around font-IranYekanBold text-[20px]  *:flex *:flex-col *:items-center *:justify-center *:gap-5 *:rounded-3xl *:bg-white *:w-64 *:h-56 *:shadow">
+                <div className="" >
+                    <img src={MedalStar} alt="" className="size-12" />
                     <p>اعتبار سنجی پروژه ها</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-5 rounded-3xl bg-white w-64 h-52 shadow-2xl " >
-                    <FiUser className="size-14" />
+                <div className="" >
+                    <img src={Chart} alt="" className="size-12" />
                     <p>اعتبار سنجی پروژه ها</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-5 rounded-3xl bg-white w-64 h-52 shadow-2xl " >
-                    <FiUser className="size-14" />
+                <div className="" >
+                    <img src={DeviceMessage} alt="" className="size-12" />
                     <p>اعتبار سنجی پروژه ها</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-5 rounded-3xl bg-white w-64 h-52 shadow-2xl " >
-                    <FiUser className="size-14" />
+                <div className="" >
+                    <img src={User} alt="" className="size-12" />
                     <p>اعتبار سنجی پروژه ها</p>
                 </div>
             </div>
 
-            <div className="flex flex-col gap-5 my-24 ">
+            <div className=" flex flex-col gap-5 my-24">
                 <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
                 <p className="font-IranYekanBold text-2xl">سوالات متداول</p>
-
                 {items.map((items, index) => (
                     <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 ${isOpen === index ? "h-auto divide-y divide-gray-400" : "h-16"}`} >
                         <div className={`p-5 flex justify-between `} key={index}>
-                            <p>{items.title}</p>
+                            <div className="flex gap-2">
+                                <img src={Tag} alt="" />
+                                {items.title}
+                            </div>
                             <FiChevronDown key={index} className={`size-6 transition-transform duration-300${isOpen === index ? "rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
-
                         </div>
                         {isOpen === index && (
                             <div className={`transition-all duration-500 overflow-hidden  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
@@ -114,18 +127,22 @@ export default function Developer() {
             </div>
             <div className="flex flex-col">
                 <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
-                <div>
+                <div className="flex justify-between">
                     <p className="font-IranYekanBold text-2xl">برخی از توسعه دهندگان پروجه</p>
+                    <div className="flex gap-5 *:size-8 *:bg-[#e5e0e7] *:text-[#50116D] *:rounded ">
+                        <FiChevronRight/>
+                        <FiChevronLeft/>
+                    </div>
                 </div>
                 <div className="flex my-5 justify-between">
                     {developers.map((developer) => (
-                        <div className="w-72 h-[400px] shadow rounded-2xl p-4 flex flex-col gap-4 items-center">
+                        <div className="w-[295px] h-[400px] shadow rounded-2xl p-4 flex flex-col gap-4 items-center">
                             <img src={developer.img} alt="" className="rounded-2xl w-full h-40 bg-cover bg-center font-extrabold" />
                             <p>{developer.name}</p>
                             <p>{developer.job}</p>
                             <p className="text-sm text-justify">{developer.desc}</p>
                             <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2">
-                                <CircleFadingPlus/>
+                                <CircleFadingPlus />
                                 <button >همکاری</button>
                             </div>
                         </div>
@@ -133,7 +150,8 @@ export default function Developer() {
                 </div>
 
             </div>
-
+            <div>
+            </div>
         </div>
     )
 }
