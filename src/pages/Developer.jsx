@@ -50,11 +50,11 @@ export default function Developer() {
                     <p className="text-3xl font-extrabold">به جمع <span className="bg-[#e7d8f1]">توسعه دهندگان </span>ما بپیوندید</p>
                     <p className="w-[390px] text-justify">پروژه های شما با نام و اعتبار خودتان در سایت ثبت می شوند و برای شروع فقط کافیه فرم همکاری را پر کنید و یک مصاحبه کوتاه داشته باشید</p>
                     <div className="flex gap-10">
-                        <p className="flex items-center gap-2 bg-[#50116D] py-1 px-2 text-white rounded-sm">
+                        <p className="flex items-center gap-2 bg-[#50116D] py-1 px-2 text-white rounded-sm cursor-pointer">
                             شروع کن
                             <FiArrowLeft />
                         </p>
-                        <p className="flex gap-2 items-center text-[#50116D]">
+                        <p className="flex gap-2 items-center text-[#50116D] cursor-pointer">
                             <FiPhone />
                             مشاوره بگیرید
                         </p>
@@ -66,10 +66,7 @@ export default function Developer() {
                             <img src={Pattern1} alt="" className="w-full h-full  rounded-2xl " />
                             <img src={Image} alt="" className="w-full h-full rotate-[10deg] rounded-2xl absolute top-10 left-0" />
                         </div>
-
-
                     </div>
-
                 </div>
             </div>
 
@@ -120,16 +117,16 @@ export default function Developer() {
                             <FiChevronDown key={index} className={`size-6 transition-transform duration-300${isOpen === index ? "rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
                         </div>
                         {isOpen === index && (
-                            <div className={`transition-all duration-500 overflow-hidden  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود .</div>
+                            <div className={`transition-all duration-500 overflow-hidden text-[14px]  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>{items.content}</div>
                         )}
                     </div>
                 ))}
             </div>
             <div className="flex flex-col">
-                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
+                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-10"></span>
                 <div className="flex justify-between">
                     <p className="font-IranYekanBold text-2xl">برخی از توسعه دهندگان پروجه</p>
-                    <div className="flex gap-5 *:size-8 *:bg-[#e5e0e7] *:text-[#50116D] *:rounded ">
+                    <div className="flex gap-5 *:size-8 *:bg-[#e5e0e7] *:text-[#50116D] *:rounded *:cursor-pointer">
                         <FiChevronRight/>
                         <FiChevronLeft/>
                     </div>
@@ -141,7 +138,7 @@ export default function Developer() {
                             <p>{developer.name}</p>
                             <p>{developer.job}</p>
                             <p className="text-sm text-justify">{developer.desc}</p>
-                            <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2">
+                            <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2 cursor-pointer">
                                 <CircleFadingPlus />
                                 <button >همکاری</button>
                             </div>
