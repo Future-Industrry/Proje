@@ -44,13 +44,13 @@ export default function Developer() {
     return (
         <div className="py-5">
             <div className="px-10">
-                <div className="flex">
-                    <div className="flex gap-7 flex-1/2 flex-col pt-24">
+                <div className="sm:flex space-y-20">
+                    <div className="space-y-5 pt-10 sm:flex sm:gap-7 sm:flex-1/2 sm:flex-col  sm:pt-24">
                         <div className="flex items-center gap-2 text-primary">
                             <span className="border-t border-primary w-6 h-1 bg-primary"></span>
-                            <p className="font-IranYekanBold text-[20px]">جایی برای رشد ، دیده شدن و فروش بهتر پروژه ها</p>
+                            <p className="font-IranYekanBold  sm:text-[20px]">جایی برای رشد ، دیده شدن و فروش بهتر پروژه ها</p>
                         </div>
-                        <p className="text-3xl font-extrabold">به جمع <span className="bg-[#e7d8f1]">توسعه دهندگان </span>ما بپیوندید</p>
+                        <p className="text-2xl sm:text-3xl font-extrabold">به جمع <span className="bg-[#e7d8f1]">توسعه دهندگان </span>ما بپیوندید</p>
                         <p className="w-[390px] text-justify">پروژه های شما با نام و اعتبار خودتان در سایت ثبت می شوند و برای شروع فقط کافیه فرم همکاری را پر کنید و یک مصاحبه کوتاه داشته باشید</p>
                         <div className="flex gap-10">
                             <p className="flex items-center gap-2 bg-[#50116D] py-1 px-2 text-white rounded-sm cursor-pointer">
@@ -72,38 +72,37 @@ export default function Developer() {
                         </div>
                     </div>
                 </div>
-
-                <div className="bg-[#C39DDD] h-96 rounded-4xl mt-24 -rotate-3 relative">
+                <div className="bg-[#C39DDD] h-[470px] sm:h-96 rounded-4xl mt-24 -rotate-3 relative mx-auto">
                     <div className="bg-[#833AB4] w-full h-full rounded-4xl rotate-3 absolute  overflow-hidden">
                         <img src={Pattern} alt="" className="h-full w-[50%] opacity-50" />
                         <div className="w-full h-full absolute top-0 text-white flex pt-24 px-20  font-IranYekanBold">
-                            <div className="flex flex-col flex-1/2">
+                            <div className="hidden sm:flex sm:flex-col sm:flex-1/2">
                                 <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
                                 <p className="text-2xl">چرا توسعه دهنده بشی؟</p>
                             </div>
-                            <div className="flex flex-1/2 text-lg">
+                            <div className="hidden sm:flex sm:flex-1/2 sm:text-lg">
                                 <p>پروژه های شما  با عنوان توسعه دهنده ی تایید شده نمایش داده می شوند و موجب جلب اعتماد  بیشتر خریداران خواهد شد .</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div className="w-full -mt-36 relative flex justify-around font-IranYekanBold text-[20px]  *:flex *:flex-col *:items-center *:justify-center *:gap-5 *:rounded-3xl *:bg-white *:w-64 *:h-56 *:shadow">
+                <div className="w-full -mt-[470px] p-10 sm:-mt-36 relative flex flex-col gap-4 sm:flex-row justify-around font-IranYekanBold text-[20px] *:w-full *:px-10 *:sm:px-0 *:py-2 *:flex *:flex-col items-start sm:*:items-center *:justify-center *:gap-5 *:rounded-3xl *:bg-white sm:*:w-64 sm:*:h-56 *:shadow">
                     <div className="" >
                         <img src={MedalStar} alt="" className="size-12" />
                         <p>اعتبار سنجی پروژه ها</p>
                     </div>
                     <div className="" >
                         <img src={Chart} alt="" className="size-12" />
-                        <p>اعتبار سنجی پروژه ها</p>
+                        <p>افزایش شانس فروش</p>
                     </div>
                     <div className="" >
                         <img src={DeviceMessage} alt="" className="size-12" />
-                        <p>اعتبار سنجی پروژه ها</p>
+                        <p>حمایت و پشتیبانی ویژه</p>
                     </div>
                     <div className="" >
                         <img src={User} alt="" className="size-12" />
-                        <p>اعتبار سنجی پروژه ها</p>
+                        <p>رزومه و برند شخصی</p>
                     </div>
                 </div>
                 <div className=" flex flex-col gap-5 my-24">
@@ -150,8 +149,8 @@ export default function Developer() {
 
                 </div>
             </div>
-            <div className="h-[1200px] bg-[#F7EBFF] mt-24 py-4">
-                <div className="w-[85%] h-[35%] grid grid-cols-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
+            <div className=" bg-[#F7EBFF] mt-24 py-4">
+                <div className="w-[85%] grid grid-cols-2 gap-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
                     <div className="self-end">
                         <p className="text-5xl font-extrabold text-[#50116D]">200+</p>
                         <p className="font-extrabold text-[22px]">پروژه فروخته شد</p>
@@ -169,16 +168,16 @@ export default function Developer() {
                         <p className="font-extrabold text-[22px]">توسعه دهنده</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-2 p-8 relative sm:w-[70%] ">
-                    <div>
-                        <span className="border-t border-primary w-6 h-1 bg-primary"></span>
-                        <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
-                        <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
-                    </div>
+
+                <div className="flex flex-col gap-5 sm:absolute sm:w-[60%] lg:w-[40%] sm:left-0 lg:left-28 p-8">
+                    <span className="border-t border-primary w-6 h-1 bg-primary"></span>
+                    <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
+                    <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
                 </div>
-                <div className="relative px-8">
-                    <div className="bg-[#C39DDD] w-40 h-52 mx-auto mt-10 rotate-4 rounded-2xl sm:w-52 sm:h-60 sm:mx-10 ">
-                        <div className="w-40 h-52 bg-[#50116D] rotate-12 rounded-2xl sm:w-52 sm:h-60">
+
+                <div className="relative px-8 sm:mt-56 lg:mt-40">
+                    <div className="bg-[#C39DDD] w-40 h-52 mx-auto mt-10 rotate-4 rounded-2xl sm:w-52 sm:h-60 sm:mx-10 lg:mx-28 lg:h-72 lg:w-60">
+                        <div className="w-40 h-52 bg-[#50116D] rotate-12 rounded-2xl sm:w-52 sm:h-60 lg:h-72 lg:w-60">
                         </div>
                     </div>
                     <div className="bg-white h-48 -mt-20 overflow-hidden rounded-2xl relative">
@@ -188,7 +187,7 @@ export default function Developer() {
                             <p className="w-24 py-2 bg-primary rounded-2xl text-center text-white cursor-pointer">مشاهده</p>
                         </div>
                     </div>
-                    <img src={Image1} alt="" className="w-56 h-72 absolute -top-2 right-32 sm:w-72 sm:h-96 sm:right-10 sm:-top-5" />
+                    <img src={Image1} alt="" className="w-56 h-72 absolute -top-2 right-32 sm:w-72 sm:h-96 lg:w-80 lg:h-[420px] sm:right-10 sm:-top-5 lg:right-28" />
                 </div>
             </div>
         </div>
