@@ -150,8 +150,8 @@ export default function Developer() {
 
                 </div>
             </div>
-            <div className="h-[1000px] bg-[#F7EBFF] mt-24 py-4 ">
-                <div className="w-[85%] h-[55%] grid grid-cols-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
+            <div className="h-[1200px] bg-[#F7EBFF] mt-24 py-4">
+                <div className="w-[85%] h-[35%] grid grid-cols-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
                     <div className="self-end">
                         <p className="text-5xl font-extrabold text-[#50116D]">200+</p>
                         <p className="font-extrabold text-[22px]">پروژه فروخته شد</p>
@@ -169,22 +169,27 @@ export default function Developer() {
                         <p className="font-extrabold text-[22px]">توسعه دهنده</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-2 p-8">
-                    <span className="border-t border-primary w-6 h-1 bg-primary"></span>
-                    <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
-                    <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
-                    <div className="bg-[#C39DDD] w-40 h-48 mx-auto mt-10 rotate-4 rounded-2xl relative">
-                        <div className="w-40 h-48 bg-[#50116D] rotate-12 rounded-2xl">
-                        </div>
-                    </div>
-                    <div className="bg-white w-full h-40 -mt-12  rounded-2xl relative">
-                        <img src={Pattern2} alt="" className="w-full h-full"/>
-                        <img src={Image1} alt="" className="size-72 absolute -top-40 left-16" />
-                        <p className="absolute left-2 top-20 font-IranYekanBold">دنبال بهترین  پروجه ها هستی؟</p>
-                        <p className="absolute left-2 top-28 bg-primary py-1 px-3 rounded-2xl text-white cursor-pointer">مشاهده</p>
+                <div className="flex flex-col gap-2 p-8 relative sm:w-[70%] ">
+                    <div>
+                        <span className="border-t border-primary w-6 h-1 bg-primary"></span>
+                        <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
+                        <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
                     </div>
                 </div>
-
+                <div className="relative px-8">
+                    <div className="bg-[#C39DDD] w-40 h-52 mx-auto mt-10 rotate-4 rounded-2xl sm:w-52 sm:h-60 sm:mx-10 ">
+                        <div className="w-40 h-52 bg-[#50116D] rotate-12 rounded-2xl sm:w-52 sm:h-60">
+                        </div>
+                    </div>
+                    <div className="bg-white h-48 -mt-20 overflow-hidden rounded-2xl relative">
+                        <img src={Pattern2} alt="" className="lg:w-1/2 h-72" />
+                        <div className="absolute top-24 left-2 space-y-2 lg:flex lg:items-center lg:gap-8 lg:left-28">
+                            <p className=" text-[#50116D] font-IranYekanBold">دنبال بهترین پروجه ها هستی؟</p>
+                            <p className="w-24 py-2 bg-primary rounded-2xl text-center text-white cursor-pointer">مشاهده</p>
+                        </div>
+                    </div>
+                    <img src={Image1} alt="" className="w-56 h-72 absolute -top-2 right-32 sm:w-72 sm:h-96 sm:right-10 sm:-top-5" />
+                </div>
             </div>
         </div>
     )
