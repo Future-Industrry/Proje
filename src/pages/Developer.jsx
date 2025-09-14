@@ -16,8 +16,8 @@ import DeviceMessage from '../../public/icons/device-message.svg'
 import User from '../../public/icons/enhance-user-ai.svg'
 import MedalStar from '../../public/icons/medal-star.svg'
 
-import { div } from "framer-motion/client"
-
+// import { div } from "framer-motion/client"
+// import { div } from "framer-motion/client"
 const items = [
     { title: "چرا باید توسعه دهنده تایید شده بشم ؟", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
     { title: "این تایید چه کمکی به من میکنه ؟ ", content: "پروژه هایتان در اولویت نمایش قرار میگیرند  ، شانس فروش بالاتر می رود و اعتبار حرفه ایتان بیشتر می شود ." },
@@ -168,13 +168,11 @@ export default function Developer() {
                         <p className="font-extrabold text-[22px]">توسعه دهنده</p>
                     </div>
                 </div>
-
                 <div className="flex flex-col gap-5 sm:absolute sm:w-[60%] lg:w-[40%] sm:left-0 lg:left-28 p-8">
                     <span className="border-t border-primary w-6 h-1 bg-primary"></span>
                     <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
                     <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
                 </div>
-
                 <div className="relative px-8 sm:mt-56 lg:mt-40">
                     <div className="bg-[#C39DDD] w-40 h-52 mx-auto mt-10 rotate-4 rounded-2xl sm:w-52 sm:h-60 sm:mx-10 lg:mx-28 lg:h-72 lg:w-60">
                         <div className="w-40 h-52 bg-[#50116D] rotate-12 rounded-2xl sm:w-52 sm:h-60 lg:h-72 lg:w-60">

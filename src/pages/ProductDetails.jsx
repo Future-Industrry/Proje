@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { FaRegBookmark, FaRegHeart, FaShoppingBasket } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 import ProjectItem from "../components/ProjectItem.jsx";
-import { div } from "framer-motion/m";
+// import { div } from "framer-motion/m";
 
 export default function ProductDetails() {
   return (
