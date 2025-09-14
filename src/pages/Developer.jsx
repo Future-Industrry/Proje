@@ -1,11 +1,13 @@
-import { FiArrowLeft, FiPhone, FiChevronDown,FiChevronLeft,FiChevronRight } from "react-icons/fi"
+import { FiArrowLeft, FiPhone, FiChevronDown, FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import { CircleFadingPlus } from "lucide-react"
 import { useState } from "react"
 
 // imgaes
 import Image from '../assets/images/developerIMG.png'
+import Image1 from '../assets/images/man-make-winner.png'
 import Pattern from '../assets/images/template0.png'
 import Pattern1 from '../assets/images/template1.png'
+import Pattern2 from '../assets/images/template.png'
 
 // Icon
 import Tag from '../../public/icons/ai-tag-price.svg'
@@ -40,114 +42,149 @@ export default function Developer() {
         }
     }
     return (
-        <div className="py-5 px-10">
-            <div className="flex">
-                <div className="flex gap-7 flex-1/2 flex-col pt-24">
-                    <div className="flex items-center gap-2 text-primary">
-                        <span className="border-t border-primary w-6 h-1 bg-primary"></span>
-                        <p className="font-IranYekanBold text-[20px]">جایی برای رشد ، دیده شدن و فروش بهتر پروژه ها</p>
-                    </div>
-                    <p className="text-3xl font-extrabold">به جمع <span className="bg-[#e7d8f1]">توسعه دهندگان </span>ما بپیوندید</p>
-                    <p className="w-[390px] text-justify">پروژه های شما با نام و اعتبار خودتان در سایت ثبت می شوند و برای شروع فقط کافیه فرم همکاری را پر کنید و یک مصاحبه کوتاه داشته باشید</p>
-                    <div className="flex gap-10">
-                        <p className="flex items-center gap-2 bg-[#50116D] py-1 px-2 text-white rounded-sm cursor-pointer">
-                            شروع کن
-                            <FiArrowLeft />
-                        </p>
-                        <p className="flex gap-2 items-center text-[#50116D] cursor-pointer">
-                            <FiPhone />
-                            مشاوره بگیرید
-                        </p>
-                    </div>
-                </div>
-                <div className=" flex flex-1/2 justify-center py-5">
-                    <div className="w-72 h-[400px] bg-[#C39DDD] rotate-[-20deg] rounded-2xl">
-                        <div className="w-full h-full rotate-[10deg] rounded-2xl bg-[#50116D] relative overflow-hidden">
-                            <img src={Pattern1} alt="" className="w-full h-full  rounded-2xl " />
-                            <img src={Image} alt="" className="w-full h-full rotate-[10deg] rounded-2xl absolute top-10 left-0" />
+        <div className="py-5">
+            <div className="px-10">
+                <div className="flex">
+                    <div className="flex gap-7 flex-1/2 flex-col pt-24">
+                        <div className="flex items-center gap-2 text-primary">
+                            <span className="border-t border-primary w-6 h-1 bg-primary"></span>
+                            <p className="font-IranYekanBold text-[20px]">جایی برای رشد ، دیده شدن و فروش بهتر پروژه ها</p>
+                        </div>
+                        <p className="text-3xl font-extrabold">به جمع <span className="bg-[#e7d8f1]">توسعه دهندگان </span>ما بپیوندید</p>
+                        <p className="w-[390px] text-justify">پروژه های شما با نام و اعتبار خودتان در سایت ثبت می شوند و برای شروع فقط کافیه فرم همکاری را پر کنید و یک مصاحبه کوتاه داشته باشید</p>
+                        <div className="flex gap-10">
+                            <p className="flex items-center gap-2 bg-[#50116D] py-1 px-2 text-white rounded-sm cursor-pointer">
+                                شروع کن
+                                <FiArrowLeft />
+                            </p>
+                            <p className="flex gap-2 items-center text-[#50116D] cursor-pointer">
+                                <FiPhone />
+                                مشاوره بگیرید
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div className="bg-[#C39DDD] h-96 rounded-4xl mt-24 -rotate-3 relative">
-                <div className="bg-[#833AB4] w-full h-full rounded-4xl rotate-3 absolute  overflow-hidden">
-                    <img src={Pattern} alt="" className="h-full w-[50%] opacity-50" />
-                    <div className="w-full h-full absolute top-0 text-white flex pt-24 px-20  font-IranYekanBold">
-                        <div className="flex flex-col flex-1/2">
-                            <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
-                            <p className="text-2xl">چرا توسعه دهنده بشی؟</p>
-                        </div>
-                        <div className="flex flex-1/2 text-lg">
-                            <p>پروژه های شما  با عنوان توسعه دهنده ی تایید شده نمایش داده می شوند و موجب جلب اعتماد  بیشتر خریداران خواهد شد .</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div className="w-full -mt-36 relative flex justify-around font-IranYekanBold text-[20px]  *:flex *:flex-col *:items-center *:justify-center *:gap-5 *:rounded-3xl *:bg-white *:w-64 *:h-56 *:shadow">
-                <div className="" >
-                    <img src={MedalStar} alt="" className="size-12" />
-                    <p>اعتبار سنجی پروژه ها</p>
-                </div>
-                <div className="" >
-                    <img src={Chart} alt="" className="size-12" />
-                    <p>اعتبار سنجی پروژه ها</p>
-                </div>
-                <div className="" >
-                    <img src={DeviceMessage} alt="" className="size-12" />
-                    <p>اعتبار سنجی پروژه ها</p>
-                </div>
-                <div className="" >
-                    <img src={User} alt="" className="size-12" />
-                    <p>اعتبار سنجی پروژه ها</p>
-                </div>
-            </div>
-
-            <div className=" flex flex-col gap-5 my-24">
-                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
-                <p className="font-IranYekanBold text-2xl">سوالات متداول</p>
-                {items.map((items, index) => (
-                    <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 ${isOpen === index ? "h-auto divide-y divide-gray-400" : "h-16"}`} >
-                        <div className={`p-5 flex justify-between `} key={index}>
-                            <div className="flex gap-2">
-                                <img src={Tag} alt="" />
-                                {items.title}
+                    <div className=" flex flex-1/2 justify-center py-5">
+                        <div className="w-72 h-[400px] bg-[#C39DDD] rotate-[-20deg] rounded-2xl">
+                            <div className="w-full h-full rotate-[10deg] rounded-2xl bg-[#50116D] relative overflow-hidden">
+                                <img src={Pattern1} alt="" className="w-full h-full  rounded-2xl " />
+                                <img src={Image} alt="" className="w-full h-full rotate-[10deg] rounded-2xl absolute top-10 left-0" />
                             </div>
-                            <FiChevronDown key={index} className={`size-6 transition-transform duration-300${isOpen === index ? "rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
                         </div>
-                        {isOpen === index && (
-                            <div className={`transition-all duration-500 overflow-hidden text-[14px]  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>{items.content}</div>
-                        )}
-                    </div>
-                ))}
-            </div>
-            <div className="flex flex-col">
-                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-10"></span>
-                <div className="flex justify-between">
-                    <p className="font-IranYekanBold text-2xl">برخی از توسعه دهندگان پروجه</p>
-                    <div className="flex gap-5 *:size-8 *:bg-[#e5e0e7] *:text-[#50116D] *:rounded *:cursor-pointer">
-                        <FiChevronRight/>
-                        <FiChevronLeft/>
                     </div>
                 </div>
-                <div className="flex my-5 justify-between">
-                    {developers.map((developer) => (
-                        <div className="w-[295px] h-[400px] shadow rounded-2xl p-4 flex flex-col gap-4 items-center">
-                            <img src={developer.img} alt="" className="rounded-2xl w-full h-40 bg-cover bg-center font-extrabold" />
-                            <p>{developer.name}</p>
-                            <p>{developer.job}</p>
-                            <p className="text-sm text-justify">{developer.desc}</p>
-                            <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2 cursor-pointer">
-                                <CircleFadingPlus />
-                                <button >همکاری</button>
+
+                <div className="bg-[#C39DDD] h-96 rounded-4xl mt-24 -rotate-3 relative">
+                    <div className="bg-[#833AB4] w-full h-full rounded-4xl rotate-3 absolute  overflow-hidden">
+                        <img src={Pattern} alt="" className="h-full w-[50%] opacity-50" />
+                        <div className="w-full h-full absolute top-0 text-white flex pt-24 px-20  font-IranYekanBold">
+                            <div className="flex flex-col flex-1/2">
+                                <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
+                                <p className="text-2xl">چرا توسعه دهنده بشی؟</p>
                             </div>
+                            <div className="flex flex-1/2 text-lg">
+                                <p>پروژه های شما  با عنوان توسعه دهنده ی تایید شده نمایش داده می شوند و موجب جلب اعتماد  بیشتر خریداران خواهد شد .</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-full -mt-36 relative flex justify-around font-IranYekanBold text-[20px]  *:flex *:flex-col *:items-center *:justify-center *:gap-5 *:rounded-3xl *:bg-white *:w-64 *:h-56 *:shadow">
+                    <div className="" >
+                        <img src={MedalStar} alt="" className="size-12" />
+                        <p>اعتبار سنجی پروژه ها</p>
+                    </div>
+                    <div className="" >
+                        <img src={Chart} alt="" className="size-12" />
+                        <p>اعتبار سنجی پروژه ها</p>
+                    </div>
+                    <div className="" >
+                        <img src={DeviceMessage} alt="" className="size-12" />
+                        <p>اعتبار سنجی پروژه ها</p>
+                    </div>
+                    <div className="" >
+                        <img src={User} alt="" className="size-12" />
+                        <p>اعتبار سنجی پروژه ها</p>
+                    </div>
+                </div>
+                <div className=" flex flex-col gap-5 my-24">
+                    <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-3"></span>
+                    <p className="font-IranYekanBold text-2xl">سوالات متداول</p>
+                    {items.map((items, index) => (
+                        <div className={`w-full bg-[#CBCBCB] rounded-3xl border border-gray-400 ${isOpen === index ? "h-auto divide-y divide-gray-400" : "h-16"}`} >
+                            <div className={`p-5 flex justify-between `} key={index}>
+                                <div className="flex gap-2">
+                                    <img src={Tag} alt="" />
+                                    {items.title}
+                                </div>
+                                <FiChevronDown key={index} className={`size-6 transition-transform duration-300${isOpen === index ? "rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
+                            </div>
+                            {isOpen === index && (
+                                <div className={`transition-all duration-500 overflow-hidden text-[14px]  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>{items.content}</div>
+                            )}
                         </div>
                     ))}
                 </div>
+                <div className="flex flex-col">
+                    <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-10"></span>
+                    <div className="flex justify-between">
+                        <p className="font-IranYekanBold text-2xl">برخی از توسعه دهندگان پروجه</p>
+                        <div className="flex gap-5 *:size-8 *:bg-[#F7EBFF] *:text-[#833AB4] *:rounded-2xl *:cursor-pointer *:p-6 ">
+                            <FiChevronRight />
+                            <FiChevronLeft />
+                        </div>
+                    </div>
+                    <div className="flex my-10 justify-between">
+                        {developers.map((developer) => (
+                            <div className="w-[295px] h-[400px] shadow rounded-2xl p-4 flex flex-col gap-4 items-center">
+                                <img src={developer.img} alt="" className="rounded-2xl w-full h-40 bg-cover bg-center font-extrabold" />
+                                <p>{developer.name}</p>
+                                <p>{developer.job}</p>
+                                <p className="text-sm text-justify">{developer.desc}</p>
+                                <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2 cursor-pointer">
+                                    <CircleFadingPlus />
+                                    <button >همکاری</button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
 
+                </div>
             </div>
-            <div>
+            <div className="h-[1000px] bg-[#F7EBFF] mt-24 py-4 ">
+                <div className="w-[85%] h-[55%] grid grid-cols-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
+                    <div className="self-end">
+                        <p className="text-5xl font-extrabold text-[#50116D]">200+</p>
+                        <p className="font-extrabold text-[22px]">پروژه فروخته شد</p>
+                    </div>
+                    <div className="">
+                        <p className="text-5xl font-extrabold text-[#50116D]">85%</p>
+                        <p className="font-extrabold text-[22px]">رضایت کاربران</p>
+                    </div>
+                    <div className="self-end">
+                        <p className="text-5xl font-extrabold text-[#50116D]">500+</p>
+                        <p className="font-extrabold text-[19px]">پروژه تایید شده</p>
+                    </div>
+                    <div className="">
+                        <p className="text-5xl font-extrabold  text-[#50116D]">138+</p>
+                        <p className="font-extrabold text-[22px]">توسعه دهنده</p>
+                    </div>
+                </div>
+                <div className="flex flex-col gap-2 p-8">
+                    <span className="border-t border-primary w-6 h-1 bg-primary"></span>
+                    <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
+                    <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
+                    <div className="bg-[#C39DDD] w-40 h-48 mx-auto mt-10 rotate-4 rounded-2xl relative">
+                        <div className="w-40 h-48 bg-[#50116D] rotate-12 rounded-2xl">
+                        </div>
+                    </div>
+                    <div className="bg-white w-full h-40 -mt-12  rounded-2xl relative">
+                        <img src={Pattern2} alt="" className="w-full h-full"/>
+                        <img src={Image1} alt="" className="size-72 absolute -top-40 left-16" />
+                        <p className="absolute left-2 top-20 font-IranYekanBold">دنبال بهترین  پروجه ها هستی؟</p>
+                        <p className="absolute left-2 top-28 bg-primary py-1 px-3 rounded-2xl text-white cursor-pointer">مشاهده</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
