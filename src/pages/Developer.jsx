@@ -151,7 +151,7 @@ export default function Developer() {
                 </div>
             </div>
             <div className=" bg-[#F7EBFF] mt-24 py-4">
-                <div className="w-[85%] grid grid-cols-2 gap-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
+                <div className="w-[90%] grid grid-cols-2 gap-2 mx-auto justify-items-center lg:grid-cols-4 lg:h-60 *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
                     <div className="self-end">
                         <p className="text-5xl font-extrabold text-[#50116D]">200+</p>
                         <p className="font-extrabold text-[22px]">پروژه فروخته شد</p>
@@ -174,7 +174,7 @@ export default function Developer() {
                     <p className="text-[#50116D] font-extrabold text-2xl">درباره پروجه</p>
                     <p className="text-justify">ایده پروجه از جایی شروع شد که خودمون بارها با چالش های پیدا کردن افراد مطمئن برای انجام پروژه روبه رو شدیم . بعضی وقتا پیدا کردن توسعه دهنده ی متخصص سخت بود و از طرف خیلی از توسعه دهنده ها فرصت دیده شدن نداشتن . همین شد که تصمیم گرفتیم فضایی بسازیم تا کارفرماها و توسعه دهنده ها راحت ، سریع و با اعتماد بیشتر به هم وصل بشن . تیم ما ترکیبیه از آدم های فنی و خلاق که با تجربه ی کار روی پروژه های مختلف ، تلاش می کنیم این مسیر رو برای همه ساده تر و مطمئن تر کنیم .</p>
                 </div>
-                <div className="relative px-8 sm:mt-56 lg:mt-40">
+                <div className="w-[90%] relative px-8 sm:mt-56 lg:mt-40 mx-auto">
                     <div className="bg-[#C39DDD] w-40 h-52 mx-auto mt-10 rotate-4 rounded-2xl sm:w-52 sm:h-60 sm:mx-10 lg:mx-28 lg:h-72 lg:w-60">
                         <div className="w-40 h-52 bg-[#50116D] rotate-12 rounded-2xl sm:w-52 sm:h-60 lg:h-72 lg:w-60">
                         </div>
