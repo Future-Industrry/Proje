@@ -135,7 +135,7 @@ export default function Developer() {
                             <FiChevronLeft className="hidden"/>
                         </div>
                     </div>
-                    <Swiper spaceBetween={16} slidesPerView={'auto'} grabCursor={true} className="">
+                    <Swiper spaceBetween={16} slidesPerView={'auto'} grabCursor={true}>
                         {developers.map((developer) => (
                             <SwiperSlide className="!w-[295px] !h-[420px] !shadow rounded-2xl p-4 !flex flex-col gap-4 items-center">
                                 <img src={developer.img} alt="" className="rounded-2xl w-full h-40 bg-cover bg-center font-extrabold" />
@@ -149,7 +149,7 @@ export default function Developer() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-
+                    <div className=""></div>
                 </div>
             </div>
             <div className=" bg-[#F7EBFF] py-4">
