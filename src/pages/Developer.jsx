@@ -1,6 +1,8 @@
 import { FiArrowLeft, FiPhone, FiChevronDown, FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import { CircleFadingPlus } from "lucide-react"
 import { useState } from "react"
+import {Swiper ,SwiperSlide} from "swiper/react"
+import 'swiper/css'
 
 // imgaes
 import Image from '../assets/images/developerIMG.png'
@@ -42,7 +44,7 @@ export default function Developer() {
         }
     }
     return (
-        <div className="py-5">
+        <div className="">
             <div className="px-10">
                 <div className="sm:flex space-y-20 sm:space-y-0">
                     <div className="space-y-6  pt-10 sm:pt-24 lg:px-16 sm:flex  sm:flex-1/2 sm:flex-col  ">
@@ -63,7 +65,7 @@ export default function Developer() {
                             </p>
                         </div>
                     </div>
-                    <div className=" flex flex-1/2 justify-center py-5">
+                    <div className=" flex flex-1/2 justify-center py-10">
                         <div className="w-72 h-[400px] bg-[#C39DDD] rotate-[-20deg] rounded-2xl">
                             <div className="w-full h-full rotate-[10deg] rounded-2xl bg-[#50116D] relative overflow-hidden">
                                 <img src={Pattern1} alt="" className="w-full h-full  rounded-2xl " />
@@ -116,7 +118,7 @@ export default function Developer() {
                                     <img src={Tag} alt="" />
                                     {items.title}
                                 </div>
-                                <FiChevronDown key={index} className={`size-6 transition-transform duration-300${isOpen === index ? "rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
+                                <FiChevronDown key={index} className={`size-6 ${isOpen === index ? "duration-500 transform rotate-90" : "rotate-0"}`} onClick={() => toggle(index)} />
                             </div>
                             {isOpen === index && (
                                 <div className={`transition-all duration-500 overflow-hidden text-[14px]  ${isOpen === index ? "max-h-40 mt-5 pb-3 px-8" : "max-h-0"}`} key={index}>{items.content}</div>
@@ -124,33 +126,33 @@ export default function Developer() {
                         </div>
                     ))}
                 </div>
-                <div className="flex flex-col">
+                <div className="mb-10 space-y-10">
                     <span className="border-t border-primary w-16 h-2 rounded-2xl bg-primary mb-10"></span>
                     <div className="flex justify-between">
                         <p className="font-IranYekanBold text-2xl">برخی از توسعه دهندگان پروجه</p>
                         <div className="flex gap-5 *:size-8 *:bg-[#F7EBFF] *:text-[#833AB4] *:rounded-2xl *:cursor-pointer *:p-6 ">
-                            <FiChevronRight />
-                            <FiChevronLeft />
+                            <FiChevronRight className="hidden"/>
+                            <FiChevronLeft className="hidden"/>
                         </div>
                     </div>
-                    <div className="flex my-10 justify-between">
+                    <Swiper spaceBetween={16} slidesPerView={'auto'} grabCursor={true} className="">
                         {developers.map((developer) => (
-                            <div className="w-[295px] h-[400px] shadow rounded-2xl p-4 flex flex-col gap-4 items-center">
+                            <SwiperSlide className="!w-[295px] !h-[420px] !shadow rounded-2xl p-4 !flex flex-col gap-4 items-center">
                                 <img src={developer.img} alt="" className="rounded-2xl w-full h-40 bg-cover bg-center font-extrabold" />
                                 <p>{developer.name}</p>
                                 <p>{developer.job}</p>
                                 <p className="text-sm text-justify">{developer.desc}</p>
-                                <div className="bg-primary px-6 py-3 text-white rounded-2xl -mt-2 flex items-center gap-2 cursor-pointer">
+                                <div className=" bg-primary px-6 py-3 text-white rounded-2xl   flex items-center gap-2 cursor-pointer">
                                     <CircleFadingPlus />
                                     <button >همکاری</button>
                                 </div>
-                            </div>
+                            </SwiperSlide>
                         ))}
-                    </div>
+                    </Swiper>
 
                 </div>
             </div>
-            <div className=" bg-[#F7EBFF] mt-24 py-4">
+            <div className=" bg-[#F7EBFF] py-4">
                 <div className="w-[90%] sm:h-60 grid grid-cols-2 gap-2 mx-auto justify-items-center sm:grid-cols-4  *:bg-white *:size-48 *:rounded-2xl *:flex *:flex-col *:items-center *:justify-center *:gap-3 ">
                     <div className="self-end">
                         <p className="text-5xl font-extrabold text-[#50116D]">200+</p>
